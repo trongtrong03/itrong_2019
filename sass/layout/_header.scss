@@ -1,0 +1,176 @@
+header {
+    position: relative;
+    width: 100%;
+
+    @include MQ(max-1024) {
+        .pages & {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 995;
+            height: 5rem;
+            line-height: 5rem;
+            text-align: center;
+            background: $blue;
+
+            &::after {
+                content: 'iTRONG';
+                font-family: 'Keania One', cursive;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.logo {
+    display: block;
+
+    a {
+        display: block;
+        height: 5rem;
+        line-height: 3rem;
+        text-align: center;
+        font-family: 'Keania One', cursive;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $blue;
+        background: $navy;
+        padding: 1rem;
+
+        &::before,
+        &::after {
+            font-size: 1rem;
+        }
+
+        &::before {
+            content: '</ ';
+        }
+
+        &::after {
+            content: ' >';
+        }
+    }
+}
+
+.nav-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: block;
+    width: 15rem;
+    height: 100vh;
+    background: $blue;
+    box-shadow: 0 5px 15px 1px rgba(32, 42, 64, 0.25);
+
+    @include MQ(max-1024) {
+        left: -15rem;
+        transition: left .3s ease;
+        box-shadow: none;
+
+        &.active {
+            left: 0;
+            box-shadow: 0 5px 25px 10px rgba(32, 42, 64, 0.25);
+        }
+    }
+}
+
+.nav-wrap {
+    >ul {
+        height: calc(100% - 9rem);
+        @include scrollbar($navy);
+        padding: 1rem 0;
+    }
+
+    >ul>li {
+        span {
+            display: block;
+            line-height: 1.5;
+            font-size: 1.25rem;
+            color: #ffffff;
+            padding: 1rem 1.5rem;
+            transition: all .3s ease;
+            cursor: pointer;
+
+            &:hover,
+            &.active {
+                font-weight: bold;
+                color: $navy;
+            }
+        }
+    }
+}
+
+.nav-sub {
+    li {
+        a {
+            display: block;
+            line-height: 1.5;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, .7);
+            padding: .5rem 2rem;
+            transition: color .3s;
+
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.nav-btn {
+    z-index: 99;
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FFF;
+    background: transparent;
+    cursor: pointer;
+
+    .index & {
+        position: fixed;
+        top: 2rem;
+        left: calc(15rem + 2rem);
+    }
+
+    .pages & {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    @include MQ(max-1024) {
+        display: block;
+
+        .index & {
+            left: 2rem;
+        }
+    }
+}
+
+.nav-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+
+    a {
+        flex: 1;
+        line-height: 3rem;
+        text-align: center;
+        font-size: 1rem;
+        color: #ffffff;
+
+        &:hover {
+            color: $blue;
+            background: $navy;
+        }
+    }
+}

@@ -1,0 +1,170 @@
+//反白色
+@mixin selection($bg: $navy) {
+    ::selection {
+        background: $bg;
+        color: #FFF;
+    }
+    ::-moz-selection {
+        background: $bg;
+        color: #FFF;
+    }
+}
+
+
+//清除浮動
+@mixin clearfix {
+    *zoom: 1;
+    &:before,&:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear:both;
+    }
+}
+
+
+//max-width
+@mixin maxW {
+    max-width: 80rem;
+    @include MQ(max-1440) {
+        max-width: 72rem;
+    }
+    @include MQ(max-1280) {
+        max-width: 60rem;
+    }
+    @include MQ(max-1024) {
+        max-width: none;
+    }
+}
+
+
+//文字溢出
+@mixin text-overflow {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+//強迫斷行
+@mixin word-wrap {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+//edit set
+@mixin edit-set {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    iframe {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+//flexbox
+@mixin center-flexbox($ai: center, $jc: center) {
+    display: flex;
+    -webkit-align-items: $ai;
+    align-items: $ai;
+    -webkit-justify-content: $jc;
+    justify-content: $jc;
+}
+
+
+//placeholder
+@mixin placeholder( $color: #CCC, $color-h: #CCC) {
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+    &::-moz-placeholder {
+        color: $color;
+    }
+    &:-ms-input-placeholder {
+        color: $color;
+    }
+    &:-moz-placeholder {
+        color: $color;
+    }
+    &.placeholder {
+        &::-webkit-input-placeholder {
+            color: $color-h;
+        }
+        &::-moz-placeholder {
+            color: $color-h;
+        }
+        &:-ms-input-placeholder {
+            color: $color-h;
+        }
+        &:-moz-placeholder {
+            color: $color-h;
+        }
+    }
+}
+
+
+//appearance
+@mixin appearance($var) {
+    -webkit-appearance: $var;
+    -moz-appearance: $var;
+    appearance: $var;
+}
+
+
+//三角形
+@mixin triangle($w, $c) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: $w;
+    border-color: $c;
+}
+
+
+//讓iPhone iPad滑滾更順暢
+@mixin overflow-scroll {
+    overflow-y: auto;
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+// scrollbar
+@mixin scrollbar(
+    $bgcolor: #999
+) {
+    overflow-y: auto;
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: $bgcolor;
+    }
+}
+
+
+// 清除 inline-block 空白字元
+@mixin removeTextNodes {
+    letter-spacing: -0.31em;
+    *letter-spacing: normal;
+    *word-spacing: -0.43em;
+    text-rendering: optimizespeed;
+    * {
+        letter-spacing: normal;
+        word-spacing: normal;
+    }
+}

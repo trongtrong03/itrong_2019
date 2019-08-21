@@ -1,0 +1,1079 @@
+.inside-wrap {
+    position: relative;
+    background: #FAFAFA;
+    padding: 2rem 1rem 4rem;
+
+    .view & {
+        min-height: calc(100vh - 5rem);
+        padding-top: 9rem;
+    }
+
+    @include MQ(max-1366) {
+        .view & {
+            padding-top: 7rem;
+        }
+    }
+
+    @include MQ(max-1024) {
+        padding-top: 1rem;
+    }
+
+    @include MQ(max-640) {
+        padding-bottom: 1rem;
+    }
+}
+
+.inside-head {
+    position: fixed;
+    top: 0;
+    left: 15rem;
+    z-index: 50;
+    display: block;
+    width: calc(100% - 15rem);
+    height: 5rem;
+    background: #FFF;
+    box-shadow: 0 2px 6px 0 rgba(52, 52, 52, .1);
+}
+
+.inside-nav {
+
+    button,
+    a {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 5rem;
+        height: 5rem;
+        line-height: 5rem;
+        text-align: center;
+        font-size: 1.5rem;
+        color: $blue;
+        background: #EFEFEF;
+        border: 0;
+        border-right: 1px solid #FFF;
+        cursor: pointer;
+
+        i {
+            transition: margin .3s ease, transform .3s ease;
+        }
+    }
+
+    button {
+
+        &.btn-back {
+            left: 0;
+        }
+
+        // &.btn-list {
+        //     left: 10rem;
+        // }
+
+        // &.btn-top {
+        //     display: none;
+        //     right: 0;
+        // }
+
+        &:hover {
+            &.btn-back {
+                i {
+                    margin-right: 5px;
+                }
+            }
+
+            // &.btn-list {
+            //     i {
+            //         margin-left: 5px;
+            //     }
+            // }
+
+            // &.btn-top {
+            //     i {
+            //         transform: translateY(-3px);
+            //     }
+            // }
+        }
+    }
+
+    a {
+        left: 5rem;
+
+        &:hover {
+            i {
+                transform: scale(1.1, 1.1);
+            }
+        }
+    }
+
+    @include MQ(max-640) {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        width: 100vw;
+        height: 5rem;
+        background: #FFF;
+
+        button,
+        a {
+            flex: 1;
+            position: static;
+            width: 25%;
+        }
+    }
+}
+
+.inside-main {
+    max-width: 60rem;
+    min-height: 30rem;
+    margin: 0 auto;
+
+    >h2 {
+        font-size: 1.5rem;
+        color: $blue;
+
+        &::before {
+            line-height: 2;
+            // text-align: center;    
+            text-transform: uppercase;
+            font-family: 'Trebuchet MS', '微軟正黑體';
+            font-size: 3rem;
+            font-weight: bold;
+            color: $navy;
+            margin-right: 1rem;
+        }
+    }
+
+    @include MQ(max-1024) {
+        >h2 {
+            text-align: center;
+
+            &::before {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+.inside-search {
+    position: relative;
+
+    input {
+        display: block;
+        width: 100%;
+        height: 3rem;
+        font-size: 1rem;
+        border: 1px solid #CCC;
+        padding-left: 3rem;
+        @include placeholder;
+
+        &:focus {
+            border-color: $blue;
+        }
+    }
+
+    label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3rem;
+        line-height: 3rem;
+        text-align: center;
+        font-size: 1.5rem;
+        color: #CCC;
+    }
+}
+
+.inside-tag {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding-left: 3rem;
+    @include removeTextNodes;
+
+    &::before {
+        content: 'TAG:';
+        position: absolute;
+        top: 0;
+        left: 0;
+        line-height: 2rem;
+        color: $blue;
+        letter-spacing: 0;
+    }
+
+    a,
+    button {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 2rem;
+        font-size: 0.875rem;
+        color: #ffffff;
+        background: $blue;
+        margin-right: .5rem;
+        margin-bottom: .5rem;
+        padding: 0 .5rem;
+        transition: all .3s ease;
+
+        &:hover {
+            background: $navy;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.inside-btn {
+    position: relative;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #ffffff;
+    background: #BBB;
+    margin-top: 1rem;
+
+    &::after {
+        content: 'API List';
+        position: absolute;
+        top: 0;
+        left: 3rem;
+        z-index: 1;
+        display: block;
+        line-height: calc(3rem - 2px);
+        font-size: 0.875rem;
+        white-space: nowrap;
+        color: #bbbbbb;
+        border: 1px solid #BBB;
+        border-left: 0;
+        padding: 0 .5rem;
+    }
+
+    &.active {
+        background: $blue;
+
+        &::after {
+            color: $blue;
+            border-color: $blue;
+        }
+    }
+}
+
+.inside-form,
+.inside-list,
+.inside-box {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    >h2 {
+        line-height: 1;
+        font-size: 1rem;
+        color: $blue;
+        border-bottom: 1px solid $blue;
+        padding-bottom: .5rem;
+    }
+
+    &.is-hide {
+        display: none;
+    }
+
+    &.active {
+        display: block !important;
+    }
+}
+
+.inside-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem 0;
+
+    >li {
+        position: relative;
+        width: 25%;
+        padding: .25rem 1rem .25rem 1.5rem;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: .75rem;
+            left: 0;
+            width: 8px;
+            height: 8px;
+            background: $blue;
+        }
+
+        i {
+            display: inline;
+            // display: inline-block;
+            vertical-align: middle;
+            font-size: 1.25rem;
+            margin-right: 0.25rem;
+        }
+
+        a,
+        span {
+            position: relative;
+            display: inline;
+            // display: inline-block;
+            vertical-align: middle;
+            line-height: 1.5;
+            font-size: 1rem;
+            transition: color .3s;
+
+            b {
+                position: absolute;
+                top: -2rem;
+                left: 1rem;
+                z-index: -1;
+                white-space: nowrap;
+                font-size: 0.875rem;
+                color: #ffffff;
+                background: rgba(0, 0, 0, .8);
+                border-radius: 4px;
+                padding: .25rem .5rem;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -8px;
+                    left: 8px;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 8px 8px 0 8px;
+                    border-color: rgba(0, 0, 0, .8) transparent transparent transparent;
+                }
+
+                q {
+                    color: #999;
+                }
+
+                &.two-rows {
+                    top: -3.5rem;
+                }
+            }
+
+            &:hover {
+                b {
+                    z-index: 10001;
+                    opacity: 1;
+                }
+            }
+        }
+
+        a {
+            color: #000000;
+
+            &:hover {
+                color: $red;
+            }
+        }
+
+        span {
+            color: #cccccc;
+        }
+
+        &:nth-child(4n) {
+
+            a,
+            span {
+                b {
+                    left: auto;
+                    right: 1rem;
+
+                    &::after {
+                        left: auto;
+                        right: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.inside-list {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+
+    li {
+        display: block;
+        margin-bottom: 1.5rem;
+
+        a {
+            display: block;
+            border-left: 4px solid #888;
+            transition: border .3s ease;
+
+            time {
+                display: inline-block;
+                vertical-align: top;
+                width: 5rem;
+                text-align: center;
+                font-size: .875rem;
+                color: #FFF;
+                background: #BBB;
+                margin-left: 1rem;
+                margin-bottom: .5rem;
+                padding: .25rem 0;
+            }
+
+            h2 {
+                display: block;
+                line-height: 1;
+                font-size: 1.5rem;
+                color: #444;
+                padding-left: 1rem;
+                @include text-overflow;
+                transition: color .3s ease;
+            }
+
+            &:hover {
+                border-left-color: $blue;
+
+                h2 {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+
+.inside-box {
+    ul {
+        margin-top: 1rem;
+    }
+
+    li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: calc(25% - (3rem / 4));
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+        @include removeTextNodes;
+
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        a {
+            display: block;
+
+            figure {
+                position: relative;
+
+                span {
+                    display: block;
+                    background: #efefef;
+                    margin-bottom: .5rem;
+                }
+
+                img {
+                    display: block;
+                    width: 100%;
+                }
+
+                h2 {
+                    line-height: 1.5;
+                    font-size: 1.25rem;
+                    @include text-overflow;
+                }
+
+                figcaption {
+                    position: absolute;
+                    display: none;
+                    width: 100%;
+                    line-height: 1.5;
+                    font-size: 0.875rem;
+                    color: #ffffff;
+                    background: rgba(0, 0, 0, .8);
+                    padding: .5rem;
+                }
+            }
+        }
+
+        &:hover {
+            z-index: 2;
+
+            a {
+                figure {
+                    figcaption {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        @include MQ(max-1024) {}
+    }
+}
+
+.inside-menu {
+    position: fixed;
+    top: 0;
+    left: -30rem;
+    z-index: 1002;
+    display: block;
+    width: 30rem;
+    height: 100vh;
+    background: $navy;
+    transition: left .3s ease;
+
+    ul {
+        display: block;
+        height: 100vh;
+        @include scrollbar();
+    }
+
+    &.active {
+        left: 0;
+        box-shadow: 0 5px 15px 1px rgba(32, 42, 64, 0.25);
+    }
+}
+
+.inside-view {
+    >hgroup {
+        position: relative;
+
+        time {
+            display: inline-block;
+            vertical-align: top;
+            font-size: .875rem;
+            color: #999;
+
+            &::before {
+                content: '最後更新日期：';
+            }
+        }
+
+        h1 {
+            display: block;
+            line-height: 1.5;
+            font-size: 1.75rem;
+            color: $blue;
+            border-bottom: 1px solid $blue;
+            padding: .75rem 0 1.25rem;
+        }
+    }
+}
+
+.inside-edit {
+    min-height: 40vh;
+    padding: 2rem 0;
+
+    em {
+        font-size: 1rem;
+        color: $red;
+        background: #f9f2f4;
+        border-radius: 4px;
+        padding: 0 .25rem;
+    }
+
+    h2,
+    b {
+        line-height: 2;
+        display: block;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    h2 {
+        &::before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: .5rem;
+            height: .5rem;
+            background: $blue;
+            margin-right: .5rem;
+            margin-bottom: .25rem;
+        }
+
+        &.cssproperty {
+            &::after {
+                content: ' 的屬性參數值：';
+            }
+        }
+
+        &.browser {
+            &::after {
+                content: '瀏覽器支援：';
+            }
+        }
+
+        &.cssjs {
+            &::after {
+                content: 'Javascript 調用方法：';
+            }
+        }
+    }
+
+    h3 {
+        display: block;
+        line-height: 2;
+        font-size: .875rem;
+        color: #999;
+
+        &::before {
+            content: '';
+        }
+
+        &.rule::before {
+            content: 'Rule：';
+        }
+
+        &.html::before {
+            content: 'HTML：';
+        }
+
+        &.css::before {
+            content: 'CSS：';
+        }
+
+        &.js::before {
+            content: 'Jacascript：';
+        }
+
+        &.ex::before {
+            content: 'Example：';
+        }
+
+        &.demo::before {
+            content: 'Demo：';
+        }
+    }
+
+    a {
+        color: $blue;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    p {
+        line-height: 1.5;
+        font-size: 1rem;
+        padding: .5rem 0;
+
+        span {
+            display: block;
+        }
+
+        &.step {
+            span:first-child {
+                color: $blue;
+            }
+        }
+    }
+
+    >figure {
+        img {
+            display: block;
+            width: auto;
+            max-width: 100%;
+        }
+
+        figcaption {
+            line-height: 2;
+
+            &::before {
+                content: '▲';
+            }
+        }
+    }
+
+    >code {
+        &::before {
+            content: '範例';
+            display: block;
+            border-bottom: 1px solid #FFF;
+            margin-bottom: .25rem;
+            padding-bottom: .25rem;
+        }
+    }
+
+    ol.decimal {
+        list-style-position: inside;
+        list-style-type: decimal;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+
+        li {
+            a {
+                color: $blue;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    ul.square {
+        list-style-position: inside;
+        list-style-type: square;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+
+        li {
+            a {
+                color: $blue;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    ul.refer {
+        list-style-position: inside;
+        list-style-type: square;
+        margin-top: 3rem;
+
+        &::before {
+            content: '參考資料';
+        }
+
+        li {
+            line-height: 1.5;
+        }
+    }
+
+    >figure,
+    >code,
+    >ul,
+    >ol {
+        display: block;
+        line-height: 1.5;
+        font-size: .875rem;
+        background: #F2F2F2;
+        margin-bottom: 1rem;
+        padding: 1rem;
+
+        &::before {
+            display: block;
+            border-bottom: 1px solid #FFF;
+            margin-bottom: .25rem;
+            padding-bottom: .25rem;
+        }
+    }
+
+    &.theme-travel {
+        p {
+            text-indent: 2em;
+        }
+
+        figure {
+            padding-bottom: 0;
+        }
+    }
+}
+
+// CODE
+.code-area {
+    position: relative;
+    background: #ccc;
+    margin-bottom: 1rem;
+
+    >pre {
+        display: block;
+        line-height: 1.5;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        font-size: .875rem;
+        background: #F2F2F2;
+        padding: 1rem;
+        @include selection($red);
+
+        &::before {
+            content: '程式碼';
+            display: block;
+            border-bottom: 1px solid #FFF;
+            margin-bottom: .25rem;
+            padding-bottom: .25rem;
+        }
+    }
+}
+
+.copy-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
+    min-width: 4rem;
+    line-height: 1.5;
+    text-align: center;
+    font-size: .75rem;
+    color: #FFF;
+    background: $blue;
+    outline: none;
+    cursor: pointer;
+}
+
+.copied {
+    &::after {
+        content: '已複製';
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 60px;
+        text-align: center;
+        font-size: .875rem;
+        color: #FFF;
+        background: rgba(0, 0, 0, .7);
+        border-radius: 4px;
+        padding: .25rem;
+        animation: 1s ease-in-out 0s 1 normal forwards running copyit;
+    }
+}
+
+@keyframes copyit {
+    0% {
+        bottom: 1rem;
+        opacity: 1;
+    }
+
+    40% {
+        bottom: 1.5rem;
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 1.5rem;
+        opacity: 0;
+    }
+}
+
+
+// TRAVEL
+.info-box {
+    border: 1px dashed $blue;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem .5rem;
+
+    >div {
+        position: relative;
+        display: block;
+        line-height: 1.5;
+        margin-bottom: .5rem;
+        padding-left: 1.75rem;
+
+        span,
+        i {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        i {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1rem;
+            line-height: 1.5;
+            text-align: center;
+            color: $red;
+        }
+
+        u {
+            display: inline-block;
+            text-decoration: none;
+
+            &::after {
+                content: '→';
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 .25rem;
+            }
+
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+[class*="photo-row-"] {
+    figure {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 1.5;
+        font-size: .875rem;
+        background: #F2F2F2;
+        margin-bottom: 1rem;
+        padding: 1rem;
+
+        img {
+            display: block;
+            width: auto;
+            max-width: 100%;
+        }
+
+        figcaption {
+            line-height: 2;
+
+            &::before {
+                content: '▲';
+            }
+        }
+    }
+}
+
+.photo-row-1 {
+    figure {
+        width: 40%;
+    }
+
+    div {
+        display: inline-block;
+        vertical-align: top;
+        width: 60%;
+        padding: 1rem 0;
+    }
+
+    &.left {
+        div {
+            padding-left: 1rem;
+        }
+    }
+
+    &.right {
+        div {
+            padding-right: 1rem;
+        }
+    }
+}
+
+.photo-row-2 {
+    figure {
+        width: 49%;
+
+        &:first-child {
+            margin-right: 2%;
+        }
+    }
+}
+
+.photo-row-3 {
+    figure {
+        width: 32%;
+
+        &:nth-child(2) {
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+    }
+}
+
+.t-form {
+    width: 100%;
+    line-height: 1.5;
+    font-size: .875rem;
+    border-right: thin solid $blue;
+    border-bottom: thin solid $blue;
+    margin-bottom: 1rem;
+
+    [class*="t-flex"] {
+        border-top: thin solid $blue;
+        border-left: thin solid $blue;
+        padding: .5rem;
+    }
+}
+
+/* t-flex */
+@for $num from 1 through 9 {
+    .t-flex#{$num} {
+        @include word-wrap;
+        flex: $num;
+    }
+}
+
+.t-head {
+    display: flex;
+    width: 100%;
+    color: #fff;
+    background: $blue;
+}
+
+.t-row {
+    width: 100%;
+    display: flex;
+
+    &:nth-child(odd) {
+        background: #f2f2f2;
+    }
+}
+
+.is-browser {
+    text-align: center;
+    margin-bottom: 1rem;
+
+    &::after {
+        content: '◆ 前綴全灰代表不需要或不支援屬性。';
+        display: block;
+        width: 100%;
+        text-align: left;
+        font-size: .875rem;
+        margin-top: 0.5rem;
+    }
+
+    .t-form {
+        margin-bottom: 0;
+    }
+
+    .t-row {
+        &:nth-child(odd) {
+            background: none;
+        }
+
+        &:nth-child(2) {
+            font-size: 2rem;
+
+            span {
+                i {
+                    color: $red;
+                }
+
+                &.is-none {
+                    i {
+                        opacity: 0.3;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            span {
+                &.is-none {
+                    color: #dddddd;
+                }
+            }
+        }
+    }
+}
+
+/* icon */
+i[class*="icon-"] {
+    display: inline-block;
+    vertical-align: top;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+}
+
+i.icon-chrome {
+    background-image: image-url('logo_chrome.png');
+}
+
+i.icon-firefox {
+    background-image: image-url('logo_firefox.png');
+}

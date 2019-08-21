@@ -1,0 +1,82 @@
+.html {
+    .inside-main>h2::before {
+        content: 'HTML';
+    }
+
+    .nav-wrap li.navHtml span {
+        font-weight: bold;
+        color: $navy;
+    }
+    .inside-flex > li i {
+        color: #e44d26;
+    }
+}
+
+.css {
+    .inside-main>h2::before {
+        content: 'CSS';
+    }
+    .nav-wrap li.navCss span {
+        font-weight: bold;
+        color: $navy;
+    }
+    .inside-flex > li i {
+        color: #1a70b5;
+    }
+}
+
+.js {
+    .inside-main>h2::before {
+        content: 'JAVASCRIPT';
+    }
+    .nav-wrap li.navJs span {
+        font-weight: bold;
+        color: $navy;
+    }
+}
+
+.git {
+    .inside-main>h2::before {
+        content: 'GIT';
+    }
+}
+
+.codeeditor {
+    .inside-main>h2::before {
+        content: 'CODE EDITOR';
+    }
+}
+
+.os {
+    .inside-main>h2::before {
+        content: '作業系統';
+    }
+}
+
+.knowledge {
+    .inside-main>h2::before {
+        content: '知識文章';
+    }
+}
+
+.res {
+    .inside-main>h2::before {
+        content: 'RESOURCES';
+    }
+    .nav-wrap li.navRes span {
+        font-weight: bold;
+        color: $navy;
+    }
+}
+
+.travel {
+    .inside-main>h2::before {
+        content: '寶島壯遊';
+    }
+}
+
+.contact {
+    .inside-main>h2::before {
+        content: 'Contact';
+    }
+}

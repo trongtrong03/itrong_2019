@@ -1,0 +1,110 @@
+//MAX
+$screen-1920: 1920px;
+$screen-1440: 1440px;
+$screen-1366: 1366px;
+$screen-1280: 1280px;
+$screen-1024: 1024px; //tablet
+$screen-960: 960px;   //grid
+$screen-800: 800px;
+$screen-768: 768px;
+$screen-767: 767px;   //pad
+$screen-640: 640px;
+$screen-568: 568px;
+$screen-480: 480px;
+$screen-414: 414px;   //iphone
+$screen-320: 320px;
+$screen-240: 240px;
+
+// media queries
+@mixin MQ($canvas) {
+    //max
+    @if $canvas == max-1920 {
+        @media only screen and (max-width: $screen-1920) { @content; } 
+    }
+    @else if $canvas == max-1440 {
+        @media only screen and (max-width: $screen-1440) { @content; } 
+    }
+    @else if $canvas == max-1366 {
+        @media only screen and (max-width: $screen-1366) { @content; } 
+    }
+    @else if $canvas == max-1280 {
+        @media only screen and (max-width: $screen-1280) { @content; } 
+    }
+    @else if $canvas == max-1024 {
+        @media only screen and (max-width: $screen-1024) { @content; } 
+    }
+    @else if $canvas == max-960 {
+        @media only screen and (max-width: $screen-960) { @content; } 
+    }
+    @else if $canvas == max-800 {
+        @media only screen and (max-width: $screen-800) { @content; } 
+    }
+    @else if $canvas == max-768 {
+        @media only screen and (max-width: $screen-768) { @content; } 
+    }
+    @else if $canvas == max-767 {
+        @media only screen and (max-width: $screen-767) { @content; } 
+    }
+    @else if $canvas == max-640 {
+        @media only screen and (max-width: $screen-640) { @content; } 
+    }
+    @else if $canvas == max-568 {
+        @media only screen and (max-width: $screen-568) { @content; } 
+    }
+    @else if $canvas == max-480 {
+        @media only screen and (max-width: $screen-480) { @content; } 
+    }
+    @else if $canvas == max-414 {
+        @media only screen and (max-width: $screen-414) { @content; } 
+    }
+    @else if $canvas == max-320 {
+        @media only screen and (max-width: $screen-320) { @content; } 
+    }
+    @else if $canvas == max-240 {
+        @media only screen and (max-width: $screen-240) { @content; } 
+    }
+
+    // min
+    @else if $canvas == min-1440 {
+        @media only screen and (min-width: $screen-1440) { @content; } 
+    }
+    @else if $canvas == min-1366 {
+        @media only screen and (min-width: $screen-1366) { @content; } 
+    }
+    @else if $canvas == min-1280 {
+        @media only screen and (min-width: $screen-1280) { @content; } 
+    }
+    @else if $canvas == min-1024 {
+        @media only screen and (min-width: $screen-1024) { @content; } 
+    }
+    @else if $canvas == min-960 {
+        @media only screen and (min-width: $screen-960) { @content; } 
+    }
+    @else if $canvas == min-800 {
+        @media only screen and (min-width: $screen-800) { @content; } 
+    }
+    @else if $canvas == min-768 {
+        @media only screen and (min-width: $screen-768) { @content; } 
+    }
+    @else if $canvas == min-767 {
+        @media only screen and (min-width: $screen-767) { @content; } 
+    }
+    @else if $canvas == min-640 {
+        @media only screen and (min-width: $screen-640) { @content; } 
+    }
+    @else if $canvas == min-568 {
+        @media only screen and (min-width: $screen-568) { @content; } 
+    }
+    @else if $canvas == min-480 {
+        @media only screen and (min-width: $screen-480) { @content; } 
+    }
+    @else if $canvas == min-414 {
+        @media only screen and (min-width: $screen-414) { @content; } 
+    }
+    @else if $canvas == min-320 {
+        @media only screen and (min-width: $screen-320) { @content; } 
+    }
+    @else if $canvas == min-240 {
+        @media only screen and (min-width: $screen-240) { @content; } 
+    }
+}

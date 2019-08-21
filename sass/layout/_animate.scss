@@ -1,0 +1,40 @@
+@keyframes shining {
+    0% {
+        filter: blur(1rem) saturate(90%);
+    }
+    50% {
+        filter: blur(1rem) saturate(150%);
+    }
+    100% {
+        filter: blur(1rem) saturate(90%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownJS {
+    0% { height: 0; }
+    100% { height: 3rem * 3; }
+}
+
+@keyframes slideDownAPP {
+    0% { height: 0; }
+    100% { height: 3rem * 5; }
+}
+
+@keyframes slideDownRes {
+    0% { height: 0; }
+    100% { height: 3rem * 6; }
+}
+
+@keyframes slideDownCre {
+    0% { height: 0; }
+    100% { height: 3rem * 1; }
+}

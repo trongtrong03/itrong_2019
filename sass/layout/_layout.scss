@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    @include selection;
+}
+
+input,
+select,
+textarea,
+button,
+a {
+    outline: none;
+    font-family: 'Karla', '微軟正黑體', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: #121212;
+    transition: color .3s ease;
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+button {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+html {
+    background: $blue;
+
+    &.index {
+        background: #1c3149;
+    }
+
+    &.iframe {
+        background: #FAFAFA;
+    }
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Karla', '微軟正黑體', sans-serif;
+    font-size: 100%;
+    color: #121212;
+    background: #FFF;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    /*@include user-select(none);*/
+    margin: 0;
+    padding: 0;
+    @include scrollbar($navy);
+
+    .index & {
+        animation-name: fadeIn;
+        animation-duration: .25s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        @include scrollbar(#FFF);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+// No-scroll
+.no-scroll {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#wrap {
+    position: relative;
+    padding-left: 15rem;
+
+    @include MQ(max-1024) {
+        padding-left: 0;
+
+        .pages & {
+            padding-top: 5rem;
+        }
+    }
+}
+
+
+// Popup
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .7);
+    cursor: pointer;
+
+    @include MQ(max-1024) {
+        &.active {
+            display: block;
+        }
+    }
+
+    &.active {
+        display: block;
+    }
+}
+
+.popup-wrap {
+    position: fixed;
+    z-index: 999;
+    display: none;
+    background: #FFF;
+    padding: 2rem;
+}
+
+.popup-close {
+    position: absolute;
+    top: 0;
+    right: -3rem;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #FFF;
+    background: $blue;
+    cursor: pointer;
+
+    &:hover {
+        color: #FFF;
+    }
+}
+
+
+// go top
+.siderbar {
+    position: fixed;
+    right: 1rem;
+    bottom: .5rem;
+    z-index: 98;
+    display: block;
+
+    button {
+        display: block;
+        width: 3rem;
+        text-align: center;
+        color: #FFF;
+        background: $navy;
+        opacity: .5;
+        margin-bottom: .5rem;
+        transition: all .3s ease;
+
+        i {
+            display: block;
+            line-height: 3rem;
+            font-size: 1.5rem;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .index & {
+        display: none;
+    }
+
+    .view & {
+        top: 0;
+        right: 0;
+        height: 5rem;
+
+        button {
+            width: 5rem;
+            height: 5rem;
+            line-height: 5rem;
+            text-align: center;
+            font-size: 1.5rem;
+            color: $blue;
+            background: #EFEFEF;
+            opacity: 1;
+
+            i {
+                font-size: 2rem;
+                transition: transform .3s ease;
+            }
+
+            &:hover {
+                i {
+                    transform: translateY(-3px);
+                }
+            }
+        }
+    }
+}
+
+
+// line popup
+.line-wrap {
+    top: calc(50% - 10rem);
+    left: calc(50% - 10rem);
+    width: 20rem;
+    min-height: 20rem;
+
+    img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    figcaption {
+        line-height: 1.5;
+        text-align: center;
+        font-size: .75rem;
+        color: #999;
+    }
+
+    span {
+        display: block;
+    }
+
+    &.line-active {
+        display: block;
+    }
+}
+
+
+// 間距
+.mb-0 {
+    margin-bottom: 0 !important;
+}
