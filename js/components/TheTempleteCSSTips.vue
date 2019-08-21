@@ -34,6 +34,12 @@ module.exports = {
       // data
       cTips: [
         {
+          id: 18,
+          href: "css_t_units",
+          time: "2019-08-29",
+          topic: "CSS 使用單位介紹"
+        },
+        {
           id: 17,
           href: "css_t_horizontal_scrollable_menu",
           time: "2019-08-28",
