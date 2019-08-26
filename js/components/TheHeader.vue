@@ -157,10 +157,10 @@ module.exports = {
         },
         {
           name: "Code Editor",
-          href: "_codeeditor"
+          href: "_editor"
         },
         {
-          name: "作業系統",
+          name: "OS",
           href: "_os"
         }
       ],

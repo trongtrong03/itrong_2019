@@ -395,8 +395,12 @@
 }
 
 .inside-list {
-    margin-top: 2rem;
+    margin-top: 0rem;
     padding-bottom: 1rem;
+
+    ul {
+        margin-top: 2rem;
+    }
 
     li {
         display: block;
@@ -405,6 +409,7 @@
         a {
             display: block;
             border-left: 4px solid #888;
+            padding: .75rem 0;
             transition: border .3s ease;
 
             time {
@@ -437,6 +442,10 @@
                     color: $blue;
                 }
             }
+        }
+
+        &:nth-child(even) {
+            background: #f2f2f2;
         }
     }
 }
@@ -633,8 +642,20 @@
             content: 'CSS：';
         }
 
+        &.scss::before {
+            content: 'SCSS：';
+        }
+
+        &.sass::before {
+            content: 'Sass';
+        }
+
         &.js::before {
             content: 'Jacascript：';
+        }
+
+        &.bash::before {
+            content: 'Bash：';
         }
 
         &.ex::before {

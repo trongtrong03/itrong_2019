@@ -7,7 +7,8 @@
         font-weight: bold;
         color: $navy;
     }
-    .inside-flex > li i {
+
+    .inside-flex>li i {
         color: #e44d26;
     }
 }
@@ -16,11 +17,13 @@
     .inside-main>h2::before {
         content: 'CSS';
     }
+
     .nav-wrap li.navCss span {
         font-weight: bold;
         color: $navy;
     }
-    .inside-flex > li i {
+
+    .inside-flex>li i {
         color: #1a70b5;
     }
 }
@@ -29,6 +32,7 @@
     .inside-main>h2::before {
         content: 'JAVASCRIPT';
     }
+
     .nav-wrap li.navJs span {
         font-weight: bold;
         color: $navy;
@@ -41,21 +45,14 @@
     }
 }
 
-.codeeditor {
+.app {
     .inside-main>h2::before {
-        content: 'CODE EDITOR';
+        content: 'APPLICATION';
     }
-}
 
-.os {
-    .inside-main>h2::before {
-        content: '作業系統';
-    }
-}
-
-.knowledge {
-    .inside-main>h2::before {
-        content: '知識文章';
+    .nav-wrap li.navApp span {
+        font-weight: bold;
+        color: $navy;
     }
 }
 
@@ -63,6 +60,7 @@
     .inside-main>h2::before {
         content: 'RESOURCES';
     }
+
     .nav-wrap li.navRes span {
         font-weight: bold;
         color: $navy;

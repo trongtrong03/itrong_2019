@@ -1292,8 +1292,11 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 }
 
 .inside-list {
-  margin-top: 2rem;
+  margin-top: 0rem;
   padding-bottom: 1rem;
+}
+.inside-list ul {
+  margin-top: 2rem;
 }
 .inside-list li {
   display: block;
@@ -1302,6 +1305,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .inside-list li a {
   display: block;
   border-left: 4px solid #888;
+  padding: .75rem 0;
   -webkit-transition: border .3s ease;
   transition: border .3s ease;
 }
@@ -1335,6 +1339,9 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 }
 .inside-list li a:hover h2 {
   color: #40a8c4;
+}
+.inside-list li:nth-child(even) {
+  background: #f2f2f2;
 }
 
 .inside-box ul {
@@ -1510,8 +1517,17 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .inside-edit h3.css::before {
   content: 'CSS：';
 }
+.inside-edit h3.scss::before {
+  content: 'SCSS：';
+}
+.inside-edit h3.sass::before {
+  content: 'Sass';
+}
 .inside-edit h3.js::before {
   content: 'Jacascript：';
+}
+.inside-edit h3.bash::before {
+  content: 'Bash：';
 }
 .inside-edit h3.ex::before {
   content: 'Example：';
@@ -1952,11 +1968,11 @@ i[class*="icon-"] {
 }
 
 i.icon-chrome {
-  background-image: url('../images/logo_chrome.png?1565098616');
+  background-image: url('../images/logo_chrome.png?1566610183');
 }
 
 i.icon-firefox {
-  background-image: url('../images/logo_firefox.png?1565098590');
+  background-image: url('../images/logo_firefox.png?1566610183');
 }
 
 .html .inside-main > h2::before {
@@ -1993,16 +2009,12 @@ i.icon-firefox {
   content: 'GIT';
 }
 
-.codeeditor .inside-main > h2::before {
-  content: 'CODE EDITOR';
+.app .inside-main > h2::before {
+  content: 'APPLICATION';
 }
-
-.os .inside-main > h2::before {
-  content: '作業系統';
-}
-
-.knowledge .inside-main > h2::before {
-  content: '知識文章';
+.app .nav-wrap li.navApp span {
+  font-weight: bold;
+  color: #2d4059;
 }
 
 .res .inside-main > h2::before {
