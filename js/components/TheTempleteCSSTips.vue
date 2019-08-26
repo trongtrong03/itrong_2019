@@ -34,6 +34,12 @@ module.exports = {
       // data
       cTips: [
         {
+          id: 19,
+          href: "css_t_justify_content",
+          time: "2019-09-03",
+          topic: "Flexbox 使用分散水平對齊之於最後一行的改善方法"
+        },
+        {
           id: 18,
           href: "css_t_units",
           time: "2019-08-29",

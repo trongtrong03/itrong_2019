@@ -23,7 +23,7 @@
 <p>完整的定義與法為下：</p>
 <h3 class="html"></h3>
 <div class="code-area">
-<pre id="area01" class="code-text"><code class="html">&lt;meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" /&gt;</code></pre>
+<pre id="area01" class="code-text"><code class="html">&lt;meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" /&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area01">
         <span>COPY</span>
     </button>

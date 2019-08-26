@@ -20,7 +20,7 @@
 <p>&lt;meta&gt; 標籤的 <em>viewport</em> 屬性功用主要是給瀏覽器定義目前裝置的尺寸，在 RWD 響應式設計中是不可或缺的重要語法。</p>
 <h3 class="html"></h3>
 <div class="code-area">
-<pre id="area01" class="code-text"><code class="html">&lt;meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" /&gt;</code></pre>
+<pre id="area01" class="code-text"><code class="html">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" /&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area01">
         <span>COPY</span>
     </button>
