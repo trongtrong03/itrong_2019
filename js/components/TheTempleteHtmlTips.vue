@@ -28,11 +28,17 @@
 module.exports = {
   data: function() {
     return {
-      format: '.php',
+      format: ".php",
       query: "",
 
       // data
       hTips: [
+        {
+          id: 5,
+          href: "html_t_googleform",
+          time: "2019-09-04",
+          topic: "使用 Google 表單建立簡易的聯絡信件"
+        },
         {
           id: 11,
           href: "html_t_data",
@@ -99,6 +105,30 @@ module.exports = {
           time: "2019-08-22",
           topic: "<meta> 的 name 屬性"
         },
+        {
+          id: 4,
+          href: "html_t_wb_plugin",
+          time: "2017-09-19",
+          topic: "微博分享按鈕"
+        },
+        {
+          id: 3,
+          href: "html_t_line_plugin",
+          time: "2016-12-18",
+          topic: "LINE 條碼轉為網址與傳送分享按鈕"
+        },
+        {
+          id: 2,
+          href: "html_t_sk_plugin",
+          time: "2016-11-21",
+          topic: "SKYPE 外掛"
+        },
+        {
+          id: 1,
+          href: "html_t_fb_plugin",
+          time: "2016-11-21",
+          topic: "Facebook 社群套件"
+        }
       ]
     };
   },
