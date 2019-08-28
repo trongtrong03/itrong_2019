@@ -137,7 +137,7 @@ module.exports = {
         },
         {
           id: 1,
-          href: "k_vm_gpu",
+          href: "kl_vm_gpu",
           time: "2017-04-10",
           topic: "什麼是 GPU？"
         }

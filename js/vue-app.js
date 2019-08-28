@@ -13,6 +13,7 @@ var wrap = new Vue({
         'v-css-sass': httpVueLoader('js/components/TheTempleteSass.vue'),
         'v-css-compass': httpVueLoader('js/components/TheTempleteCompass.vue'),
         'v-jquery': httpVueLoader('js/components/TheTempleteJQ.vue'),
+        'v-canvas': httpVueLoader('js/components/TheTempleteCanvas.vue'),
         'v-code-editor': httpVueLoader('js/components/TheTempleteEditor.vue'),
         'v-os': httpVueLoader('js/components/TheTempleteOS.vue'),
         'v-webtool': httpVueLoader('js/components/TheTempleteWebtool.vue'),

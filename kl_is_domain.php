@@ -1,4 +1,5 @@
-<?php require_once 'include/_viewhead.php' ?>
+<!doctype html>
+<html class="pages res view">
 <?php require_once 'include/_head.php' ?>
 <body>
     <article id="wrap">

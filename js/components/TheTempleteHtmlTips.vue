@@ -34,88 +34,142 @@ module.exports = {
       // data
       hTips: [
         {
-          id: 5,
+          id: 25,
           href: "html_t_googleform",
           time: "2019-09-04",
           topic: "使用 Google 表單建立簡易的聯絡信件"
         },
         {
-          id: 11,
+          id: 24,
           href: "html_t_data",
           time: "2019-09-02",
           topic: "淺談資料屬性（data-*）"
         },
         {
-          id: 10,
+          id: 23,
           href: "html_t_symbol_list",
           time: "2019-08-31",
           topic: "HTML 常用特殊符號編碼對照表"
         },
         {
-          id: 9,
+          id: 22,
           href: "html_t_div_vs",
           time: "2019-08-28",
           topic: "<div> V.S. <section> V.S. <article>"
         },
         {
-          id: 8,
+          id: 21,
           href: "html_t_input_readonly_vs_disabled",
           time: "2019-08-26",
           topic: "輸入框（<input>、<textarea>）的 readonly 屬性與 disabled 比較"
         },
         {
-          id: 7,
+          id: 20,
           href: "html_t_meta_http_equiv",
           time: "2019-08-25",
           topic: "<meta> 之 http-equiv 屬性"
         },
         {
-          id: 6,
+          id: 19,
           href: "html_t_meta_charset",
           time: "2019-08-23",
           topic: "<meta> 之 charset 屬性"
         },
         {
-          id: 5,
+          id: 18,
           href: "html_t_mq",
           time: "2019-08-23",
           topic: "HTML 的 Media Queries 寫法"
         },
         {
-          id: 4,
+          id: 17,
           href: "html_t_h5_tag_a",
           time: "2019-08-22",
           topic: "超連結（<a>）HTML5 的新增屬性"
         },
         {
-          id: 3,
+          id: 16,
           href: "html_t_meta_viewport",
           time: "2019-08-22",
           topic: "<meta> 之 viewport 屬性"
         },
         {
-          id: 2,
+          id: 15,
           href: "html_t_schema",
           time: "2019-08-22",
           topic: "Schema 標記（item...）"
         },
         {
-          id: 1,
+          id: 14,
           href: "html_t_meta_name",
           time: "2019-08-22",
           topic: "<meta> 的 name 屬性"
         },
         {
-          id: 4,
+          id: 13,
+          href: "html_star_label",
+          time: "2017-10-12",
+          topic: "用 HTML 與 CSS 實現評分效果"
+        },
+        {
+          id: 12,
           href: "html_t_wb_plugin",
           time: "2017-09-19",
           topic: "微博分享按鈕"
         },
         {
-          id: 3,
+          id: 11,
+          href: "html_t_embed_pdf",
+          time: "2017-07-24",
+          topic: "將 PDF 文件內嵌於網頁（<embed>）"
+        },
+        {
+          id: 10,
+          href: "html_t_marquee",
+          time: "2017-07-11",
+          topic: "簡易跑馬燈語法（<marquee>）"
+        },
+        {
+          id: 9,
           href: "html_t_line_plugin",
           time: "2016-12-18",
           topic: "LINE 條碼轉為網址與傳送分享按鈕"
+        },
+        {
+          id: 8,
+          href: "html_t_meta_twitter",
+          time: "2016-12-10",
+          topic: "寫給 Twitter 看的 SEO 標籤"
+        },
+        {
+          id: 7,
+          href: "html_t_meta_itemprop",
+          time: "2016-12-06",
+          topic: "寫給 Google 看的 SEO 標籤"
+        },
+        {
+          id: 6,
+          href: "html_t_meta_property",
+          time: "2016-11-30",
+          topic: "寫給 Facebook 看的 SEO 標籤"
+        },
+        {
+          id: 5,
+          href: "html_t_appicon",
+          time: "2016-11-23",
+          topic: "App icon 的語法教學"
+        },
+        {
+          id: 4,
+          href: "html_t_href_tel",
+          time: "2016-11-23",
+          topic: "<a> 播打電話號碼（tel）"
+        },
+        {
+          id: 3,
+          href: "html_img_onerror",
+          time: "2016-11-23",
+          topic: "<img> 的預設圖（onerror）"
         },
         {
           id: 2,
