@@ -58,8 +58,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 * ::-moz-selection {
   background: #2d4059;
@@ -87,7 +86,6 @@ a {
   text-decoration: none;
   outline: none;
   color: #121212;
-  -webkit-transition: color .3s ease;
   transition: color .3s ease;
 }
 a:hover {
@@ -272,7 +270,6 @@ body::-webkit-scrollbar-thumb {
   background: #2d4059;
   opacity: .5;
   margin-bottom: .5rem;
-  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 .siderbar button i {
@@ -306,7 +303,6 @@ body::-webkit-scrollbar-thumb {
 }
 .view .siderbar button i {
   font-size: 2rem;
-  -webkit-transition: -webkit-transform .3s ease;
   transition: -webkit-transform .3s ease;
   transition: transform .3s ease;
   transition: transform .3s ease, -webkit-transform .3s ease;
@@ -402,21 +398,17 @@ header {
   width: 15rem;
   height: 100vh;
   background: #40a8c4;
-  -webkit-box-shadow: 0 5px 15px 1px rgba(32, 42, 64, 0.25);
-          box-shadow: 0 5px 15px 1px rgba(32, 42, 64, 0.25);
+  box-shadow: 0 5px 12px 1px rgba(32, 42, 64, 0.25);
 }
 @media only screen and (max-width: 1024px) {
   .nav-wrap {
     left: -15rem;
-    -webkit-transition: left .3s ease;
     transition: left .3s ease;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   .nav-wrap.active {
     left: 0;
-    -webkit-box-shadow: 0 5px 25px 10px rgba(32, 42, 64, 0.25);
-            box-shadow: 0 5px 25px 10px rgba(32, 42, 64, 0.25);
+    box-shadow: 0 5px 25px 10px rgba(32, 42, 64, 0.25);
   }
 }
 
@@ -443,7 +435,6 @@ header {
   font-size: 1.25rem;
   color: #ffffff;
   padding: 1rem 1.5rem;
-  -webkit-transition: all .3s ease;
   transition: all .3s ease;
   cursor: pointer;
 }
@@ -458,7 +449,6 @@ header {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.7);
   padding: .5rem 2rem;
-  -webkit-transition: color .3s;
   transition: color .3s;
 }
 .nav-sub li a:hover {
@@ -501,15 +491,11 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 .nav-bottom a {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   line-height: 3rem;
   text-align: center;
   font-size: 1rem;
@@ -768,7 +754,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 #particlesBG {
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0d121c), to(#1c3149));
   background: linear-gradient(#0d121c 0%, #1c3149 100%);
 }
 
@@ -809,7 +794,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   border-style: solid;
   border-color: #CCC;
   padding-left: .5rem;
-  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 .form-input textarea {
@@ -826,7 +810,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   line-height: 3rem;
   color: #000;
   opacity: .5;
-  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 .form-input label.active {
@@ -842,7 +825,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .form-input.focus textarea {
   background: #FFF;
   border-color: #40a8c4;
-  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 .form-input.focus label {
@@ -850,7 +832,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   left: 0;
   color: #40a8c4;
   opacity: 1;
-  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 .form-input.focus label::after {
@@ -878,7 +859,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   border-style: solid;
   border-color: #CF5341;
   float: left;
-  -webkit-transition: color .3s ease, background .3s ease;
   transition: color .3s ease, background .3s ease;
 }
 .form-btn button:last-child {
@@ -949,8 +929,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   width: calc(100% - 15rem);
   height: 5rem;
   background: #FFF;
-  -webkit-box-shadow: 0 2px 6px 0 rgba(52, 52, 52, 0.1);
-          box-shadow: 0 2px 6px 0 rgba(52, 52, 52, 0.1);
+  box-shadow: 0 2px 6px 0 rgba(52, 52, 52, 0.1);
 }
 
 .inside-nav button,
@@ -971,7 +950,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 }
 .inside-nav button i,
 .inside-nav a i {
-  -webkit-transition: margin .3s ease, -webkit-transform .3s ease;
   transition: margin .3s ease, -webkit-transform .3s ease;
   transition: margin .3s ease, transform .3s ease;
   transition: margin .3s ease, transform .3s ease, -webkit-transform .3s ease;
@@ -994,8 +972,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     position: fixed;
     bottom: 0;
     left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100vw;
     height: 5rem;
@@ -1003,9 +979,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   }
   .inside-nav button,
   .inside-nav a {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    flex: 1;
     position: static;
     width: 25%;
   }
@@ -1121,7 +1095,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   margin-right: .5rem;
   margin-bottom: .5rem;
   padding: 0 .5rem;
-  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 .inside-tag a:hover,
@@ -1195,11 +1168,8 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 }
 
 .inside-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
   padding: 1rem 0;
 }
@@ -1230,7 +1200,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   vertical-align: middle;
   line-height: 1.5;
   font-size: 1rem;
-  -webkit-transition: color .3s;
   transition: color .3s;
 }
 .inside-flex > li a b,
@@ -1300,13 +1269,12 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 }
 .inside-list li {
   display: block;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 .inside-list li a {
   display: block;
   border-left: 4px solid #888;
-  padding: .75rem 0;
-  -webkit-transition: border .3s ease;
+  padding: .75rem 0 .5rem;
   transition: border .3s ease;
 }
 .inside-list li a time {
@@ -1323,7 +1291,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 }
 .inside-list li a h2 {
   display: block;
-  line-height: 1;
+  line-height: 1.5;
   font-size: 1.5rem;
   color: #444;
   padding-left: 1rem;
@@ -1331,7 +1299,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   text-overflow: ellipsis;
   -ms-text-overflow: ellipsis;
   overflow: hidden;
-  -webkit-transition: color .3s ease;
   transition: color .3s ease;
 }
 .inside-list li a:hover {
@@ -1415,7 +1382,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   width: 30rem;
   height: 100vh;
   background: #2d4059;
-  -webkit-transition: left .3s ease;
   transition: left .3s ease;
 }
 .inside-menu ul {
@@ -1437,8 +1403,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 }
 .inside-menu.active {
   left: 0;
-  -webkit-box-shadow: 0 5px 15px 1px rgba(32, 42, 64, 0.25);
-          box-shadow: 0 5px 15px 1px rgba(32, 42, 64, 0.25);
+  box-shadow: 0 5px 15px 1px rgba(32, 42, 64, 0.25);
 }
 
 .inside-view > hgroup {
@@ -1837,78 +1802,58 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .t-flex1 {
   word-wrap: break-word;
   word-break: break-all;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 
 .t-flex2 {
   word-wrap: break-word;
   word-break: break-all;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  flex: 2;
 }
 
 .t-flex3 {
   word-wrap: break-word;
   word-break: break-all;
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+  flex: 3;
 }
 
 .t-flex4 {
   word-wrap: break-word;
   word-break: break-all;
-  -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
+  flex: 4;
 }
 
 .t-flex5 {
   word-wrap: break-word;
   word-break: break-all;
-  -webkit-box-flex: 5;
-      -ms-flex: 5;
-          flex: 5;
+  flex: 5;
 }
 
 .t-flex6 {
   word-wrap: break-word;
   word-break: break-all;
-  -webkit-box-flex: 6;
-      -ms-flex: 6;
-          flex: 6;
+  flex: 6;
 }
 
 .t-flex7 {
   word-wrap: break-word;
   word-break: break-all;
-  -webkit-box-flex: 7;
-      -ms-flex: 7;
-          flex: 7;
+  flex: 7;
 }
 
 .t-flex8 {
   word-wrap: break-word;
   word-break: break-all;
-  -webkit-box-flex: 8;
-      -ms-flex: 8;
-          flex: 8;
+  flex: 8;
 }
 
 .t-flex9 {
   word-wrap: break-word;
   word-break: break-all;
-  -webkit-box-flex: 9;
-      -ms-flex: 9;
-          flex: 9;
+  flex: 9;
 }
 
 .t-head {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   color: #fff;
@@ -1917,8 +1862,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 
 .t-row {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .t-row:nth-child(odd) {
@@ -1968,11 +1911,11 @@ i[class*="icon-"] {
 }
 
 i.icon-chrome {
-  background-image: url('../images/logo_chrome.png?1566610183');
+  background-image: url('../images/logo_chrome.png?1566439107');
 }
 
 i.icon-firefox {
-  background-image: url('../images/logo_firefox.png?1566610183');
+  background-image: url('../images/logo_firefox.png?1566439107');
 }
 
 .html .inside-main > h2::before {

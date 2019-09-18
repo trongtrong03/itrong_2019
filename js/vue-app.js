@@ -15,6 +15,7 @@ var wrap = new Vue({
         'v-jquery': httpVueLoader('js/components/TheTempleteJQ.vue'),
         'v-canvas': httpVueLoader('js/components/TheTempleteCanvas.vue'),
         'v-code-editor': httpVueLoader('js/components/TheTempleteEditor.vue'),
+        'v-git': httpVueLoader('js/components/TheTempleteGit.vue'),
         'v-os': httpVueLoader('js/components/TheTempleteOS.vue'),
         'v-webtool': httpVueLoader('js/components/TheTempleteWebtool.vue'),
         'v-software': httpVueLoader('js/components/TheTempleteSoftware.vue'),

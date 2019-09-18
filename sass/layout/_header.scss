@@ -1,7 +1,6 @@
 header {
     position: relative;
     width: 100%;
-
     @include MQ(max-1024) {
         .pages & {
             position: fixed;
@@ -12,7 +11,6 @@ header {
             line-height: 5rem;
             text-align: center;
             background: $blue;
-
             &::after {
                 content: 'iTRONG';
                 font-family: 'Keania One', cursive;
@@ -26,7 +24,6 @@ header {
 
 .logo {
     display: block;
-
     a {
         display: block;
         height: 5rem;
@@ -38,16 +35,13 @@ header {
         color: $blue;
         background: $navy;
         padding: 1rem;
-
         &::before,
         &::after {
             font-size: 1rem;
         }
-
         &::before {
             content: '</ ';
         }
-
         &::after {
             content: ' >';
         }
@@ -63,13 +57,11 @@ header {
     width: 15rem;
     height: 100vh;
     background: $blue;
-    box-shadow: 0 5px 15px 1px rgba(32, 42, 64, 0.25);
-
+    box-shadow: 0 5px 12px 1px rgba(32, 42, 64, 0.25);
     @include MQ(max-1024) {
         left: -15rem;
         transition: left .3s ease;
         box-shadow: none;
-
         &.active {
             left: 0;
             box-shadow: 0 5px 25px 10px rgba(32, 42, 64, 0.25);
@@ -83,7 +75,6 @@ header {
         @include scrollbar($navy);
         padding: 1rem 0;
     }
-
     >ul>li {
         span {
             display: block;
@@ -93,7 +84,6 @@ header {
             padding: 1rem 1.5rem;
             transition: all .3s ease;
             cursor: pointer;
-
             &:hover,
             &.active {
                 font-weight: bold;
@@ -112,7 +102,6 @@ header {
             color: rgba(255, 255, 255, .7);
             padding: .5rem 2rem;
             transition: color .3s;
-
             &:hover {
                 color: #ffffff;
             }
@@ -130,13 +119,11 @@ header {
     color: #FFF;
     background: transparent;
     cursor: pointer;
-
     .index & {
         position: fixed;
         top: 2rem;
         left: calc(15rem + 2rem);
     }
-
     .pages & {
         position: absolute;
         top: 0;
@@ -144,10 +131,8 @@ header {
         width: 5rem;
         height: 5rem;
     }
-
     @include MQ(max-1024) {
         display: block;
-
         .index & {
             left: 2rem;
         }
@@ -160,14 +145,12 @@ header {
     left: 0;
     display: flex;
     width: 100%;
-
     a {
         flex: 1;
         line-height: 3rem;
         text-align: center;
         font-size: 1rem;
         color: #ffffff;
-
         &:hover {
             color: $blue;
             background: $navy;
