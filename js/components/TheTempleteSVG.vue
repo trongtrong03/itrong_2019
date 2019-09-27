@@ -34,6 +34,30 @@ module.exports = {
       // data
       svgLists: [
         {
+          id: 14,
+          href: 'svg_base_masking',
+          time: '2019-06-12',
+          topic: 'Learn14-- 遮色片（Masking）',
+        },
+        {
+          id: 13,
+          href: 'svg_base_clipping',
+          time: '2019-06-09',
+          topic: 'Learn13-- 剪裁（Clipping）',
+        },
+        {
+          id: 12,
+          href: 'svg_base_text_2',
+          time: '2019-06-08',
+          topic: 'Learn12-- 文字（Text） ● 其二：tspan 與 textPath',
+        },
+        {
+          id: 11,
+          href: 'svg_base_text',
+          time: '2019-06-08',
+          topic: 'Learn11-- 文字（Text） ● 其一：基本語法',
+        },
+        {
           id: 10,
           href: "svg_base_fill",
           time: "2019-06-06",

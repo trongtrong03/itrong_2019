@@ -38,11 +38,35 @@ module.exports = {
       // data
       gits: [
         {
+          id: 5,
+          href: 'git_bash_log',
+          time: '2017-05-04',
+          topic: 'Lesson05-- 查閱提交的歷史記錄（log）',
+        },
+        {
+          id: 4,
+          href: 'git_bash_status',
+          time: '2017-05-03',
+          topic: 'Lesson04-- 查看檔案狀態（status）',
+        },
+        {
+          id: 3,
+          href: 'git_bash_add_and_commit',
+          time: '2017-05-03',
+          topic: 'Lesson03-- 新增檔案（add）並提交（commit）',
+        },
+        {
+          id: 2,
+          href: 'git_bash_init',
+          time: '2017-05-03',
+          topic: 'Lesson02-- 建立 Git 版本庫（init）',
+        },
+        {
           id: 1,
-          href: "xxxx",
-          time: "2019-08-07",
-          topic: "xxxx"
-        }
+          href: 'git_bash_config',
+          time: '2017-05-02',
+          topic: 'Lesson01-- Git 初始設定（config）',
+        },
       ]
     };
   },
