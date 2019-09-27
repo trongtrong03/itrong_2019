@@ -28,16 +28,70 @@
 module.exports = {
   data: function() {
     return {
-      format: '.php',
+      format: ".php",
       query: "",
 
       // data
       svgLists: [
         {
+          id: 10,
+          href: "svg_base_fill",
+          time: "2019-06-06",
+          topic: "Learn10-- 填色（Fill）"
+        },
+        {
+          id: 9,
+          href: "svg_base_stroke",
+          time: "2019-06-05",
+          topic: "Learn09-- 邊框（Stroke）"
+        },
+        {
+          id: 8,
+          href: "svg_base_path_4",
+          time: "2019-06-04",
+          topic: "Learn08-- 路徑（Path） ● 其四：指令介紹-弧形"
+        },
+        {
+          id: 7,
+          href: "svg_base_path_3",
+          time: "2019-06-03",
+          topic: "Learn07-- 路徑（Path） ● 其三：指令介紹-曲線"
+        },
+        {
+          id: 6,
+          href: "svg_base_path_2",
+          time: "2019-06-02",
+          topic: "Learn06-- 路徑（Path） ● 其二：指令介紹-點與直線"
+        },
+        {
+          id: 5,
+          href: "svg_base_path",
+          time: "2019-06-02",
+          topic: "Learn05-- 路徑（Path） ● 其一：指令列表"
+        },
+        {
+          id: 4,
+          href: "svg_base_shape_2",
+          time: "2019-05-30",
+          topic: "Learn04-- SVG 的基本圖形 ● 其二：圓形、橢圓形、多邊形"
+        },
+        {
+          id: 3,
+          href: "svg_base_shape",
+          time: "2019-05-29",
+          topic: "Learn03-- SVG 的基本圖形 ● 其一：矩形、圓角矩形"
+        },
+        {
+          id: 2,
+          href: "svg_vs_canvas",
+          time: "2019-05-29",
+          topic: "Learn02-- SVG V.S. Canvas"
+        },
+        {
           id: 1,
-          href: "",
-          time: "2019-xx-xx",
-          topic: "title"
+          href: "svg_intro",
+          time: "2019-05-28",
+          topic: "Learn01-- 什麼是 SVG？"
         }
       ]
     };
