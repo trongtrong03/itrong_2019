@@ -11,7 +11,7 @@
                 <!-- 文章標題 -->
                 <div class="inside-view">
                     <hgroup>
-                        <time>2017-05-04</time>
+                        <time>2019-09-27</time>
                         <h1>Lesson05-- 查閱提交的歷史記錄（log）</h1>
                     </hgroup>
                 </div>

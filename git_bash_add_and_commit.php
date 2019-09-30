@@ -11,7 +11,7 @@
                 <!-- 文章標題 -->
                 <div class="inside-view">
                     <hgroup>
-                        <time>2017-05-03</time>
+                        <time>2019-09-26</time>
                         <h1>Lesson02-- 建立 Git 版本庫（init）</h1>
                     </hgroup>
                 </div>

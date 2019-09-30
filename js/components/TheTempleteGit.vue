@@ -38,39 +38,63 @@ module.exports = {
       // data
       gits: [
         {
+          id: 10,
+          href: 'git_bash_merge',
+          time: '2019-09-30',
+          topic: 'Lesson10-- 合併（merge）：分支合併',
+        },
+        {
+          id: 9,
+          href: 'git_bash_branch3',
+          time: '2019-09-30',
+          topic: 'Lesson09-- 分支（branch）：刪除',
+        },
+        {
+          id: 8,
+          href: 'git_bash_branch2',
+          time: '2019-09-30',
+          topic: 'Lesson08-- 分支（branch）：進行作業',
+        },
+        {
+          id: 7,
+          href: 'git_bash_branch',
+          time: '2019-09-30',
+          topic: 'Lesson07-- 分支（branch）：建立與切換',
+        },
+        {
           id: 6,
           href: 'git_bash_reset',
-          time: '2017-05-05',
+          time: '2019-09-28',
           topic: 'Lesson06-- 將檔案從暫存區返回工作目錄（reset）',
         },
         {
           id: 5,
           href: 'git_bash_log',
-          time: '2017-05-04',
+          time: '2019-09-27',
           topic: 'Lesson05-- 查閱提交的歷史記錄（log）',
         },
         {
           id: 4,
           href: 'git_bash_status',
-          time: '2017-05-03',
+          time: '2019-09-26',
           topic: 'Lesson04-- 查看檔案狀態（status）',
         },
         {
           id: 3,
           href: 'git_bash_add_and_commit',
-          time: '2017-05-03',
+          time: '2019-09-26',
           topic: 'Lesson03-- 新增檔案（add）並提交（commit）',
         },
         {
           id: 2,
           href: 'git_bash_init',
-          time: '2017-05-03',
+          time: '2019-09-25',
           topic: 'Lesson02-- 建立 Git 版本庫（init）',
         },
         {
           id: 1,
           href: 'git_bash_config',
-          time: '2017-05-02',
+          time: '2019-09-25',
           topic: 'Lesson01-- Git 初始設定（config）',
         },
       ]
