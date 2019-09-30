@@ -38,6 +38,12 @@ module.exports = {
       // data
       gits: [
         {
+          id: 6,
+          href: 'git_bash_reset',
+          time: '2017-05-05',
+          topic: 'Lesson06-- 將檔案從暫存區返回工作目錄（reset）',
+        },
+        {
           id: 5,
           href: 'git_bash_log',
           time: '2017-05-04',
