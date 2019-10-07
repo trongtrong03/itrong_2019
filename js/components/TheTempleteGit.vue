@@ -38,6 +38,30 @@ module.exports = {
       // data
       gits: [
         {
+          id: 14,
+          href: 'git_bash_remote',
+          time: '2019-10-03',
+          topic: 'Lesson14-- 設定遠端（remote）',
+        },
+        {
+          id: 13,
+          href: 'git_bash_add',
+          time: '2019-10-02',
+          topic: 'Lesson13-- 補遺：新增檔案（add）',
+        },
+        {
+          id: 12,
+          href: 'git_bash_merge3',
+          time: '2019-10-01',
+          topic: 'Lesson12-- 合併（merge）：衝突',
+        },
+        {
+          id: 11,
+          href: 'git_bash_merge2',
+          time: '2019-10-01',
+          topic: 'Lesson11-- 合併（merge）：還原合併',
+        },
+        {
           id: 10,
           href: 'git_bash_merge',
           time: '2019-09-30',

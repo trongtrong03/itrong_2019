@@ -1508,6 +1508,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 }
 .inside-edit p {
   line-height: 1.5;
+  text-indent: 2rem;
   font-size: 1rem;
   padding: .5rem 0;
 }
