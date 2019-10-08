@@ -14,6 +14,7 @@ var wrap = new Vue({
         'v-css-compass': httpVueLoader('js/components/TheTempleteCompass.vue'),
         'v-jquery': httpVueLoader('js/components/TheTempleteJQ.vue'),
         'v-canvas': httpVueLoader('js/components/TheTempleteCanvas.vue'),
+        'v-gulp': httpVueLoader('js/components/TheTempleteGulp.vue'),
         'v-code-editor': httpVueLoader('js/components/TheTempleteEditor.vue'),
         'v-git': httpVueLoader('js/components/TheTempleteGit.vue'),
         'v-os': httpVueLoader('js/components/TheTempleteOS.vue'),

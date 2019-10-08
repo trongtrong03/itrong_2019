@@ -29,25 +29,33 @@
             </li>
           </ul>
         </li>
-        <li class="navApp">
-          <span :class="active==4 ? 'active' : ''" @click="active=4">APPLICATION</span>
+        <li class="navFe">
+          <span :class="active==4 ? 'active' : ''" @click="active=4">FRONT-END</span>
           <ul class="nav-sub" v-if="active==4">
+            <li v-for="nav in navFe">
+              <a :href="nav.href + format">{{ nav.name }}</a>
+            </li>
+          </ul>
+        </li>
+        <li class="navApp">
+          <span :class="active==5 ? 'active' : ''" @click="active=5">APPLICATION</span>
+          <ul class="nav-sub" v-if="active==5">
             <li v-for="nav in navApp">
               <a :href="nav.href + format">{{ nav.name }}</a>
             </li>
           </ul>
         </li>
         <li class="navRes">
-          <span :class="active==5 ? 'active' : ''" @click="active=5">RESOURCES</span>
-          <ul class="nav-sub" v-if="active==5">
+          <span :class="active==6 ? 'active' : ''" @click="active=6">RESOURCES</span>
+          <ul class="nav-sub" v-if="active==6">
             <li v-for="nav in navRes">
               <a :href="nav.href +format">{{ nav.name }}</a>
             </li>
           </ul>
         </li>
         <li class="navCre">
-          <span :class="active==6 ? 'active' : ''" @click="active=6">CREATIONS</span>
-          <ul class="nav-sub" v-if="active==6">
+          <span :class="active==7 ? 'active' : ''" @click="active=7">CREATIONS</span>
+          <ul class="nav-sub" v-if="active==7">
             <li v-for="nav in navCre">
               <a :href="nav.href + format">{{ nav.name }}</a>
             </li>
@@ -150,6 +158,14 @@ module.exports = {
           href: "_canvas"
         }
       ],
+      
+      navFe: [
+        {
+          name: "Gulp",
+          href: "_gulp"
+        },
+      ],
+
       navApp: [
         {
           name: "Git",

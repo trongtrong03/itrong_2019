@@ -38,6 +38,12 @@ module.exports = {
       // data
       gits: [
         {
+          id: 15,
+          href: 'git_bash_remote2',
+          time: '2019-10-05',
+          topic: 'Lesson15-- 遠端（remote）的相關指令',
+        },
+        {
           id: 14,
           href: 'git_bash_remote',
           time: '2019-10-03',

@@ -99,7 +99,12 @@
     </div>
 </div>
 
-
+<!-- 參考資料 -->
+<ul class="refer">
+    <li><a href="xxx" target="_blank">xxxx</a></li>
+    <li><a href="xxx" target="_blank">xxxx</a></li>
+    <li><a href="xxx" target="_blank">xxxx</a></li>
+</ul>
 <!-- end -->
                 </div>
             </section>

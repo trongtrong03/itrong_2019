@@ -1949,8 +1949,12 @@ i.icon-firefox {
   color: #2d4059;
 }
 
-.git .inside-main > h2::before {
-  content: 'GIT';
+.frontend .inside-main > h2::before {
+  content: 'FRONT-END';
+}
+.frontend .nav-wrap li.navFe span {
+  font-weight: bold;
+  color: #2d4059;
 }
 
 .app .inside-main > h2::before {
