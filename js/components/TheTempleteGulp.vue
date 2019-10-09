@@ -38,6 +38,12 @@ module.exports = {
       // data
       glists: [
         {
+          id: 2,
+          href: "gulp_install",
+          time: "2019-10-08",
+          topic: "Lesson02-- Gulp 安裝流程"
+        },
+        {
           id: 1,
           href: "gulp_intro",
           time: "2019-10-07",

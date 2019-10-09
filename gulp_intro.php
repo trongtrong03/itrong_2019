@@ -22,7 +22,7 @@
     <img src="images/pic/frontend/gulp-intro-01.jpg">
     <figcaption><a href="https://gulpjs.com/" target="_blank">Gulp 官方網站</a></figcaption>
 </figure>
-<p>隨著網路的迅速發展，網頁技術開發需求也越來越龐大，就前端而言，核心雖然仍圍繞於 HTML、CSS、Javascript 這三大構成元素，但各自細分的使用技術可謂是五花八門，儘管這些技術可以幫助開發者們實現各式各樣的效果及需求，相對卻也對網站運行帶來不小的負擔，為了同時兼顧網頁優化及程式技術統合，各種「前端自動化工具」如雨後春筍般相繼問世，而本學習系列主角──「Gulp」，便是廣為人知的其中一款工具。</p>
+<p>隨著網路的迅速發展，網頁技術開發需求也越來越龐大，就前端而言，核心雖然仍圍繞於 HTML、CSS、Javascript 這三大構成元素，但各自細分的使用技術可謂是五花八門，儘管這些技術可以幫助開發者們實現各式各樣的效果及需求，相對卻也對網站運行帶來不小的負擔，為了同時兼顧網頁優化及程式技術統合，各種「前端自動化建構工具」如雨後春筍般相繼問世，所謂的建構工具指的是根據原始碼自動生成文件的一種程序，其過程包含打包、編譯、壓縮與測試，而本學習系列主角──「Gulp」，便是廣為人知的其中一款建構工具。</p>
 <br>
 
 <h2>用途：</h2>
@@ -45,13 +45,23 @@
     <figcaption>Gulp 的編譯流程。（引用自 <a href="https://www.cnblogs.com/chyingp/p/gulp-introduction.html" target="_blank">chyingp- gulp：入门简介</a>）</figcaption>
 </figure>
 <p>儘管看起來插件用量都很多，但在執行效率上，Gulp 卻遠遠高於 Grunt 的編譯方式。</p>
+<br>
 
 <h2>優點：</h2>
-<p></p>
+<p>看懂 Gulp 文件流的作業方式，我們可以得到其具備以下這些優點：</p>
+<ol class="decimal">
+    <li>易於使用。</li>
+    <li>建構快速。</li>
+    <li>學習簡單。</li>
+</ol>
+<br>
+
+<p>在下一篇我們將進入如何前置安裝 Gulp 的學習記錄。</p>
 
 <!-- 參考資料 -->
 <ul class="refer">
     <li><a href="https://gulpjs.com/" target="_blank">gulp.js - The streaming build system</a></li>
+    <li><a href="https://www.gulpjs.com.cn/" target="_blank">gulp.js - 中文</a></li>
     <li><a href="https://www.cnblogs.com/chyingp/p/gulp-introduction.html" target="_blank">gulp：入门简介</a></li>
     <li><a href="https://ithelp.ithome.com.tw/articles/10185420" target="_blank">Gulp 安裝與介紹</a></li>
     <li><a href="https://juejin.im/post/5c736fc4f265da2d943f6b8c" target="_blank">Gulp 快速入门</a></li>

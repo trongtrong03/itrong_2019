@@ -18,6 +18,11 @@
                 <!-- 文章內容 -->
                 <div class="inside-edit">
 <!-- start -->
+<!-- 步驟 -->
+<p class="step">
+    <span>Step01. xxxx。</span>
+    <span>簡述</span>
+</p>
 <!-- 
     CSS 屬性文章範本 
 -->
