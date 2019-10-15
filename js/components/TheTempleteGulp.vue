@@ -38,6 +38,18 @@ module.exports = {
       // data
       glists: [
         {
+          id: 4,
+          href: "gulp_use_plugin",
+          time: "2019-10-14",
+          topic: "Lesson04-- 使用 Gulp 套件與 gulpfile.js 說明"
+        },
+        {
+          id: 3,
+          href: "gulp_gulpfile",
+          time: "2019-10-14",
+          topic: "Lesson03-- 建立 Gulp 專案"
+        },
+        {
           id: 2,
           href: "gulp_install",
           time: "2019-10-08",

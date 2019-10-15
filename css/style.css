@@ -1515,6 +1515,9 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .inside-edit p span {
   display: block;
 }
+.inside-edit p.step {
+  text-indent: 0;
+}
 .inside-edit p.step span:first-child {
   color: #40a8c4;
 }
