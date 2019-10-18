@@ -38,10 +38,22 @@ module.exports = {
       // data
       glists: [
         {
+          id: 6,
+          href: "gulp_api_task",
+          time: "2019-10-15",
+          topic: "Lesson06-- gulp.task 於 Gulp4.0 的改動"
+        },
+        {
+          id: 5,
+          href: "gulp_api",
+          time: "2019-10-15",
+          topic: "Lesson05-- 淺說 Gulp API"
+        },
+        {
           id: 4,
           href: "gulp_use_plugin",
           time: "2019-10-14",
-          topic: "Lesson04-- 使用 Gulp 套件與 gulpfile.js 說明"
+          topic: "Lesson04-- 使用 Gulp 套件與 寫入 gulpfile.js"
         },
         {
           id: 3,

@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-14</time>
-                        <h1>Lesson04-- 使用 Gulp 套件與 gulpfile.js 說明</h1>
+                        <h1>Lesson04-- 使用 Gulp 套件與 寫入 gulpfile.js</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->
@@ -67,11 +67,20 @@ var sass = require('gulp-sass');</code></pre>
     </button>
 </div>
 <p>這段的用意是要將這些安裝的套件引入進來。<em>'use strict'</em> 則是嚴格模式的意思，目的是讓 Javascript 過去不嚴謹的寫法變得更加具有穩定性。</p>
+<p>此外，在 Gulp 套件所在的 NPM 社區中，較早期發布的套件變數宣告基本都是使用 <em>var</em>，但是在 Javascript ES6 廣泛使用後，現在套件多半會看到改採 <em>const</em> 來宣告變數了，例如：</p>
+<h3 class="js"></h3>
+<div class="code-area">
+<pre id="area03" class="code-text"><code class="javascript">const gulp = require('gulp');
+const sass = require('gulp-sass');</code></pre>
+    <button class="copy-btn" data-clipboard-target="#area03">
+        <span>COPY</span>
+    </button>
+</div>
 
-<p>接著就是要細部設定每個使用套件的 API 了，在變數宣告之後，接續貼上以下程式碼：</p>
+<p>完成變數宣告後，接著就是要細部設定每個使用套件的 API 了，在宣告變數之後，接續貼上以下程式碼：</p>
 <h3 class="js"></h3>
 <div class="code-area mb-0">
-<pre id="area03" class="code-text"><code class="javascript">sass.compiler = require('node-sass');
+<pre id="area04" class="code-text"><code class="javascript">sass.compiler = require('node-sass');
 
 gulp.task('sass', function () {
     return gulp.src('scss/**/*.scss')
@@ -82,12 +91,12 @@ gulp.task('sass', function () {
 gulp.task('sass:watch', function () {
     gulp.watch('scss/**/*.scss', ['sass']);
 });</code></pre>
-    <button class="copy-btn" data-clipboard-target="#area03">
+    <button class="copy-btn" data-clipboard-target="#area04">
         <span>COPY</span>
     </button>
 </div>
 <p>當然真實使用的配置多少會和官方文件展示的範例有所出入，依開發者自身的需求進行調整即可。</p>
-<p>現在我們可以在專案根目錄內新增 scss 與 css 資料夾，並在 scss 資料夾內新增一個 scss 檔案，並編輯內容。</p>
+<p>現在我們可以在專案根目錄內新增 scss 與 css 資料夾，並在 scss 資料夾內新增一個 scss 檔案，然後編輯內容。</p>
 <figure>
     <img src="images/pic/frontend/gulp-use-03.jpg">
 </figure>
@@ -96,11 +105,11 @@ gulp.task('sass:watch', function () {
 <p class="step">
     <span>Step03. 運行 gulp。</span>
 </p>
-<p>再來就是要執行 <em>gulp</em> 指令跑任務了，依照套件的預設指令，我們要鍵入的指令內容為下：</p>
+<p>再來就是要執行 <em>gulp</em> 指令跑任務，依照套件的預設指令，我們要鍵入的指令內容為下：</p>
 <h3 class="bash"></h3>
 <div class="code-area">
-<pre id="area04" class="code-text"><code class="dos">gulp sass</code></pre>
-    <button class="copy-btn" data-clipboard-target="#area04">
+<pre id="area05" class="code-text"><code class="dos">gulp sass</code></pre>
+    <button class="copy-btn" data-clipboard-target="#area05">
         <span>COPY</span>
     </button>
 </div>
@@ -111,7 +120,7 @@ gulp.task('sass:watch', function () {
 <figure>
     <img src="images/pic/frontend/gulp-use-05.jpg">
 </figure>
-<p>看起來感覺大功告成，其實操作幾次之後就會發現仍有不方便的地方，假如單純按照套件原先預設的指令工作，會發現每一次修改 scss 檔案，就必須重新輸入 <em>gulp sass</em>，這其實是非常沒有效率的，為了讓 <em>gulp sass</em> 能隨時被監聽，我們勢必需要改寫任務流的程式碼。</p>
+<p>看起來感覺大功告成，其實操作幾次之後就會發現仍有不方便的地方，假如單純按照套件原先預設的指令工作，會發現每一次修改 scss 檔案，就必須重新輸入 <em>gulp sass</em> 命令 Gulp 執行任務，這其實是非常沒有效率的，為了讓 <em>gulp sass</em> 能隨時被監聽，我們勢必需要改寫任務流的程式碼。</p>
 <br>
 
 <p class="step">
@@ -120,20 +129,20 @@ gulp.task('sass:watch', function () {
 <p><em>default</em> 方法能讓其任務內涵式內的 gulp 套件隨時被監聽，如此一來就不需要每修改一次檔案就得重新執行一次套件的任務命令，以 <em>gulp sass</em>為例，我們得找出這一段：</p>
 <h3 class="js"></h3>
 <div class="code-area mb-0">
-<pre id="area05" class="code-text"><code class="javascript">gulp.task('sass:watch', function () {
+<pre id="area06" class="code-text"><code class="javascript">gulp.task('sass:watch', function () {
     gulp.watch('scss/**/*.scss', ['sass']);
 });</code></pre>
-    <button class="copy-btn" data-clipboard-target="#area05">
+    <button class="copy-btn" data-clipboard-target="#area06">
         <span>COPY</span>
     </button>
 </div>
-<p>並將其改寫成：</p>
+<p>將其改寫成：</p>
 <h3 class="js"></h3>
 <div class="code-area mb-0">
-<pre id="area06" class="code-text"><code class="javascript">gulp.task('default', function () {
+<pre id="area07" class="code-text"><code class="javascript">gulp.task('default', function () {
     gulp.watch('scss/**/*.scss', gulp.series('sass'));
 });</code></pre>
-    <button class="copy-btn" data-clipboard-target="#area06">
+    <button class="copy-btn" data-clipboard-target="#area07">
         <span>COPY</span>
     </button>
 </div>
@@ -145,7 +154,6 @@ gulp.task('sass:watch', function () {
 <p>大部分 gulp 套件的使用方法皆大同小異，有關個人常使用的套件會在後面幾篇陸續進行記錄，方便日後需要重新使用的時後能立即找到使用方式。</p>
 <br>
 
-<h2>gulpfile API 介紹：</h2>
 <!-- 參考資料 -->
 <ul class="refer">
     <li><a href="https://gulpjs.com/" target="_blank">gulp.js - The streaming build system</a></li>
