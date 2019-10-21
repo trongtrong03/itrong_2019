@@ -1494,6 +1494,9 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .inside-edit h3.bash::before {
   content: 'Bash：';
 }
+.inside-edit h3.pug::before {
+  content: 'Pug：';
+}
 .inside-edit h3.ex::before {
   content: 'Example：';
 }
@@ -1507,7 +1510,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   text-decoration: underline;
 }
 .inside-edit p {
-  line-height: 1.5;
+  line-height: 1.75;
   text-indent: 2rem;
   font-size: 1rem;
   padding: .5rem 0;

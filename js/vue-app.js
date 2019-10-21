@@ -6,6 +6,7 @@ var wrap = new Vue({
         'v-ihead': httpVueLoader('js/components/TheInsideHead.vue'),
         'v-html-list': httpVueLoader('js/components/TheTempleteHtml_1.vue'),
         'v-html-tips': httpVueLoader('js/components/TheTempleteHtmlTips.vue'),
+        'v-pug': httpVueLoader('js/components/TheTempletePug.vue'),
         'v-svg': httpVueLoader('js/components/TheTempleteSVG.vue'),
         'v-css-list': httpVueLoader('js/components/TheTempleteCSS_1.vue'),
         'v-css-selector': httpVueLoader('js/components/TheTempleteCSS_2.vue'),

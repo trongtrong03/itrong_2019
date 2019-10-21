@@ -27,7 +27,7 @@
     <figcaption>Node.js 的<a href="https://nodejs.org/en/" target="_blank">官網網站</a>。</figcaption>
 </figure>
 <p>它有兩個下載連結，左邊是目前最多使用者推薦的版本，右邊則是當前最新的版本，視需求選擇相對應的版本即可。下載完程式後執行安裝，安裝基本上沒有什麼需要特別注意的，一直選擇下一步即可。</p>
-<p>可以用以下兩筆版本確認指令查看 node、npm、npx 是否有確實安裝於電腦裡：</p>
+<p>可以用以下三筆版本確認指令查看 node、npm、npx 是否有確實安裝於電腦裡：</p>
 <h3 class="bash"></h3>
 <div class="code-area">
 <pre id="area01" class="code-text"><code class="dos">node --version

@@ -8,8 +8,12 @@
           <i class="fas fa-search"></i>
         </label>
       </div>
+      <div class="inside-tag">
+        <a href="#tagLearn">學習誌</a>
+      </div>
       <div class="inside-container">
-        <div class="inside-list">
+        <div id="tagLearn" class="inside-list">
+          <h2>學習誌</h2>
           <ul>
             <li v-for="item in filterSVG" :key="item.id">
               <a :href="item.href + format">

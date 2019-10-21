@@ -112,9 +112,13 @@ module.exports = {
           href: "_htmlTips"
         },
         {
+          name: "PUG",
+          href: "_pug"
+        },
+        {
           name: "SVG",
           href: "_svg"
-        }
+        },
       ],
 
       navCSS: [
