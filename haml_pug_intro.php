@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-19</time>
-                        <h1>Learn01-- 什麼是 Pug？</h1>
+                        <h1>Lesson16-- 什麼是 Pug？</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->
@@ -140,6 +140,9 @@ html
 <figure>
     <img src="images/pic/html/pug-intro-05.jpg">
 </figure>
+
+<p>目前尚未找到 Sublime Text 能執行 Pug 持續監聽執行編譯的相關資料，倘若有這方面需求，可能需要朝 Gulp、Webpack 此類自動化工具的方向尋求輔助。</p>
+<br>
 
 <h2>小結：</h2>
 <ol class="decimal">
