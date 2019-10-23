@@ -38,22 +38,46 @@ module.exports = {
       // data
       pugLists: [
         {
-          id: 4,
+          id: 8,
+          href: "haml_pug_inheritance",
+          time: "2019-10-23",
+          topic: "Lesson08-- 模板繼承（Inheritance）"
+        },
+        {
+          id: 7,
+          href: "haml_pug_include",
+          time: "2019-10-23",
+          topic: "Lesson07-- 包含（Include）"
+        },
+        {
+          id: 6,
           href: "haml_pug_attribute",
           time: "2019-10-21",
-          topic: "Lesson04-- 屬性（Attribute）"
+          topic: "Lesson06-- 屬性（Attribute）"
+        },
+        {
+          id: 5,
+          href: "haml_pug_tag",
+          time: "2019-10-21",
+          topic: "Lesson05-- 元素標籤（Tag）"
+        },
+        {
+          id: 4,
+          href: "haml_pug_whitespace",
+          time: "2019-10-20",
+          topic: "Lesson04-- 空白控制（Whitespace Control）"
         },
         {
           id: 3,
-          href: "haml_pug_whitespace",
+          href: "haml_pug_text",
           time: "2019-10-20",
-          topic: "Lesson03-- 空白控制（Whitespace Control）"
+          topic: "Lesson03-- 純文本（Plain Text）"
         },
         {
           id: 2,
-          href: "haml_pug_text",
+          href: "haml_pug_doctype",
           time: "2019-10-20",
-          topic: "Lesson02-- 純文本（Plain Text）"
+          topic: "Lesson02-- 文件類型（Doctype）"
         },
         {
           id: 1,

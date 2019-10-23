@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-21</time>
-                        <h1>Lesson04-- 屬性（Attribute）</h1>
+                        <h1>Lesson06-- 屬性（Attribute）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->
@@ -139,7 +139,7 @@ button(class = classes) btnName</code></pre>
         <span>COPY</span>
     </button>
 </div>
-<p>如果同時存在共用與額外獨自使用的樣式，數組與類別普通使用方式混用也是可以的：</p>
+<p>如果同時存在共用與額外獨自使用的樣式，數組與類別正常使用方式混用也是可以的：</p>
 <h3 class="pug"></h3>
 <div class="code-area">
 <pre id="area16" class="code-text"><code class="yaml">- var classes = ['class1', 'class2', 'class3']

@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-20</time>
-                        <h1>Lesson02-- 純文本（Plain Text）</h1>
+                        <h1>Lesson03-- 純文本（Plain Text）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->
@@ -21,7 +21,7 @@
 <p>根據 Pug 官方文件的描述，純文本的 Pug 撰寫方法有數種，它們各自在不同的情況有不同的用處。</p>
 <br>
 <h2>Inline（適合短文本）：</h2>
-<p>這是最基本也是最常見的用法，Pug 的表達方式也非常簡單，僅需在該行行首鍵入元素本身（不需要嵌套），然後在元素與純文本之間以一個空白字元隔開即可。</p>
+<p>這是最基本也是最常見的用法，Pug 的表達方式也非常簡單，僅需在該行行首鍵入元素本身（不需要尖括號），然後在元素與純文本之間以一個空白字元隔開即可。</p>
 <h3 class="pug"></h3>
 <div class="code-area">
 <pre id="area01" class="code-text"><code class="yaml">p This is text.</code></pre>
@@ -68,7 +68,7 @@
         <span>COPY</span>
     </button>
 </div>
-<p>假如要在行內加入其他元素，有兩種表示方法。第一種是直接用傳統 HTML 嵌套囊括的方式，將純文字內容放入嵌套內。例如：</p>
+<p>假如要在行內加入其他元素，有兩種表示方法。第一種是直接用傳統 HTML 尖括號囊括的方式，將純文字內容放入尖括號內。例如：</p>
 <h3 class="pug"></h3>
 <div class="code-area">
 <pre id="area07" class="code-text"><code class="yaml">p This is text &lt;b&gt;content&lt;/b&gt;.</code></pre>
@@ -179,7 +179,7 @@
         <span>COPY</span>
     </button>
 </div>
-<p>假如要使 <em>.</em> 區塊內的純文本元素生成為對應的元素標籤，我們要嘛就是直接用傳統嵌套的方式指定該元素名稱為標籤，例如：</p>
+<p>假如要使 <em>.</em> 區塊內的純文本元素生成為對應的元素標籤，我們要嘛就是直接用傳統尖括號的方式指定該元素名稱為標籤，例如：</p>
 <h3 class="pug"></h3>
 <div class="code-area">
 <pre id="area18" class="code-text"><code class="yaml">div.
@@ -218,7 +218,7 @@
 </figure>
 
 <br>
-<p>以上是 Pug 純文本的應用方式，最後再稍微補充撰寫時另一個需要注意的地方──由於 Pug 省略了 HTML 元素標籤必須有頭有尾的規則，但假如我們撰寫時遇到必須在 <em>.pug</em> 檔案裡使用傳統 HTML 嵌套格式的情況，要記得補上結束嵌套，以免編譯後排版亂了套。</p>
+<p>以上是 Pug 純文本的應用方式，最後再稍微補充撰寫時另一個需要注意的地方──由於 Pug 省略了 HTML 元素標籤必須有頭有尾的規則，但假如我們撰寫時遇到必須在 <em>.pug</em> 檔案裡使用傳統 HTML 尖括號格式的情況，要記得補上結尾標籤，以免編譯後排版亂了套。</p>
 <h3 class="pug"></h3>
 <div class="code-area">
 <pre id="area21" class="code-text"><code class="yaml">div
@@ -234,7 +234,7 @@
         <span>COPY</span>
     </button>
 </div>
-<p>可以發現到 Pug 編譯的結果並不會自動補足 <em>&lt;p&gt;</em> 的結尾嵌套，故在編輯時需要多加注意。</p>
+<p>可以發現到 Pug 編譯的結果並不會自動補足 <em>&lt;p&gt;</em> 的結尾標籤，故在編輯時需要多加注意。</p>
 
 <!-- 參考資料 -->
 <ul class="refer">
