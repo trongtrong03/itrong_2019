@@ -98,9 +98,79 @@ block h1
     </button>
 </div>
 <p>仔細看 <em>&lt;h1&gt;</em> 的部分，裡頭純文本的內容已覆蓋原本父模板 <em>layout.pug</em> 的預設 <em>&lt;h1&gt;</em> 內容了。而 <em>page.pug</em> 內其他模板程式碼因為沒有別的操作，所以仍然維持父模板預設的內容。</p>
-<p>注意喔！子模板無法添加父模板沒有的程式碼，也無法修改不是 <em>block</em> 區塊內的程式碼，所以為什麼我們會說繼承父模板的擴展文件是子模板的原因就在這裡，繼承模板的擴展文件只能編輯模板裡的 <em>block</em>。我們可以將複雜的頁面拆分成許多簡潔的模板區塊，功能強大又方便維護，卻也犧牲了自由。</p>
+<p>注意喔！子模板無法添加父模板沒有的程式碼，也無法修改不是 <em>block</em> 區塊內的程式碼，所以為什麼我們會說繼承父模板的擴展文件是子模板的原因就在這裡，繼承模板的擴展文件只能編輯模板裡的 <em>block</em>。我們可以將複雜的頁面拆分成許多簡潔的模板區塊，功能強大又方便維護，卻也犧牲了部分自由。</p>
 <br>
 
+<h2>添加 <em>block</em> 內容：</h2>
+<p>擴展的子模塊除了可以直接覆寫父模塊的 <em>block</em> 內容，也可以添加新的內容到 <em>block</em> 內，如果是添加在原本內容之前（頭部）的語法叫 <em>prepend</em>，添加在之後（尾部）的語法則叫 <em>append</em>。</p>
+<h3 class="pug"></h3>
+<div class="code-area">
+<pre id="area06" class="code-text"><code class="yaml">//- page.pug
+extends layout.pug
+
+block prepend h1
+    h1 This is prepend content.
+
+block append h1
+    h1 This is append content.
+</code></pre>
+    <button class="copy-btn" data-clipboard-target="#area06">
+        <span>COPY</span>
+    </button>
+</div>
+<h3 class="html"></h3>
+<div class="code-area">
+<pre id="area07" class="code-text"><code class="html">&lt;!-- page.html --&gt;
+&lt;h1&gt;This is prepend content.&lt;/h1&gt;
+&lt;h1&gt;This is title.&lt;/h1&gt;
+&lt;h1&gt;This is append content.&lt;/h1&gt;</code></pre>
+    <button class="copy-btn" data-clipboard-target="#area07">
+        <span>COPY</span>
+    </button>
+</div>
+<p>當使用 <em>prepend</em> 及 <em>append</em> 語法時，前方的 <em>block</em> 是可以省略的：</p>
+<h3 class="pug"></h3>
+<div class="code-area">
+<pre id="area07" class="code-text"><code class="yaml">//- page.pug
+extends layout.pug
+
+prepend h1
+    h1 This is prepend content.
+
+append h1
+    h1 This is append content.
+</code></pre>
+    <button class="copy-btn" data-clipboard-target="#area07">
+        <span>COPY</span>
+    </button>
+</div>
+<p>其輸出結果不變。</p>
+<br>
+
+<h2>與包含（Include）的差異：</h2>
+<p>當學會模板擴展 <em>extend</em> 的使用方法後，難免會產生其與 <em>include</em> 用法差異的疑竇，以下製作一份簡表來比較兩者的不同之處：</p>
+<div class="t-form">
+    <div class="t-head">
+        <span class="t-flex1"></span>
+        <span class="t-flex2">extand</span>
+        <span class="t-flex2">include</span>
+    </div>
+    <div class="t-row">
+        <span class="t-flex1">引用文件</span>
+        <span class="t-flex2">只能是 <em>.pug</em></span>
+        <span class="t-flex2">可引用其他文件，如 <em>.js</em>、<em>.css</em></span>
+    </div>
+    <div class="t-row">
+        <span class="t-flex1">引用次數</span>
+        <span class="t-flex2">一個文件只能繼承一個模板</span>
+        <span class="t-flex2">一個文件可包含多個文件</span>
+    </div>
+    <div class="t-row">
+        <span class="t-flex1">引用修改</span>
+        <span class="t-flex2">可以覆寫或添加內容</span>
+        <span class="t-flex2">不能修改</span>
+    </div>
+</div>
 <!-- 參考資料 -->
 <ul class="refer">
     <li><a href="https://pugjs.org/language/inheritance.html" target="_blank">pug</a></li>

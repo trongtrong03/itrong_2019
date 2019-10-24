@@ -25,10 +25,10 @@
     <span>Step01. 建立 <em>.pug</em> 內容。</span>
 </p>
 <p>首先，我們至少要創建兩個以上的 <em>.pug</em> 文件，分別是包含以及被包含的文件。</p>
-<p><em>header.pug</em>：</p>
 <h3 class="pug"></h3>
 <div class="code-area">
-<pre id="area01" class="code-text"><code class="yaml">header
+<pre id="area01" class="code-text"><code class="yaml">//- header.pug
+header
     a.logo(href='index.html') LOGO
     nav
         ul
@@ -43,10 +43,10 @@
     </button>
 </div>
 
-<p><em>footer.pug</em>：</p>
 <h3 class="pug"></h3>
 <div class="code-area">
-<pre id="area02" class="code-text"><code class="yaml">footer
+<pre id="area02" class="code-text"><code class="yaml">//- footer.pug
+footer
     p copyright @ 2019</code></pre>
     <button class="copy-btn" data-clipboard-target="#area02">
         <span>COPY</span>
@@ -122,10 +122,10 @@ html
 
 <h2>包含純文本：</h2>
 <p>被包含的文件如果不是 <em>.pug</em> 文件，而是像樣式表（<em>.css</em>）或 Javascript 腳本（<em>.js</em>）之類的檔案，則會被視作純文字內容來引入。</p>
-<p><em>style.css</em>：</p>
 <h3 class="css"></h3>
 <div class="code-area">
-<pre id="area06" class="code-text"><code class="css">body {
+<pre id="area06" class="code-text"><code class="css">//- style.css
+body {
     margin: 0;
     padding: 0;
 }
@@ -139,19 +139,19 @@ header {
     </button>
 </div>
 
-<p><em>script.js</em>：</p>
 <h3 class="js"></h3>
 <div class="code-area">
-<pre id="area07" class="code-text"><code class="javascript">console.log("hello!");</code></pre>
+<pre id="area07" class="code-text"><code class="javascript">//- script.js
+console.log("hello!");</code></pre>
     <button class="copy-btn" data-clipboard-target="#area07">
         <span>COPY</span>
     </button>
 </div>
 
-<p><em>index.pug</em>：</p>
 <h3 class="pug"></h3>
 <div class="code-area">
-<pre id="area08" class="code-text"><code class="yaml">doctype html
+<pre id="area08" class="code-text"><code class="yaml">//- index.pug
+doctype html
 html
   head
     title Pug Demo
