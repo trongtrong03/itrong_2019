@@ -38,6 +38,24 @@ module.exports = {
       // data
       pugLists: [
         {
+          id: 11,
+          href: "haml_pug_for",
+          time: "2019-10-25",
+          topic: "Lesson11-- 迴圈（For）"
+        },
+        {
+          id: 10,
+          href: "haml_pug_conditional",
+          time: "2019-10-24",
+          topic: "Lesson10-- 變數與條件式（Conditional）"
+        },
+        {
+          id: 9,
+          href: "haml_pug_mixin",
+          time: "2019-10-24",
+          topic: "Lesson09-- 混入（Mixin）"
+        },
+        {
           id: 8,
           href: "haml_pug_inheritance",
           time: "2019-10-23",
