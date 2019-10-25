@@ -38,16 +38,40 @@ module.exports = {
       // data
       pugLists: [
         {
-          id: 11,
+          id: 15,
+          href: "haml_pug_comment",
+          time: "2019-10-27",
+          topic: "Lesson15-- 註解（Comment）"
+        },
+        {
+          id: 14,
+          href: "haml_pug_iteration",
+          time: "2019-10-26",
+          topic: "Lesson14-- 迭代（Iteration）"
+        },
+        {
+          id: 13,
           href: "haml_pug_for",
           time: "2019-10-25",
-          topic: "Lesson11-- 迴圈（For）"
+          topic: "Lesson13-- 迴圈（For）"
+        },
+        {
+          id: 12,
+          href: "haml_pug_conditional",
+          time: "2019-10-25",
+          topic: "Lesson12-- 條件式（Conditional）"
+        },
+        {
+          id: 11,
+          href: "haml_pug_interpolation",
+          time: "2019-10-24",
+          topic: "Lesson11-- 變數（Variable）與嵌入（Interpolation）"
         },
         {
           id: 10,
-          href: "haml_pug_conditional",
+          href: "haml_pug_code",
           time: "2019-10-24",
-          topic: "Lesson10-- 變數與條件式（Conditional）"
+          topic: "Lesson10-- 程式碼輸出的觀念（Code）"
         },
         {
           id: 9,

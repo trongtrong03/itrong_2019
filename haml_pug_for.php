@@ -12,13 +12,12 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-25</time>
-                        <h1>Lesson11-- 迴圈（For 與 While）</h1>
+                        <h1>Lesson13-- 迴圈（For）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->
                 <div class="inside-edit">
 <!-- start -->
-<h2>For：</h2>
 <p>Pug 的 <em>for</em> 迴圈使用方式為下：</p>
 <h3 class="pug"></h3>
 <div class="code-area">
@@ -27,7 +26,6 @@
         <span>COPY</span>
     </button>
 </div>
-<p>與上一篇 <em>if</em> 判斷式不同的是，<em>for</em> 的前方必須要存才一個 <em>-</em>，雖然官方文件有對此現象作出解釋，只可惜說明略顯簡潔了些。不過無妨，稍微擠點腦汁背起來就好。</p>
 <h3 class="pug"></h3>
 <div class="code-area">
 <pre id="area02" class="code-text"><code class="yaml">- for (var x = 0; x < 3; x++)
@@ -67,31 +65,6 @@
     </button>
 </div>
 <br>
-
-<h2>While：</h2>
-<h3 class="pug"></h3>
-<div class="code-area">
-<pre id="area06" class="code-text"><code class="yaml">- var n = 0;
-ul
-    while n < 3
-        li= n++</code></pre>
-    <button class="copy-btn" data-clipboard-target="#area06">
-        <span>COPY</span>
-    </button>
-</div>
-<h3 class="html"></h3>
-<div class="code-area">
-<pre id="area07" class="code-text"><code class="html">&lt;ul&gt;
-  &lt;li&gt;0&lt;/li&gt;
-  &lt;li&gt;1&lt;/li&gt;
-  &lt;li&gt;2&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-    <button class="copy-btn" data-clipboard-target="#area07">
-        <span>COPY</span>
-    </button>
-</div>
-
-
 <!-- 參考資料 -->
 <ul class="refer">
     <li><a href="https://pugjs.org/language/code.html" target="_blank">pug</a></li>
