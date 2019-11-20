@@ -38,6 +38,12 @@ module.exports = {
       // data
       gits: [
         {
+            id: 17,
+            href: 'git_bash_pull',
+            time: '2019-10-14',
+            topic: 'Lesson17-- 拉取（pull）',
+        },
+        {
             id: 16,
             href: 'git_bash_push',
             time: '2019-10-09',
