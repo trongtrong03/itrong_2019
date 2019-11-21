@@ -38,6 +38,24 @@ module.exports = {
       // data
       gits: [
         {
+            id: 19,
+            href: 'git_bash_amend',
+            time: '2019-10-20',
+            topic: 'Lesson20-- 修改 Commit 記錄（--amend）',
+        },
+        {
+            id: 19,
+            href: 'git_bash_diff',
+            time: '2019-10-17',
+            topic: 'Lesson19-- 差異比對（diff）',
+        },
+        {
+            id: 18,
+            href: 'git_bash_clone',
+            time: '2019-10-14',
+            topic: 'Lesson18-- 複製（clone）',
+        },
+        {
             id: 17,
             href: 'git_bash_pull',
             time: '2019-10-14',
