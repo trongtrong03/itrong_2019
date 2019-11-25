@@ -254,7 +254,8 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding: 1rem 0;
+    margin: 1rem 0;
+    // padding: 1rem 0;
     >li {
         position: relative;
         width: 25%;
@@ -310,7 +311,7 @@
                     color: #999;
                 }
                 &.two-rows {
-                    top: -3.5rem;
+                    top: -2.5rem;
                 }
             }
             &:hover {
