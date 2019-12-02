@@ -74,6 +74,30 @@
               </span>
             </li>
           </ul>
+          <ul class="inside-flex">
+            <li v-for="item in apiSelector_6" :key="item.id">
+              <a :href="item.href + format" v-if="item.isLink">
+                {{ item.topic }}
+                <b class="two-rows">{{ item.note }}</b>
+              </a>
+              <span v-else>
+                {{ item.topic }}
+                <b class="two-rows">{{ item.note }}</b>
+              </span>
+            </li>
+          </ul>
+          <ul class="inside-flex">
+            <li v-for="item in apiSelector_7" :key="item.id">
+              <a :href="item.href + format" v-if="item.isLink">
+                {{ item.topic }}
+                <b class="two-rows">{{ item.note }}</b>
+              </a>
+              <span v-else>
+                {{ item.topic }}
+                <b class="two-rows">{{ item.note }}</b>
+              </span>
+            </li>
+          </ul>
         </div>
         <div class="inside-list">
           <ul>
@@ -283,6 +307,110 @@ module.exports = {
         },
       ],
 
+      apiSelectorList_6: [
+        {
+          id: 1,
+          isLink: false,
+          href: "",
+          topic: "$(':input')",
+          note: "選取所有 <input> 元素。"
+        },
+        {
+          id: 2,
+          isLink: false,
+          href: "",
+          topic: "$(':text')",
+          note: "選取所有 type 屬性為 text 的 <input> 元素。"
+        },
+        {
+          id: 3,
+          isLink: false,
+          href: "",
+          topic: "$(':password')",
+          note: "選取所有 type 屬性為 password 的 <input> 元素。"
+        },
+        {
+          id: 4,
+          isLink: false,
+          href: "",
+          topic: "$(':radio')",
+          note: "選取所有 type 屬性為 radio 的 <input> 元素。"
+        },
+        {
+          id: 5,
+          isLink: false,
+          href: "",
+          topic: "$(':checkbox')",
+          note: "選取所有 type 屬性為 checkbox 的 <input> 元素。"
+        },
+        {
+          id: 6,
+          isLink: false,
+          href: "",
+          topic: "$(':submit')",
+          note: "選取所有 type 屬性為 submit 的 <input> 元素。"
+        },
+        {
+          id: 7,
+          isLink: false,
+          href: "",
+          topic: "$(':reset')",
+          note: "選取所有 type 屬性為 reset 的 <input> 元素。"
+        },
+        {
+          id: 8,
+          isLink: false,
+          href: "",
+          topic: "$(':button')",
+          note: "選取所有 type 屬性為 button 的 <input> 元素。"
+        },
+        {
+          id: 9,
+          isLink: false,
+          href: "",
+          topic: "$(':image')",
+          note: "選取所有 type 屬性為 image 的 <input> 元素。"
+        },
+        {
+          id: 10,
+          isLink: false,
+          href: "",
+          topic: "$(':file')",
+          note: "選取所有 type 屬性為 file 的 <input> 元素。"
+        },
+      ],
+
+      apiSelectorList_7: [
+        {
+          id: 1,
+          isLink: false,
+          href: "",
+          topic: "$(':enabled')",
+          note: "選取所有啟用中的 <input> 元素。"
+        },
+        {
+          id: 2,
+          isLink: false,
+          href: "",
+          topic: "$(':disabled')",
+          note: "選取所有禁止啟用的 <input> 元素。"
+        },
+        {
+          id: 3,
+          isLink: false,
+          href: "",
+          topic: "$(':checked')",
+          note: "選取所有核選中的 <input> 元素。"
+        },
+        {
+          id: 4,
+          isLink: false,
+          href: "",
+          topic: "$(':selected')",
+          note: "選取所有選擇中的 <option> 元素項目。"
+        },
+      ],
+
 
 
 
@@ -339,6 +467,22 @@ module.exports = {
     apiSelector_5: function() {
       var search = this;
       return this.apiSelectorList_5.filter(function(item) {
+        return (
+          item.topic.toLowerCase().indexOf(search.query.toLowerCase()) !== -1
+        );
+      });
+    },
+    apiSelector_6: function() {
+      var search = this;
+      return this.apiSelectorList_6.filter(function(item) {
+        return (
+          item.topic.toLowerCase().indexOf(search.query.toLowerCase()) !== -1
+        );
+      });
+    },
+    apiSelector_7: function() {
+      var search = this;
+      return this.apiSelectorList_7.filter(function(item) {
         return (
           item.topic.toLowerCase().indexOf(search.query.toLowerCase()) !== -1
         );
