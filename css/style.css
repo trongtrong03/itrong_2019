@@ -303,10 +303,13 @@ body::-webkit-scrollbar-thumb {
 }
 .view .siderbar button i {
   font-size: 2rem;
+  transition: -webkit-transform .3s ease;
   transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
 }
 .view .siderbar button:hover i {
-  transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .line-wrap {
@@ -426,7 +429,30 @@ header {
   border-radius: 10px;
   background: #2d4059;
 }
-.nav-wrap > ul > li span {
+.nav-wrap > ul > li:hover .nav-title, .nav-wrap > ul > li.active .nav-title {
+  font-weight: bold;
+  color: #2d4059;
+}
+.nav-wrap > ul > li.active.navHtml .nav-sub {
+  height: calc(2.5rem * 4);
+}
+.nav-wrap > ul > li.active.navCss .nav-sub {
+  height: calc(2.5rem * 5);
+}
+.nav-wrap > ul > li.active.navJs .nav-sub {
+  height: calc(2.5rem * 4);
+}
+.nav-wrap > ul > li.active.navFe .nav-sub {
+  height: calc(2.5rem * 1);
+}
+.nav-wrap > ul > li.active.navApp .nav-sub {
+  height: calc(2.5rem * 3);
+}
+.nav-wrap > ul > li.active.navRes .nav-sub {
+  height: calc(2.5rem * 4);
+}
+
+.nav-title {
   display: block;
   line-height: 1.5;
   font-size: 1.25rem;
@@ -435,11 +461,12 @@ header {
   transition: all .3s ease;
   cursor: pointer;
 }
-.nav-wrap > ul > li span:hover, .nav-wrap > ul > li span.active {
-  font-weight: bold;
-  color: #2d4059;
-}
 
+.nav-sub {
+  height: 0;
+  overflow: hidden;
+  transition: height .3s;
+}
 .nav-sub li a {
   display: block;
   line-height: 1.5;
@@ -523,6 +550,11 @@ footer p {
   color: rgba(255, 255, 255, 0.3);
   background: none;
   padding-left: 16rem;
+}
+@media only screen and (max-width: 1024px) {
+  .index footer {
+    padding-left: 0;
+  }
 }
 
 @-webkit-keyframes shining {
@@ -947,7 +979,9 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 }
 .inside-nav button i,
 .inside-nav a i {
+  transition: margin .3s ease, -webkit-transform .3s ease;
   transition: margin .3s ease, transform .3s ease;
+  transition: margin .3s ease, transform .3s ease, -webkit-transform .3s ease;
 }
 .inside-nav button.btn-back {
   left: 0;
@@ -959,7 +993,8 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   left: 5rem;
 }
 .inside-nav a:hover i {
-  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 @media only screen and (max-width: 640px) {
   .inside-nav {
@@ -1912,11 +1947,11 @@ i[class*="icon-"] {
 }
 
 i.icon-chrome {
-  background-image: url('../images/logo_chrome.png?1566610183');
+  background-image: url('../images/logo_chrome.png?1566439107');
 }
 
 i.icon-firefox {
-  background-image: url('../images/logo_firefox.png?1566610183');
+  background-image: url('../images/logo_firefox.png?1566439107');
 }
 
 .html .inside-main > h2::before {

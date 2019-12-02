@@ -5,62 +5,62 @@
         <a :href="'index' + format">iTRONG</a>
       </span>
       <ul>
-        <li class="navHtml">
-          <span :class="active==1 ? 'active' : ''" @click="active=1">HTML</span>
-          <ul class="nav-sub" v-if="active==1">
+        <li class="navHtml" :class="active==1 ? 'active' : ''">
+          <span class="nav-title" @click="active=1">HTML</span>
+          <ul class="nav-sub">
             <li v-for="nav in navHtml">
               <a :href="nav.href + format">{{ nav.name }}</a>
             </li>
           </ul>
         </li>
-        <li class="navCss">
-          <span :class="active==2 ? 'active' : ''" @click="active=2">CSS</span>
-          <ul class="nav-sub" v-if="active==2">
+        <li class="navCss" :class="active==2 ? 'active' : ''">
+          <span class="nav-title" @click="active=2">CSS</span>
+          <ul class="nav-sub">
             <li v-for="nav in navCSS">
               <a :href="nav.href + format">{{ nav.name }}</a>
             </li>
           </ul>
         </li>
-        <li class="navJs">
-          <span :class="active==3 ? 'active' : ''" @click="active=3">JAVASCRIPT</span>
-          <ul class="nav-sub" v-if="active==3">
+        <li class="navJs" :class="active==3 ? 'active' : ''">
+          <span class="nav-title" @click="active=3">JAVASCRIPT</span>
+          <ul class="nav-sub">
             <li v-for="nav in navJS">
               <a :href="nav.href + format">{{ nav.name }}</a>
             </li>
           </ul>
         </li>
-        <li class="navFe">
-          <span :class="active==4 ? 'active' : ''" @click="active=4">FRONT-END</span>
-          <ul class="nav-sub" v-if="active==4">
+        <li class="navFe" :class="active==4 ? 'active' : ''">
+          <span class="nav-title" @click="active=4">FRONT-END</span>
+          <ul class="nav-sub">
             <li v-for="nav in navFe">
               <a :href="nav.href + format">{{ nav.name }}</a>
             </li>
           </ul>
         </li>
-        <li class="navApp">
-          <span :class="active==5 ? 'active' : ''" @click="active=5">APPLICATION</span>
-          <ul class="nav-sub" v-if="active==5">
+        <li class="navApp" :class="active==5 ? 'active' : ''">
+          <span class="nav-title" @click="active=5">APPLICATION</span>
+          <ul class="nav-sub">
             <li v-for="nav in navApp">
               <a :href="nav.href + format">{{ nav.name }}</a>
             </li>
           </ul>
         </li>
-        <li class="navRes">
-          <span :class="active==6 ? 'active' : ''" @click="active=6">RESOURCES</span>
-          <ul class="nav-sub" v-if="active==6">
+        <li class="navRes" :class="active==6 ? 'active' : ''">
+          <span class="nav-title" @click="active=6">RESOURCES</span>
+          <ul class="nav-sub">
             <li v-for="nav in navRes">
               <a :href="nav.href +format">{{ nav.name }}</a>
             </li>
           </ul>
         </li>
-        <li class="navCre">
-          <span :class="active==7 ? 'active' : ''" @click="active=7">CREATIONS</span>
-          <ul class="nav-sub" v-if="active==7">
+        <!-- <li class="navCre">
+          <span class="nav-title" :class="active==7 ? 'active' : ''" @click="active=7">CREATIONS</span>
+          <ul class="nav-sub">
             <li v-for="nav in navCre">
               <a :href="nav.href + format">{{ nav.name }}</a>
             </li>
           </ul>
-        </li>
+        </li> -->
       </ul>
       <div class="nav-bottom">
         <a href="#0" title="My Profile">
@@ -184,6 +184,7 @@ module.exports = {
           href: "_os"
         }
       ],
+
       navRes: [
         {
           name: "線上工具",
@@ -202,12 +203,13 @@ module.exports = {
           href: "_knowledge"
         }
       ],
-      navCre: [
-        {
-          name: "寶島壯遊",
-          href: "_travel"
-        }
-      ]
+
+      // navCre: [
+      //   {
+      //     name: "寶島壯遊",
+      //     href: "_travel"
+      //   }
+      // ]
     };
   },
 
@@ -220,7 +222,7 @@ module.exports = {
     navClose: function() {
       this.isActive = !this.isActive;
       this.noScroll = !this.noScroll;
-    }
+    },
   }
 };
 </script>

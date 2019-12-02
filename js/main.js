@@ -13,3 +13,4 @@ if(isMobile()){
 $('.removeTextNodes').contents().filter(function() {
 　　return this.nodeType === 3;
 }).remove();
+

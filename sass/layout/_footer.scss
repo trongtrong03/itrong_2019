@@ -20,4 +20,10 @@ footer {
         background: none;
         padding-left: 16rem;
     }
+
+    @include MQ(max-1024) {
+        .index & {
+            padding-left: 0;
+        }
+    }
 }

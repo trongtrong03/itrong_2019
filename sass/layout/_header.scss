@@ -75,25 +75,63 @@ header {
         @include scrollbar($navy);
         padding: 1rem 0;
     }
-    >ul>li {
-        span {
-            display: block;
-            line-height: 1.5;
-            font-size: 1.25rem;
-            color: #ffffff;
-            padding: 1rem 1.5rem;
-            transition: all .3s ease;
-            cursor: pointer;
-            &:hover,
-            &.active {
+    >ul >li {
+        &:hover,
+        &.active {
+            .nav-title {
                 font-weight: bold;
                 color: $navy;
+            }
+        }
+        &.active {
+            &.navHtml {
+                .nav-sub {
+                    height: calc(2.5rem * 4);
+                }
+            }
+            &.navCss {
+                .nav-sub {
+                    height: calc(2.5rem * 5);
+                }
+            }
+            &.navJs {
+                .nav-sub {
+                    height: calc(2.5rem * 4);
+                }
+            }
+            &.navFe {
+                .nav-sub {
+                    height: calc(2.5rem * 1);
+                }
+            }
+            &.navApp {
+                .nav-sub {
+                    height: calc(2.5rem * 3);
+                }
+            }
+            &.navRes {
+                .nav-sub {
+                    height: calc(2.5rem * 4);
+                }
             }
         }
     }
 }
 
+.nav-title {
+    display: block;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
 .nav-sub {
+    height: 0;
+    overflow: hidden;
+    transition: height .3s;
     li {
         a {
             display: block;
