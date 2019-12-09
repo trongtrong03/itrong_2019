@@ -98,6 +98,19 @@
               </span>
             </li>
           </ul>
+          <h2>事件</h2>
+          <ul class="inside-flex">
+            <li v-for="item in apiEvent" :key="item.id">
+              <a :href="item.href + format" v-if="item.isLink">
+                {{ item.topic }}
+                <b class="two-rows">{{ item.note }}</b>
+              </a>
+              <span v-else>
+                {{ item.topic }}
+                <b class="two-rows">{{ item.note }}</b>
+              </span>
+            </li>
+          </ul>
         </div>
         <div class="inside-list">
           <ul>
@@ -411,6 +424,155 @@ module.exports = {
         },
       ],
 
+      apiEvent: [
+        {
+          id: 1,
+          isLink: false,
+          href: "",
+          topic: ".bind()",
+          note: "為指定元素添加一或多個事件處理程序及函數。"
+        },
+        {
+          id: 2,
+          isLink: false,
+          href: "",
+          topic: ".blur()",
+          note: "為指定元素添加失焦事件。"
+        },
+        {
+          id: 3,
+          isLink: false,
+          href: "",
+          topic: ".change()",
+          note: "當指定元素的值發生改變時觸發事件。"
+        },
+        {
+          id: 4,
+          isLink: false,
+          href: "",
+          topic: ".click()",
+          note: "當點擊指定元素時觸發事件。"
+        },
+        {
+          id: 5,
+          isLink: false,
+          href: "",
+          topic: ".dblclick()",
+          note: "當雙擊指定元素時觸發事件。"
+        },
+        {
+          id: 6,
+          isLink: false,
+          href: "",
+          topic: ".delegate()",
+          note: "為指定的當前或未來元素添加一或多個事件處理程序及函數。"
+        },
+        {
+          id: 7,
+          isLink: false,
+          href: "",
+          topic: ".die()",
+          note: "移除所有透過 .live() 方法向指定元素添加的一或多個事件處理程序。"
+        },
+        {
+          id: 8,
+          isLink: false,
+          href: "",
+          topic: ".error()",
+          note: "當指定元素發生錯誤時觸發事件處理程序。"
+        },
+        {
+          id: 9,
+          isLink: false,
+          href: "",
+          topic: "event.preventDefault()",
+          note: "阻止指定元素發生其預設行為，例如 <a> 點擊開啟超連結。"
+        },
+        {
+          id: 10,
+          isLink: false,
+          href: "",
+          topic: "event.isDefaultPrevented()",
+          note: "聲明 event 對象元素是否調用了 preventDefault() 方法的結果。"
+        },
+        {
+          id: 11,
+          isLink: false,
+          href: "",
+          topic: "event.pageX",
+          note: "顯示滑鼠鼠標距離相對於螢幕左側邊緣的位置。"
+        },
+        {
+          id: 12,
+          isLink: false,
+          href: "",
+          topic: "event.pageY",
+          note: "顯示滑鼠鼠標距離相對於螢幕上部邊緣的位置。"
+        },
+        {
+          id: 13,
+          isLink: false,
+          href: "",
+          topic: "event.result",
+          note: "返回由指定事件觸發的事件處理器之最後一個值。"
+        },
+        {
+          id: 14,
+          isLink: false,
+          href: "",
+          topic: "event.target",
+          note: "規定事件由哪一個 DOM 元素去觸發。"
+        },
+        {
+          id: 15,
+          isLink: false,
+          href: "",
+          topic: "event.timeStamp",
+          note: "計算事件觸發時，從 1970 年 1 月 1 日至觸發當下的總毫秒數。"
+        },
+        {
+          id: 16,
+          isLink: false,
+          href: "",
+          topic: "event.timeStamp",
+          note: "描述事件觸發的類型。"
+        },
+        {
+          id: 17,
+          isLink: false,
+          href: "",
+          topic: "event.which",
+          note: "指示指定元素按下什麼鍵或按鈕。"
+        },
+        {
+          id: 18,
+          isLink: false,
+          href: "",
+          topic: ".focus()",
+          note: "為指定元素添加焦點事件。"
+        },
+        {
+          id: 19,
+          isLink: false,
+          href: "",
+          topic: ".keydown()",
+          note: "當指定元素按下按鍵時觸發事件。"
+        },
+        {
+          id: 20,
+          isLink: false,
+          href: "",
+          topic: ".keypress()",
+          note: "當指定元素每插入一個字符就會觸發事件。"
+        },
+        {
+          id: 21,
+          isLink: false,
+          href: "",
+          topic: ".keyup()",
+          note: "當指定元素按下按鍵然後鬆開時觸發事件。"
+        },
+      ],
 
 
 
@@ -483,6 +645,14 @@ module.exports = {
     apiSelector_7: function() {
       var search = this;
       return this.apiSelectorList_7.filter(function(item) {
+        return (
+          item.topic.toLowerCase().indexOf(search.query.toLowerCase()) !== -1
+        );
+      });
+    },
+    apiEvent: function() {
+      var search = this;
+      return this.apiEvent.filter(function(item) {
         return (
           item.topic.toLowerCase().indexOf(search.query.toLowerCase()) !== -1
         );
