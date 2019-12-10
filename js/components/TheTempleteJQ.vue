@@ -9,10 +9,17 @@
         </label>
       </div>
       <div class="inside-container">
-        <button class="inside-btn" @click="clickOpen" :class="{active: isActive}">
-          <i class="fas fa-list-ul"></i>
-        </button>
-        <div class="inside-form is-hide" :class="{active: isActive}">
+        <div class="inside-btn">
+          <button @click="openApi" :class="{active: isApiActive}">
+            <i class="fas fa-list-ul"></i>
+            <b>API List</b>
+          </button>
+          <button @click="openTec" :class="{active: isTecActive}">
+            <i class="fas fa-list"></i>
+            <b>TEC List</b>
+          </button>
+        </div>
+        <div class="inside-form is-hide" :class="{active: isApiActive}">
           <h2>選擇器</h2>
           <ul class="inside-flex">
             <li v-for="item in apiSelector_1" :key="item.id">
@@ -112,7 +119,7 @@
             </li>
           </ul>
         </div>
-        <div class="inside-list">
+        <div class="inside-list is-hide" :class="{active: isTecActive}">
           <ul>
             <li v-for="item in listJQ" :key="item.id">
               <a :href="item.href + format">
@@ -132,7 +139,8 @@ module.exports = {
   data: function() {
     return {
       format: '.php',
-      isActive: false,
+      isApiActive: false,
+      isTecActive: false,
       isLink: true,
       query: "",
 
@@ -572,6 +580,153 @@ module.exports = {
           topic: ".keyup()",
           note: "當指定元素按下按鍵然後鬆開時觸發事件。"
         },
+        {
+          id: 22,
+          isLink: false,
+          href: "",
+          topic: ".live()",
+          note: "為指定的當前或未來元素添加一或多個事件處理程序及函數。"
+        },
+        {
+          id: 23,
+          isLink: false,
+          href: "",
+          topic: ".load()",
+          note: "當指定元素已載入時觸發事件。"
+        },
+        {
+          id: 24,
+          isLink: false,
+          href: "",
+          topic: ".mousedown()",
+          note: "當從指定元素按下滑鼠按鍵時觸發事件。"
+        },
+        {
+          id: 25,
+          isLink: false,
+          href: "",
+          topic: ".mouseenter()",
+          note: "當滑鼠移入指定元素時觸發事件，通常與 .mouseleave() 一同使用。"
+        },
+        {
+          id: 26,
+          isLink: false,
+          href: "",
+          topic: ".mouseleave()",
+          note: "當滑鼠移出指定元素時觸發事件，通常與 .mouseenter() 一同使用。"
+        },
+        {
+          id: 27,
+          isLink: false,
+          href: "",
+          topic: ".mousemove()",
+          note: "當滑鼠在指定元素範圍內移動時觸發事件。"
+        },
+        {
+          id: 28,
+          isLink: false,
+          href: "",
+          topic: ".mouseover()",
+          note: "當滑鼠移入指定元素時觸發事件，通常與 .mouseout() 一同使用。"
+        },
+        {
+          id: 29,
+          isLink: false,
+          href: "",
+          topic: ".mouseout()",
+          note: "當滑鼠移出指定元素時觸發事件，通常與 .mouseover() 一同使用。"
+        },
+        {
+          id: 30,
+          isLink: false,
+          href: "",
+          topic: ".mouseup()",
+          note: "當鬆開滑鼠按鈕時觸發事件。"
+        },
+        {
+          id: 31,
+          isLink: false,
+          href: "",
+          topic: ".one()",
+          note: "指定元素僅能觸發事件一次。"
+        },
+        {
+          id: 32,
+          isLink: false,
+          href: "",
+          topic: ".ready()",
+          note: "當 DOM 完成加載時觸差 ready 事件裡的函數。"
+        },
+        {
+          id: 33,
+          isLink: false,
+          href: "",
+          topic: ".resize()",
+          note: "當瀏覽器畫面大小有所調整時觸發事件。"
+        },
+        {
+          id: 34,
+          isLink: false,
+          href: "",
+          topic: ".scroll()",
+          note: "當滑鼠滾輪在指定元素滾動時觸發事件。"
+        },
+        {
+          id: 35,
+          isLink: false,
+          href: "",
+          topic: ".select()",
+          note: "當指定 <textarea> 或 <input> type 類型為 text 之元素內容被選取時觸發事件。"
+        },
+        {
+          id: 36,
+          isLink: false,
+          href: "",
+          topic: ".submit()",
+          note: "當指定表單提交時觸發事件。"
+        },
+        {
+          id: 37,
+          isLink: false,
+          href: "",
+          topic: ".toggle()",
+          note: "當點擊指定元素時，會輪流觸發二或多個函數事件。"
+        },
+        {
+          id: 38,
+          isLink: false,
+          href: "",
+          topic: ".trigger()",
+          note: "規定指定元素要觸發的事件。"
+        },
+        {
+          id: 39,
+          isLink: false,
+          href: "",
+          topic: ".triggerHandler()",
+          note: "與 .trigger() 類似，但不會執行瀏覽器預設操作，例如 select 選取效果。"
+        },
+        {
+          id: 40,
+          isLink: false,
+          href: "",
+          topic: ".unbind()",
+          note: "移除指定元素的事件處理器。"
+        },
+        {
+          id: 41,
+          isLink: false,
+          href: "",
+          topic: ".undelegate()",
+          note: "移除由 .delegate() 添加的事件處理器。"
+        },
+        {
+          id: 42,
+          isLink: false,
+          href: "",
+          topic: ".unload()",
+          note: "當離開頁面時觸發事件。"
+        },
       ],
 
 
@@ -588,8 +743,13 @@ module.exports = {
   },
 
   methods: {
-    clickOpen: function() {
-      this.isActive = !this.isActive;
+    openApi: function() {
+      this.isApiActive = !this.isApiActive;
+      this.isTecActive = false;
+    },
+    openTec: function() {
+      this.isApiActive = false;
+      this.isTecActive = !this.isTecActive;
     }
   },
 

@@ -303,13 +303,10 @@ body::-webkit-scrollbar-thumb {
 }
 .view .siderbar button i {
   font-size: 2rem;
-  transition: -webkit-transform .3s ease;
   transition: transform .3s ease;
-  transition: transform .3s ease, -webkit-transform .3s ease;
 }
 .view .siderbar button:hover i {
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 
 .line-wrap {
@@ -979,9 +976,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 }
 .inside-nav button i,
 .inside-nav a i {
-  transition: margin .3s ease, -webkit-transform .3s ease;
   transition: margin .3s ease, transform .3s ease;
-  transition: margin .3s ease, transform .3s ease, -webkit-transform .3s ease;
 }
 .inside-nav button.btn-back {
   left: 0;
@@ -993,8 +988,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   left: 5rem;
 }
 .inside-nav a:hover i {
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
 @media only screen and (max-width: 640px) {
   .inside-nav {
@@ -1136,35 +1130,47 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 }
 
 .inside-btn {
+  padding-top: 1rem;
+}
+.inside-btn button {
   position: relative;
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.25rem;
+  margin-right: .5rem;
+  *zoom: 1;
+}
+.inside-btn button:before, .inside-btn button:after {
+  content: "";
+  display: table;
+}
+.inside-btn button:after {
+  clear: both;
+}
+.inside-btn button i {
   width: 3rem;
   height: 3rem;
+  line-height: 3rem;
   text-align: center;
-  font-size: 1.25rem;
   color: #ffffff;
   background: #BBB;
-  margin-top: 1rem;
+  float: left;
 }
-.inside-btn::after {
-  content: 'API List';
-  position: absolute;
-  top: 0;
-  left: 3rem;
-  z-index: 1;
-  display: block;
+.inside-btn button b {
   line-height: calc(3rem - 2px);
   font-size: 0.875rem;
   white-space: nowrap;
   color: #bbbbbb;
+  background-color: #FFF;
   border: 1px solid #BBB;
   border-left: 0;
   padding: 0 .5rem;
+  float: left;
 }
-.inside-btn.active {
+.inside-btn button.active i {
   background: #40a8c4;
 }
-.inside-btn.active::after {
+.inside-btn button.active b {
   color: #40a8c4;
   border-color: #40a8c4;
 }
@@ -1947,11 +1953,11 @@ i[class*="icon-"] {
 }
 
 i.icon-chrome {
-  background-image: url('../images/logo_chrome.png?1566439107');
+  background-image: url('../images/logo_chrome.png?1566610183');
 }
 
 i.icon-firefox {
-  background-image: url('../images/logo_firefox.png?1566439107');
+  background-image: url('../images/logo_firefox.png?1566610183');
 }
 
 .html .inside-main > h2::before {
