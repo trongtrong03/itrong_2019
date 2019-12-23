@@ -1177,14 +1177,16 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 
 .inside-form,
 .inside-list,
-.inside-box {
+.inside-box,
+.inside-grid {
   margin-top: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 .inside-form > h2,
 .inside-list > h2,
-.inside-box > h2 {
+.inside-box > h2,
+.inside-grid > h2 {
   line-height: 1;
   font-size: 1rem;
   color: #40a8c4;
@@ -1193,12 +1195,14 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 }
 .inside-form.is-hide,
 .inside-list.is-hide,
-.inside-box.is-hide {
+.inside-box.is-hide,
+.inside-grid.is-hide {
   display: none;
 }
 .inside-form.active,
 .inside-list.active,
-.inside-box.active {
+.inside-box.active,
+.inside-grid.active {
   display: block !important;
 }
 
@@ -1248,6 +1252,8 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   color: #ffffff;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 4px;
+  opacity: 0;
+  transition: opacity .3s;
   padding: .25rem .5rem;
 }
 .inside-flex > li a b::after,
@@ -1406,6 +1412,72 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 }
 .inside-box li:hover a figure figcaption {
   display: block;
+}
+
+.inside-grid ul {
+  margin-top: 1rem;
+}
+.inside-grid li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: calc(25% - (3rem / 4));
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  letter-spacing: -0.31em;
+  *letter-spacing: normal;
+  *word-spacing: -0.43em;
+  text-rendering: optimizespeed;
+}
+.inside-grid li * {
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.inside-grid li:nth-child(4n) {
+  margin-right: 0;
+}
+.inside-grid li a {
+  display: block;
+}
+.inside-grid li a figure {
+  background: #40a8c4;
+  margin-bottom: .5rem;
+  overflow: hidden;
+}
+.inside-grid li a figure img {
+  transition: transform .3s ease;
+  transform: scale(0.8);
+}
+.inside-grid li a time {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  vertical-align: top;
+  width: 5rem;
+  text-align: center;
+  font-size: .875rem;
+  color: #FFF;
+  background: #BBB;
+  margin-bottom: .5rem;
+  padding: .25rem 0;
+}
+.inside-grid li a h2 {
+  display: block;
+  line-height: 1.5;
+  font-size: 1.125rem;
+  color: #555;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  overflow: hidden;
+  transition: color .3s ease;
+}
+.inside-grid li a:hover figure img {
+  transform: scale(0.99);
+}
+.inside-grid li a:hover h2 {
+  color: #40a8c4;
 }
 
 .inside-menu {

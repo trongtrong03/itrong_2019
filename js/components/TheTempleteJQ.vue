@@ -19,6 +19,7 @@
             <b>TEC List</b>
           </button>
         </div>
+        <!-- API 列表 -->
         <div class="inside-form is-hide" :class="{active: isApiActive}">
           <h2>選擇器</h2>
           <ul class="inside-flex">
@@ -118,11 +119,39 @@
               </span>
             </li>
           </ul>
+          <h2>效果</h2>
+          <ul class="inside-flex">
+            <li v-for="item in apiEffect" :key="item.id">
+              <a :href="item.href + format" v-if="item.isLink">
+                {{ item.topic }}
+                <b class="two-rows">{{ item.note }}</b>
+              </a>
+              <span v-else>
+                {{ item.topic }}
+                <b class="two-rows">{{ item.note }}</b>
+              </span>
+            </li>
+          </ul>
         </div>
+        <!-- TEC 列表 -->
         <div class="inside-list is-hide" :class="{active: isTecActive}">
           <ul>
             <li v-for="item in listJQ" :key="item.id">
               <a :href="item.href + format">
+                <time>{{ item.time }}</time>
+                <h2>{{ item.topic }}</h2>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- PLUGIN 列表 -->
+        <div class="inside-grid" :class="{active: isTecActive}">
+          <ul>
+            <li v-for="item in jqPlugs" :key="item.id">
+              <a :href="'jq_plugin_' + item.href + format">
+                <figure>
+                    <img :src="'images/pic/jq/plugin/' + item.href + '.jpg'">
+                </figure>
                 <time>{{ item.time }}</time>
                 <h2>{{ item.topic }}</h2>
               </a>
@@ -143,6 +172,32 @@ module.exports = {
       isTecActive: false,
       isLink: true,
       query: "",
+
+      // plug
+      jqPlugs: [
+        {
+          id: 2,
+          href: 'elevatezoom',
+          time: '2017-07-15',
+          topic: '影像放大鏡（Image Zoom）',
+        },
+        {
+          id: 1,
+          href: 'accordion',
+          time: '2017-07-09',
+          topic: '兩層式摺疊列表（Accordion）',
+        }
+      ],
+
+      // tec
+      jqLists: [
+        {
+          id: 1,
+          href: "",
+          time: "2019-xx-xx",
+          topic: "title"
+        }
+      ],
 
       // data
       apiSelectorList_1: [
@@ -729,16 +784,107 @@ module.exports = {
         },
       ],
 
-
-
-      jqLists: [
+      apiEffect: [
         {
           id: 1,
+          isLink: false,
           href: "",
-          time: "2019-xx-xx",
-          topic: "title"
-        }
-      ]
+          topic: ".animate()",
+          note: "給指定元素添加 CSS 屬性的變動效果。"
+        },
+        {
+          id: 2,
+          isLink: false,
+          href: "",
+          topic: ".clearQueue()",
+          note: "停止指定元素中尚未執行的函數。"
+        },
+        {
+          id: 3,
+          isLink: false,
+          href: "",
+          topic: ".delay()",
+          note: "延遲指定元素中尚未執行的函數。"
+        },
+        {
+          id: 4,
+          isLink: false,
+          href: "",
+          topic: ".dequeue()",
+          note: "運行指定元素中下一個尚未執行的函數。"
+        },
+        {
+          id: 5,
+          isLink: false,
+          href: "",
+          topic: ".fadeIn()",
+          note: "使指定元素從透明漸變為不透明（淡入效果）。"
+        },
+        {
+          id: 6,
+          isLink: false,
+          href: "",
+          topic: ".fadeOut()",
+          note: "使指定元素從不透明漸變為透明（淡出效果）。"
+        },
+        {
+          id: 7,
+          isLink: false,
+          href: "",
+          topic: ".fadeTo()",
+          note: "使指定元素從不透明漸變為指定透明度。"
+        },
+        {
+          id: 8,
+          isLink: false,
+          href: "",
+          topic: ".hide()",
+          note: "隱藏指定元素。"
+        },
+        {
+          id: 9,
+          isLink: false,
+          href: "",
+          topic: ".show()",
+          note: "顯示指定元素。"
+        },
+        {
+          id: 10,
+          isLink: false,
+          href: "",
+          topic: ".slideDown()",
+          note: "使指定元素以向下滑動的方式展開隱藏的內容。"
+        },
+        {
+          id: 11,
+          isLink: false,
+          href: "",
+          topic: ".slideUp()",
+          note: "使指定元素以向上滑動的方式隱藏展開的內容。"
+        },
+        {
+          id: 12,
+          isLink: false,
+          href: "",
+          topic: ".slideToggle()",
+          note: "使指定元素在向下與向上輪流滑動間顯示或隱藏內容。"
+        },
+        {
+          id: 13,
+          isLink: false,
+          href: "",
+          topic: ".stop()",
+          note: "停止指定元素的動畫運行狀態。"
+        },
+        {
+          id: 14,
+          isLink: false,
+          href: "",
+          topic: ".toggle()",
+          note: "使指定元素輪流切換顯示或隱藏的狀態。"
+        },
+      ],
+      
     };
   },
 
@@ -754,6 +900,22 @@ module.exports = {
   },
 
   computed: {
+    jqPlugs: function() {
+      var search = this;
+      return this.jqPlugs.filter(function(item) {
+        return (
+          item.topic.toLowerCase().indexOf(search.query.toLowerCase()) !== -1
+        );
+      });
+    },
+    listJQ: function() {
+      var search = this;
+      return this.jqLists.filter(function(item) {
+        return (
+          item.topic.toLowerCase().indexOf(search.query.toLowerCase()) !== -1
+        );
+      });
+    },
     apiSelector_1: function() {
       var search = this;
       return this.apiSelectorList_1.filter(function(item) {
@@ -818,9 +980,9 @@ module.exports = {
         );
       });
     },
-    listJQ: function() {
+    apiEffect: function() {
       var search = this;
-      return this.jqLists.filter(function(item) {
+      return this.apiEffect.filter(function(item) {
         return (
           item.topic.toLowerCase().indexOf(search.query.toLowerCase()) !== -1
         );
