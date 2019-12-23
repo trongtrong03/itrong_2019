@@ -156,7 +156,7 @@
 
 <h2>參數一覽：</h2>
 <p>以下列出一些本套件可用的參數及其用法：</p>
-<p>◆ 放大鏡效果的呈現方式：</p>
+<h4>放大鏡效果的呈現方式：</h4>
 <h3 class="js"></h3>
 <div class="code-area mb-0">
 <pre id="area09" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
@@ -169,7 +169,7 @@
 <p><em>inner</em> 為顯示於圖片範圍內，<em>lens</em> 為放大鏡尺寸內，沒有設定此行則另開一浮動視窗於一旁。</p>
 <br>
 
-<p>◆ 滑鼠移入上方的樣式：</p>
+<h4>滑鼠移入上方的樣式：</h4>
 <h3 class="js"></h3>
 <div class="code-area mb-0">
 <pre id="area10" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
@@ -190,7 +190,7 @@
     </button>
 </div>
 
-<p>◆ 底圖著色效果：</p>
+<h4>底圖著色效果：</h4>
 <h3 class="js"></h3>
 <div class="code-area mb-0">
 <pre id="area12" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
@@ -215,7 +215,7 @@
     </button>
 </div>
 
-<p>◆ 可用滑鼠滾輪縮放放大鏡圖片：</p>
+<h4>可用滑鼠滾輪縮放放大鏡圖片：</h4>
 <h3 class="js"></h3>
 <div class="code-area">
 <pre id="area14" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
@@ -226,7 +226,7 @@
     </button>
 </div>
 
-<p>◆ 圓形放大鏡的設定：</p>
+<h4>圓形放大鏡的設定：</h4>
 <h3 class="js"></h3>
 <div class="code-area">
 <pre id="area15" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
@@ -239,7 +239,7 @@
     </button>
 </div>
 
-<p>◆ 修改浮動側欄放大鏡的尺寸：</p>
+<h4>修改浮動側欄放大鏡的尺寸：</h4>
 <h3 class="js"></h3>
 <div class="code-area">
 <pre id="area16" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
@@ -252,7 +252,7 @@
     </button>
 </div>
 
-<p>◆ 淡入淡出的效果：</p>
+<h4>淡入淡出的效果：</h4>
 <h3 class="js"></h3>
 <div class="code-area mb-0">
 <pre id="area17" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
@@ -280,7 +280,7 @@
     </button>
 </div>
 
-<p>◆ 多張圖片組成群組：</p>
+<h4>多張圖片組成群組：</h4>
 <h3 class="js"></h3>
 <div class="code-area mb-0">
 <pre id="area19" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
@@ -303,7 +303,7 @@
     </button>
 </div>
 
-<p>◆ 是否啟用緩動效果：</p>
+<h4>是否啟用緩動效果：</h4>
 <h3 class="js"></h3>
 <div class="code-area">
 <pre id="area21" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({

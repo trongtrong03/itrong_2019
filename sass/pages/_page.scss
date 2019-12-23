@@ -652,6 +652,13 @@
             content: 'Demo：';
         }
     }
+    h4 {
+        line-height: 2;
+        color: $blue;
+        &::before {
+            content: '◆ ';
+        }
+    }
     a {
         color: $blue;
         &:hover {
@@ -660,7 +667,7 @@
     }
     p {
         line-height: 1.75;
-        text-indent: 2rem;
+        // text-indent: 2rem;
         font-size: 1rem;
         padding: .5rem 0;
         span {

@@ -176,6 +176,18 @@ module.exports = {
       // plug
       jqPlugs: [
         {
+          id: 4,
+          href: 'tabs_slider',
+          time: '2017-07-25',
+          topic: '頁籤型影像輪播（Tabs Slider）',
+        },
+        {
+          id: 3,
+          href: 'bxslider',
+          time: '2017-07-24',
+          topic: '水平影像輪播（Horizontal Slider）',
+        },
+        {
           id: 2,
           href: 'elevatezoom',
           time: '2017-07-15',
