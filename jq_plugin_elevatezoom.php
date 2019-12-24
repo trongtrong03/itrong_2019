@@ -39,12 +39,14 @@
 </div>
 <h3 class="js"></h3>
 <div class="code-area">
-<pre id="area03" class="code-text"><code class="javascript">$('#imgZoom').elevateZoom({
-    zoomType: "inner",
-    cursor: "crosshair",
-    zoomWindowFadeIn: 500,
-    zoomWindowFadeOut: 500
-});</code></pre>
+<pre id="area03" class="code-text"><code class="html">&lt;script&gt;
+    $('#imgZoom').elevateZoom({
+        zoomType: "inner",
+        cursor: "crosshair",
+        zoomWindowFadeIn: 500,
+        zoomWindowFadeOut: 500
+    });
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area03">
         <span>COPY</span>
     </button>
@@ -59,11 +61,13 @@
 <h2>圓形的放大鏡：</h2>
 <h3 class="js"></h3>
 <div class="code-area">
-<pre id="area04" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
-    zoomType: "lens",
-    lensShape: "round",
-    lensSize: 200
-});</code></pre>
+<pre id="area04" class="code-text"><code class="html">&lt;script&gt;
+    $("#imgZoom").elevateZoom({
+        zoomType: "lens",
+        lensShape: "round",
+        lensSize: 200
+    });
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area04">
         <span>COPY</span>
     </button>
@@ -78,9 +82,11 @@
 <h2>使用滾輪縮放的放大鏡：</h2>
 <h3 class="js"></h3>
 <div class="code-area">
-<pre id="area05" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
-    scrollZoom: true
-});</code></pre>
+<pre id="area05" class="code-text"><code class="html">&lt;script&gt;
+    $("#imgZoom").elevateZoom({
+        scrollZoom: true
+    });
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area05">
         <span>COPY</span>
     </button>
@@ -95,11 +101,13 @@
 <h2>底圖著色 + 另開放大視窗：</h2>
 <h3 class="js"></h3>
 <div class="code-area">
-<pre id="area06" class="code-text"><code class="javascript">$('#imgZoom').elevateZoom({
-    tint: true, 
-    tintColour: '#000', 
-    tintOpacity: 0.5
-});</code></pre>
+<pre id="area06" class="code-text"><code class="html">&lt;script&gt;
+        $('#imgZoom').elevateZoom({
+        tint: true, 
+        tintColour: '#000', 
+        tintOpacity: 0.5
+    });
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area06">
         <span>COPY</span>
     </button>
@@ -136,14 +144,16 @@
 </div>
 <h3 class="js"></h3>
 <div class="code-area">
-<pre id="area08" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
-    gallery:'gallery',
-    zoomType: "inner",
-    cursor: "crosshair",
-    galleryActiveClass: 'active',
-    imageCrossfade: true,
-    loadingIcon: '影像連結'
-});</code></pre>
+<pre id="area08" class="code-text"><code class="html">&lt;script&gt;
+    $("#imgZoom").elevateZoom({
+        gallery:'gallery',
+        zoomType: "inner",
+        cursor: "crosshair",
+        galleryActiveClass: 'active',
+        imageCrossfade: true,
+        loadingIcon: '影像連結'
+    });
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area08">
         <span>COPY</span>
     </button>
@@ -159,9 +169,11 @@
 <h4>放大鏡效果的呈現方式：</h4>
 <h3 class="js"></h3>
 <div class="code-area mb-0">
-<pre id="area09" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
-    zoomType: "inner",
-});</code></pre>
+<pre id="area09" class="code-text"><code class="html">&lt;script&gt;
+    $("#imgZoom").elevateZoom({
+        zoomType: "inner",
+    });
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area09">
         <span>COPY</span>
     </button>
@@ -172,9 +184,11 @@
 <h4>滑鼠移入上方的樣式：</h4>
 <h3 class="js"></h3>
 <div class="code-area mb-0">
-<pre id="area10" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
-    cursor: "參數",
-});</code></pre>
+<pre id="area10" class="code-text"><code class="html">&lt;script&gt;
+    $("#imgZoom").elevateZoom({
+        cursor: "參數",
+    });
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area10">
         <span>COPY</span>
     </button>
@@ -182,9 +196,11 @@
 <p>和 CSS 屬性相同，例如：</p>
 <h3 class="js"></h3>
 <div class="code-area">
-<pre id="area11" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
-    cursor: "crosshair",
-});</code></pre>
+<pre id="area11" class="code-text"><code class="html">&lt;script&gt;
+    $("#imgZoom").elevateZoom({
+        cursor: "crosshair",
+    });
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area11">
         <span>COPY</span>
     </button>
@@ -193,11 +209,13 @@
 <h4>底圖著色效果：</h4>
 <h3 class="js"></h3>
 <div class="code-area mb-0">
-<pre id="area12" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
-    tint: true,     // 是否啟用著色功能。
-    tintColour:'色彩代碼',      // 著色的顏色。
-    tintOpacity: 數值           // 著色的透明度。
-});</code></pre>
+<pre id="area12" class="code-text"><code class="html">&lt;script&gt;
+    $("#imgZoom").elevateZoom({
+        tint: true,     // 是否啟用著色功能。
+        tintColour:'色彩代碼',      // 著色的顏色。
+        tintOpacity: 數值           // 著色的透明度。
+    });
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area12">
         <span>COPY</span>
     </button>
@@ -205,11 +223,13 @@
 <p>例如：</p>
 <h3 class="js"></h3>
 <div class="code-area">
-<pre id="area13" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
-    tint: true, 
-    tintColour:'#000', 
-    tintOpacity: 0.5
-});</code></pre>
+<pre id="area13" class="code-text"><code class="html">&lt;script&gt;
+    $("#imgZoom").elevateZoom({
+        tint: true, 
+        tintColour:'#000', 
+        tintOpacity: 0.5
+    });
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area13">
         <span>COPY</span>
     </button>
@@ -218,9 +238,11 @@
 <h4>可用滑鼠滾輪縮放放大鏡圖片：</h4>
 <h3 class="js"></h3>
 <div class="code-area">
-<pre id="area14" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
-    scrollZoom: true,
-});</code></pre>
+<pre id="area14" class="code-text"><code class="html">&lt;script&gt;
+    $("#imgZoom").elevateZoom({
+        scrollZoom: true,
+    });
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area14">
         <span>COPY</span>
     </button>
@@ -229,11 +251,13 @@
 <h4>圓形放大鏡的設定：</h4>
 <h3 class="js"></h3>
 <div class="code-area">
-<pre id="area15" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
-    zoomType: "lens",
-    lensShape: "round",     // 也可以是 square（方形）。
-    lensSize: 200           // 放大鏡尺寸。
-});</code></pre>
+<pre id="area15" class="code-text"><code class="html">&lt;script&gt;
+    $("#imgZoom").elevateZoom({
+        zoomType: "lens",
+        lensShape: "round",     // 也可以是 square（方形）。
+        lensSize: 200           // 放大鏡尺寸。
+    });
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area15">
         <span>COPY</span>
     </button>
@@ -242,11 +266,13 @@
 <h4>修改浮動側欄放大鏡的尺寸：</h4>
 <h3 class="js"></h3>
 <div class="code-area">
-<pre id="area16" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
-    zoomWindowWidth: 數值,
-    zoomWindowHeight: 數值,
-    lensFadeOut: 500
-});</code></pre>
+<pre id="area16" class="code-text"><code class="html">&lt;script&gt;
+    $("#imgZoom").elevateZoom({
+        zoomWindowWidth: 數值,
+        zoomWindowHeight: 數值,
+        lensFadeOut: 500
+    });
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area16">
         <span>COPY</span>
     </button>
@@ -255,13 +281,15 @@
 <h4>淡入淡出的效果：</h4>
 <h3 class="js"></h3>
 <div class="code-area mb-0">
-<pre id="area17" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
-    zoomWindowFadeIn: 數值,
-    zoomWindowFadeOut: 數值,
-    lensFadeIn: 數值,
-    lensFadeOut: 數值,
-    lensFadeOut: 500
-});</code></pre>
+<pre id="area17" class="code-text"><code class="html">&lt;script&gt;
+    $("#imgZoom").elevateZoom({
+        zoomWindowFadeIn: 數值,
+        zoomWindowFadeOut: 數值,
+        lensFadeIn: 數值,
+        lensFadeOut: 數值,
+        lensFadeOut: 500
+    });
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area17">
         <span>COPY</span>
     </button>
@@ -269,12 +297,14 @@
 <p><em>zoomWindowFadeIn</em> 和 <em>zoomWindowFadeOut</em> 用於放大視窗內的大圖；<em>lensFadeIn</em> 和 <em>lensFadeOut</em>，效果用於放大鏡視窗本身。例如：</p>
 <h3 class="js"></h3>
 <div class="code-area">
-<pre id="area18" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
-    zoomWindowFadeIn: 500,
-    zoomWindowFadeOut: 500,
-    lensFadeIn: 500,
-    lensFadeOut: 500
-});</code></pre>
+<pre id="area18" class="code-text"><code class="html">&lt;script&gt;
+    $("#imgZoom").elevateZoom({
+        zoomWindowFadeIn: 500,
+        zoomWindowFadeOut: 500,
+        lensFadeIn: 500,
+        lensFadeOut: 500
+    });
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area18">
         <span>COPY</span>
     </button>
@@ -283,10 +313,12 @@
 <h4>多張圖片組成群組：</h4>
 <h3 class="js"></h3>
 <div class="code-area mb-0">
-<pre id="area19" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
-    gallery: "ID 名稱",
-    galleryActiveClass: "選取狀態時的 class 名稱"
-});</code></pre>
+<pre id="area19" class="code-text"><code class="html">&lt;script&gt;
+    $("#imgZoom").elevateZoom({
+        gallery: "ID 名稱",
+        galleryActiveClass: "選取狀態時的 class 名稱"
+    });
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area19">
         <span>COPY</span>
     </button>
@@ -294,10 +326,12 @@
 <p>例如：</p>
 <h3 class="js"></h3>
 <div class="code-area">
-<pre id="area20" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
-    gallery: "gallery",
-    galleryActiveClass: "active"
-});</code></pre>
+<pre id="area20" class="code-text"><code class="html">&lt;script&gt;
+    $("#imgZoom").elevateZoom({
+        gallery: "gallery",
+        galleryActiveClass: "active"
+    });
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area20">
         <span>COPY</span>
     </button>
@@ -306,9 +340,11 @@
 <h4>是否啟用緩動效果：</h4>
 <h3 class="js"></h3>
 <div class="code-area">
-<pre id="area21" class="code-text"><code class="javascript">$("#imgZoom").elevateZoom({
-    easing: true,
-});</code></pre>
+<pre id="area21" class="code-text"><code class="html">&lt;script&gt;
+    $("#imgZoom").elevateZoom({
+        easing: true,
+    });
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area21">
         <span>COPY</span>
     </button>

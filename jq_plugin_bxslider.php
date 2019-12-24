@@ -43,21 +43,23 @@
 
 <h3 class="js"></h3>
 <div class="code-area">
-<pre id="area03" class="code-text"><code class="javascript">$(function() {
-    $('.bxslider').bxSlider({
-        mode: 'horizontal',
-        adaptiveHeight: true,
-        adaptiveHeightSpeed: 500,
-        touchEnabled: true,
-        pager: true,
-        controls: true,
-        auto: false,
-        pause: 4000,
-        moveSlides: 1,
-        infiniteLoop: true,
-        speed: 800,
+<pre id="area03" class="code-text"><code class="html">&lt;script&gt;
+    $(function() {
+        $('.bxslider').bxSlider({
+            mode: 'horizontal',
+            adaptiveHeight: true,
+            adaptiveHeightSpeed: 500,
+            touchEnabled: true,
+            pager: true,
+            controls: true,
+            auto: false,
+            pause: 4000,
+            moveSlides: 1,
+            infiniteLoop: true,
+            speed: 800,
+        });
     });
-});</code></pre>
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area03">
         <span>COPY</span>
     </button>

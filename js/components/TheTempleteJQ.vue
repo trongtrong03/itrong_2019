@@ -176,6 +176,12 @@ module.exports = {
       // plug
       jqPlugs: [
         {
+          id: 5,
+          href: 'fancyBox',
+          time: '2017-08-23',
+          topic: '燈箱（FancyBox 2.1.7）',
+        },
+        {
           id: 4,
           href: 'tabs_slider',
           time: '2017-07-25',

@@ -74,36 +74,37 @@
 
 <h3 class="js"></h3>
 <div class="code-area">
-<pre id="area03" class="code-text"><code class="javascript">//tabs
-$(function(){
-    var $block = $('.tabs-box');
-    $('.tabs-box .title ul li').click(function(){
-        var $this = $(this);
-        $this.add($('.tabs-main .content', $block)
-            .eq($this.index()))
-            .addClass('active')
-            .siblings('.active')
-            .removeClass('active');
+<pre id="area03" class="code-text"><code class="html">&lt;script&gt;
+    //tabs
+    $(function(){
+        var $block = $('.tabs-box');
+        $('.tabs-box .title ul li').click(function(){
+            var $this = $(this);
+            $this.add($('.tabs-main .content', $block)
+                .eq($this.index()))
+                .addClass('active')
+                .siblings('.active')
+                .removeClass('active');
+        });
     });
-});
 
-
-//slides
-$(function(){
-    $(".tabslider").responsiveSlides({
-        auto: false,
-        pager: false,
-        nav: true,
-        speed: 500,
-        namespace: "tabslider-ctrl",
-        before: function () {
-            $('.events').append("&lt;li&gt;before event fired.&lt;/li&gt;");
-        },
-        after: function () {
-            $('.events').append("&lt;li&gt;after event fired.&lt;/li&gt;");
-        }
+    //slides
+    $(function(){
+        $(".tabslider").responsiveSlides({
+            auto: false,
+            pager: false,
+            nav: true,
+            speed: 500,
+            namespace: "tabslider-ctrl",
+            before: function () {
+                $('.events').append("&lt;li&gt;before event fired.&lt;/li&gt;");
+            },
+            after: function () {
+                $('.events').append("&lt;li&gt;after event fired.&lt;/li&gt;");
+            }
+        });
     });
-});</code></pre>
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area03">
         <span>COPY</span>
     </button>

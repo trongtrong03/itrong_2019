@@ -41,21 +41,23 @@
 
 <h3 class="js"></h3>
 <div class="code-area">
-<pre id="area02" class="code-text"><code class="javascript">$(".title").on("click", function(e){
-    if($(this).parent().has(".content")) {
-        e.preventDefault();
-    }
-    if(!$(this).hasClass("active")) {
-        $(".content").slideUp();
-        $(".title").removeClass("active");
-        $(this).next(".content").slideDown();
-        $(this).addClass("active");
-    }
-    else if($(this).hasClass("active")) {
-        $(this).removeClass("active");
-        $(this).next(".content").slideUp();
-    }
-});</code></pre>
+<pre id="area02" class="code-text"><code class="html">&lt;script&gt;
+    $(".title").on("click", function(e){
+        if($(this).parent().has(".content")) {
+            e.preventDefault();
+        }
+        if(!$(this).hasClass("active")) {
+            $(".content").slideUp();
+            $(".title").removeClass("active");
+            $(this).next(".content").slideDown();
+            $(this).addClass("active");
+        }
+        else if($(this).hasClass("active")) {
+            $(this).removeClass("active");
+            $(this).next(".content").slideUp();
+        }
+    });
+&lt;/script&gt;</code></pre>
     <button class="copy-btn" data-clipboard-target="#area02">
         <span>COPY</span>
     </button>
