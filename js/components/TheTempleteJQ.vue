@@ -176,6 +176,12 @@ module.exports = {
       // plug
       jqPlugs: [
         {
+          id: 6,
+          href: 'iosslider_multislide',
+          time: '2017-10-30',
+          topic: '多項目輪播（iosslider）',
+        },
+        {
           id: 5,
           href: 'fancyBox',
           time: '2017-08-23',
