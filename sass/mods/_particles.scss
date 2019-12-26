@@ -50,3 +50,8 @@
     background: -o-linear-gradient(#0d121c 0%, #1c3149 100%);
     background: linear-gradient(#0d121c 0%, #1c3149 100%);
 }
+
+// 20191226 AJAX產生崩潰
+.font-effect-wallpaper {
+    -webkit-mask-image: none;
+}

@@ -786,6 +786,10 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   background: linear-gradient(#0d121c 0%, #1c3149 100%);
 }
 
+.font-effect-wallpaper {
+  -webkit-mask-image: none;
+}
+
 .index-wrap {
   position: relative;
 }
@@ -1199,17 +1203,11 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   border-bottom: 1px solid #40a8c4;
   padding-bottom: .5rem;
 }
-.inside-form.is-hide,
-.inside-list.is-hide,
-.inside-box.is-hide,
-.inside-grid.is-hide {
-  display: none;
-}
 .inside-form.active,
 .inside-list.active,
 .inside-box.active,
 .inside-grid.active {
-  display: block !important;
+  display: block;
 }
 
 .inside-flex {

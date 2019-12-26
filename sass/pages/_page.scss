@@ -250,11 +250,8 @@
         border-bottom: 1px solid $blue;
         padding-bottom: .5rem;
     }
-    &.is-hide {
-        display: none;
-    }
     &.active {
-        display: block !important;
+        display: block;
     }
 }
 

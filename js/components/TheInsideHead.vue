@@ -4,7 +4,7 @@
       <button class="btn-back" onclick="javascript:history.back()">
         <i class="fas fa-arrow-left"></i>
       </button>
-      <a href="index.html">
+      <a href="index.php">
         <i class="fas fa-home"></i>
       </a>
       <!-- <button class="btn-list" @click="listOpen">

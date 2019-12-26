@@ -10,17 +10,35 @@
       </div>
       <div class="inside-container">
         <div class="inside-btn">
-          <button @click="openApi" :class="{active: isApiActive}">
+          <button :class="active==1 ? 'active' : ''" @click="active=1">
+            <i class="fas fa-th"></i>
+            <b>Effect</b>
+          </button>
+          <button :class="active==2 ? 'active' : ''" @click="active=2">
             <i class="fas fa-list-ul"></i>
             <b>API List</b>
           </button>
-          <button @click="openTec" :class="{active: isTecActive}">
+          <button :class="active==3 ? 'active' : ''" @click="active=3">
             <i class="fas fa-list"></i>
             <b>TEC List</b>
           </button>
         </div>
+        <!-- PLUGIN 列表 -->
+        <div class="inside-grid" v-if="active==1">
+          <ul>
+            <li v-for="item in jqPlugin" :key="item.id">
+              <a :href="'jq_plugin_' + item.href + format">
+                <figure>
+                    <img :src="'images/pic/jq/plugin/' + item.href + '.jpg'">
+                </figure>
+                <time>{{ item.time }}</time>
+                <h2>{{ item.topic }}</h2>
+              </a>
+            </li>
+          </ul>
+        </div>
         <!-- API 列表 -->
-        <div class="inside-form is-hide" :class="{active: isApiActive}">
+        <div class="inside-form" v-if="active==2">
           <h2>選擇器</h2>
           <ul class="inside-flex">
             <li v-for="item in apiSelector_1" :key="item.id">
@@ -108,7 +126,7 @@
           </ul>
           <h2>事件</h2>
           <ul class="inside-flex">
-            <li v-for="item in apiEvent" :key="item.id">
+            <li v-for="item in apiEvents" :key="item.id">
               <a :href="item.href + format" v-if="item.isLink">
                 {{ item.topic }}
                 <b class="two-rows">{{ item.note }}</b>
@@ -121,7 +139,7 @@
           </ul>
           <h2>效果</h2>
           <ul class="inside-flex">
-            <li v-for="item in apiEffect" :key="item.id">
+            <li v-for="item in apiEffects" :key="item.id">
               <a :href="item.href + format" v-if="item.isLink">
                 {{ item.topic }}
                 <b class="two-rows">{{ item.note }}</b>
@@ -134,24 +152,10 @@
           </ul>
         </div>
         <!-- TEC 列表 -->
-        <div class="inside-list is-hide" :class="{active: isTecActive}">
+        <div class="inside-list" v-if="active==3">
           <ul>
             <li v-for="item in listJQ" :key="item.id">
               <a :href="item.href + format">
-                <time>{{ item.time }}</time>
-                <h2>{{ item.topic }}</h2>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- PLUGIN 列表 -->
-        <div class="inside-grid" :class="{active: isTecActive}">
-          <ul>
-            <li v-for="item in jqPlugs" :key="item.id">
-              <a :href="'jq_plugin_' + item.href + format">
-                <figure>
-                    <img :src="'images/pic/jq/plugin/' + item.href + '.jpg'">
-                </figure>
                 <time>{{ item.time }}</time>
                 <h2>{{ item.topic }}</h2>
               </a>
@@ -168,13 +172,114 @@ module.exports = {
   data: function() {
     return {
       format: '.php',
-      isApiActive: false,
-      isTecActive: false,
       isLink: true,
       query: "",
+      active: 1,
 
       // plug
       jqPlugs: [
+        {
+          id: 23,
+          href: 'escape',
+          time: '2019-07-22',
+          topic: '程式碼跳脫字元（escape character）',
+        },
+        {
+          id: 22,
+          href: 'datepicker',
+          time: '2019-07-03',
+          topic: '日曆選擇工具（Calendar Picker）',
+        },
+        {
+          id: 21,
+          href: 'masonry',
+          time: '2019-07-01',
+          topic: '瀑布流（Masonry Grid）',
+        },
+        {
+          id: 20,
+          href: 'pagination',
+          time: '2019-06-29',
+          topic: '分頁效果（Pagination）',
+        },
+        {
+          id: 19,
+          href: 'contentFlipper',
+          time: '2019-06-24',
+          topic: '文字翻轉特效（Content Flipper）',
+        },
+        {
+          id: 18,
+          href: 'textdots',
+          time: '2019-06-23',
+          topic: '文字溢出省略符號（Text Dots）',
+        },
+        {
+          id: 17,
+          href: 'v_tabs',
+          time: '2019-06-21',
+          topic: '垂直切換頁籤（Vertical Tabs）',
+        },
+        {
+          id: 16,
+          href: 'swiper_vslider',
+          time: '2019-06-18',
+          topic: '垂直影像輪播（Vertical Slider）',
+        },
+        {
+          id: 15,
+          href: 'thumbslider',
+          time: '2019-06-01',
+          topic: '縮圖型影像輪播（Thumb Slider）',
+        },
+        {
+          id: 14,
+          href: 'copy',
+          time: '2019-05-13',
+          topic: '複製區域文字（Copy）',
+        },
+        {
+          id: 13,
+          href: 'h_newsticker',
+          time: '2019-05-10',
+          topic: '水平鍵字效果跑馬燈（News Ticker）',
+        },
+        {
+          id: 12,
+          href: 'preloaded',
+          time: '2019-03-29',
+          topic: '預先載入影像（Preload Image）',
+        },
+        {
+          id: 11,
+          href: 'mixitup',
+          time: '2019-03-26',
+          topic: '項目篩選（MixItUp）',
+        },
+        {
+          id: 10,
+          href: 'v_newsticker',
+          time: '2019-01-24',
+          topic: '垂直切換跑馬燈（News Ticker）',
+        },
+        {
+          id: 9,
+          href: 'h_tabs',
+          time: '2019-01-21',
+          topic: '水平切換頁籤（Horizontal Tabs）',
+        },
+        {
+          id: 8,
+          href: 'particleground',
+          time: '2018-09-07',
+          topic: '粒子特效（Particleground）',
+        },
+        {
+          id: 7,
+          href: 'image_comparison',
+          time: '2018-01-10',
+          topic: '兩張影像的拖曳比較（Image Comparison）',
+        },
         {
           id: 6,
           href: 'iosslider_multislide',
@@ -217,9 +322,9 @@ module.exports = {
       jqLists: [
         {
           id: 1,
-          href: "",
-          time: "2019-xx-xx",
-          topic: "title"
+          href: "jq_tec_callback",
+          time: "2016-12-05",
+          topic: "完成載入後執行（callback）"
         }
       ],
 
@@ -913,18 +1018,10 @@ module.exports = {
   },
 
   methods: {
-    openApi: function() {
-      this.isApiActive = !this.isApiActive;
-      this.isTecActive = false;
-    },
-    openTec: function() {
-      this.isApiActive = false;
-      this.isTecActive = !this.isTecActive;
-    }
   },
 
   computed: {
-    jqPlugs: function() {
+    jqPlugin: function() {
       var search = this;
       return this.jqPlugs.filter(function(item) {
         return (
@@ -996,7 +1093,7 @@ module.exports = {
         );
       });
     },
-    apiEvent: function() {
+    apiEvents: function() {
       var search = this;
       return this.apiEvent.filter(function(item) {
         return (
@@ -1004,7 +1101,7 @@ module.exports = {
         );
       });
     },
-    apiEffect: function() {
+    apiEffects: function() {
       var search = this;
       return this.apiEffect.filter(function(item) {
         return (
