@@ -8,12 +8,15 @@
           <i class="fas fa-search"></i>
         </label>
       </div>
-      <div class="inside-tag">
-        <a href="#tagLearn">Pug</a>
-      </div>
       <div class="inside-container">
-        <div id="tagLearn" class="inside-list">
-          <h2>Pug</h2>
+        <div class="inside-btn">
+          <button :class="active==1 ? 'active' : ''" @click="active=1">
+            <i class="fas fa-list-ul"></i>
+            <b>PUG</b>
+          </button>
+        </div>
+        <!-- Pug -->
+        <div class="inside-list" v-if="active==1">
           <ul>
             <li v-for="item in filterPug" :key="item.id">
               <a :href="item.href + format">
@@ -34,6 +37,7 @@ module.exports = {
     return {
       format: ".php",
       query: "",
+      active: 1,
 
       // data
       pugLists: [

@@ -86,12 +86,12 @@ header {
         &.active {
             &.navHtml {
                 .nav-sub {
-                    height: calc(2.5rem * 4);
+                    height: calc(2.5rem * 3);
                 }
             }
             &.navCss {
                 .nav-sub {
-                    height: calc(2.5rem * 5);
+                    height: calc(2.5rem * 3);
                 }
             }
             &.navJs {

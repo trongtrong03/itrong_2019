@@ -8,15 +8,27 @@
           <i class="fas fa-search"></i>
         </label>
       </div>
-      <div class="inside-tag">
-        <a href="#tagPG">程式語言</a>
-        <a href="#tagDP">開發工具</a>
-        <a href="#tagBS">瀏覽器</a>
-        <a href="#tagMD">影像處理</a>
-      </div>
       <div class="inside-container">
-        <div id="tagPG" class="inside-box">
-          <h2>程式語言</h2>
+        <div class="inside-btn">
+          <button :class="active==1 ? 'active' : ''" @click="active=1">
+            <i class="fas fa-th"></i>
+            <b>程式語言</b>
+          </button>
+          <button :class="active==2 ? 'active' : ''" @click="active=2">
+            <i class="fas fa-th"></i>
+            <b>開發工具</b>
+          </button>
+          <button :class="active==3 ? 'active' : ''" @click="active=3">
+            <i class="fas fa-th"></i>
+            <b>瀏覽器</b>
+          </button>
+          <button :class="active==4 ? 'active' : ''" @click="active=4">
+            <i class="fas fa-th"></i>
+            <b>影像處理</b>
+          </button>
+        </div>
+        <!-- 程式語言 -->
+        <div class="inside-box" v-if="active==1">
           <ul>
             <li v-for="item in filterPG" :key="item.id">
               <a :href="item.href" target="_blank">
@@ -34,8 +46,8 @@
             </li>
           </ul>
         </div>
-        <div id="tagDP" class="inside-box">
-          <h2>開發工具</h2>
+        <!-- 開發工具 -->
+        <div class="inside-box" v-if="active==2">
           <ul>
             <li v-for="item in filterDP" :key="item.id">
               <a :href="item.href" target="_blank">
@@ -53,8 +65,8 @@
             </li>
           </ul>
         </div>
-        <div id="tagBS" class="inside-box">
-          <h2>瀏覽器</h2>
+        <!-- 瀏覽器 -->
+        <div class="inside-box" v-if="active==3">
           <ul>
             <li v-for="item in filterBS" :key="item.id">
               <a :href="item.href" target="_blank">
@@ -72,8 +84,8 @@
             </li>
           </ul>
         </div>
-        <div id="tagMD" class="inside-box">
-          <h2>影像處理</h2>
+        <!-- 影像處理 -->
+        <div class="inside-box" v-if="active==4">
           <ul>
             <li v-for="item in filterMD" :key="item.id">
               <a :href="item.href" target="_blank">
@@ -102,6 +114,7 @@ module.exports = {
     return {
       isImg: true,
       query: "",
+      active: 1,
 
       // data
       pg_webs: [

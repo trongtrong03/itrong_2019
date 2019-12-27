@@ -241,17 +241,24 @@
 .inside-box,
 .inside-grid {
     margin-top: 1rem;
-    padding-top: 1rem;
+    padding-top: .5rem;
     padding-bottom: 1rem;
+    animation-name: fadeIn;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
     >h2 {
         line-height: 1;
         font-size: 1rem;
         color: $blue;
         border-bottom: 1px solid $blue;
+        padding-top: .5rem;
         padding-bottom: .5rem;
     }
     &.active {
         display: block;
+    }
+    .inside-tag {
+        margin-top: 0;
     }
 }
 
@@ -301,7 +308,7 @@
                 background: rgba(0, 0, 0, .8);
                 border-radius: 4px;
                 opacity: 0;
-                transition: opacity .3s;
+                
                 padding: .25rem .5rem;
                 &::after {
                     content: '';
@@ -325,6 +332,7 @@
                 b {
                     z-index: 10001;
                     opacity: 1;
+                    transition: opacity .3s;
                 }
             }
         }

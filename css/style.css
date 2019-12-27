@@ -434,10 +434,10 @@ header {
   color: #2d4059;
 }
 .nav-wrap > ul > li.active.navHtml .nav-sub {
-  height: calc(2.5rem * 4);
+  height: calc(2.5rem * 3);
 }
 .nav-wrap > ul > li.active.navCss .nav-sub {
-  height: calc(2.5rem * 5);
+  height: calc(2.5rem * 3);
 }
 .nav-wrap > ul > li.active.navJs .nav-sub {
   height: calc(2.5rem * 4);
@@ -1190,8 +1190,14 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .inside-box,
 .inside-grid {
   margin-top: 1rem;
-  padding-top: 1rem;
+  padding-top: .5rem;
   padding-bottom: 1rem;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .inside-form > h2,
 .inside-list > h2,
@@ -1201,6 +1207,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   font-size: 1rem;
   color: #40a8c4;
   border-bottom: 1px solid #40a8c4;
+  padding-top: .5rem;
   padding-bottom: .5rem;
 }
 .inside-form.active,
@@ -1208,6 +1215,12 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .inside-box.active,
 .inside-grid.active {
   display: block;
+}
+.inside-form .inside-tag,
+.inside-list .inside-tag,
+.inside-box .inside-tag,
+.inside-grid .inside-tag {
+  margin-top: 0;
 }
 
 .inside-flex {
@@ -1257,7 +1270,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   background: rgba(0, 0, 0, 0.8);
   border-radius: 4px;
   opacity: 0;
-  transition: opacity .3s;
   padding: .25rem .5rem;
 }
 .inside-flex > li a b::after,
@@ -1284,6 +1296,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .inside-flex > li span:hover b {
   z-index: 10001;
   opacity: 1;
+  transition: opacity .3s;
 }
 .inside-flex > li a {
   color: #000000;

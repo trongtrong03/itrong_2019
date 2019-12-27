@@ -104,12 +104,8 @@ module.exports = {
 
       navHtml: [
         {
-          name: "元素列表",
-          href: "_htmlList"
-        },
-        {
-          name: "小貼士",
-          href: "_htmlTips"
+          name: "Html",
+          href: "_html"
         },
         {
           name: "Haml",
@@ -123,16 +119,8 @@ module.exports = {
 
       navCSS: [
         {
-          name: "屬性列表",
-          href: "_cssList"
-        },
-        {
-          name: "選擇器",
-          href: "_cssSelectors"
-        },
-        {
-          name: "小貼士",
-          href: "_cssTips"
+          name: "CSS",
+          href: "_css"
         },
         {
           name: "Sass",

@@ -8,13 +8,19 @@
           <i class="fas fa-search"></i>
         </label>
       </div>
-      <div class="inside-tag">
-        <a href="#tagVscode">VS Code</a>
-        <a href="#tagSublime">Sublime Text</a>
-      </div>
       <div class="inside-container">
-        <div id="tagVscode" class="inside-list">
-          <h2>VS Code</h2>
+        <div class="inside-btn">
+          <button :class="active==1 ? 'active' : ''" @click="active=1">
+            <i class="fas fa-list-ul"></i>
+            <b>VS Code</b>
+          </button>
+          <button :class="active==2 ? 'active' : ''" @click="active=2">
+            <i class="fas fa-list-ul"></i>
+            <b>Sublime Text</b>
+          </button>
+        </div>
+        <!-- Vscode -->
+        <div class="inside-list" v-if="active==1">
           <ul>
             <li v-for="item in filterVscodes" :key="item.id">
               <a :href="item.href + format">
@@ -24,8 +30,8 @@
             </li>
           </ul>
         </div>
-        <div id="tagSublime" class="inside-list">
-          <h2>Sublime Text</h2>
+        <!-- Sublime -->
+        <div class="inside-list" v-if="active==2">
           <ul>
             <li v-for="item in filterSublimes" :key="item.id">
               <a :href="item.href + format">
@@ -46,6 +52,7 @@ module.exports = {
     return {
       format: ".php",
       query: "",
+      active: 1,
 
       // data
       vlists: [

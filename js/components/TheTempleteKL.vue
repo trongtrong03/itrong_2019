@@ -8,14 +8,23 @@
           <i class="fas fa-search"></i>
         </label>
       </div>
-      <div class="inside-tag">
-        <a href="#tagWF">網頁前端</a>
-        <a href="#tagVM">影像相關</a>
-        <a href="#tagIS">資訊安全</a>
-      </div>
       <div class="inside-container">
-        <div id="tagWF" class="inside-list">
-          <h2>網頁前端</h2>
+        <div class="inside-btn">
+          <button :class="active==1 ? 'active' : ''" @click="active=1">
+            <i class="fas fa-list-ul"></i>
+            <b>網頁前端</b>
+          </button>
+          <button :class="active==2 ? 'active' : ''" @click="active=2">
+            <i class="fas fa-list-ul"></i>
+            <b>影像相關</b>
+          </button>
+          <button :class="active==3 ? 'active' : ''" @click="active=3">
+            <i class="fas fa-list-ul"></i>
+            <b>資訊安全</b>
+          </button>
+        </div>
+        <!-- 網頁前端 -->
+        <div class="inside-list" v-if="active==1">
           <ul>
             <li v-for="item in filterWFs" :key="item.id">
               <a :href="item.href + format">
@@ -25,8 +34,8 @@
             </li>
           </ul>
         </div>
-        <div id="tagVM" class="inside-list">
-          <h2>影像相關</h2>
+        <!-- 影像相關 -->
+        <div class="inside-list" v-if="active==2">
           <ul>
             <li v-for="item in filterVMs" :key="item.id">
               <a :href="item.href + format">
@@ -36,8 +45,8 @@
             </li>
           </ul>
         </div>
-        <div id="tagIS" class="inside-list">
-          <h2>資訊安全</h2>
+        <!-- 資訊安全 -->
+        <div class="inside-list" v-if="active==3">
           <ul>
             <li v-for="item in filterISs" :key="item.id">
               <a :href="item.href + format">
@@ -58,6 +67,7 @@ module.exports = {
     return {
       format: ".php",
       query: "",
+      active: 1,
 
       // data
       wflists: [

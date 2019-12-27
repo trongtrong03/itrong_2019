@@ -8,12 +8,15 @@
           <i class="fas fa-search"></i>
         </label>
       </div>
-      <div class="inside-tag">
-        <a href="#tagBash">BASH</a>
-      </div>
       <div class="inside-container">
-        <div id="tagBash" class="inside-list">
-          <h2>BASH</h2>
+        <div class="inside-btn">
+          <button :class="active==1 ? 'active' : ''" @click="active=1">
+            <i class="fas fa-list-ul"></i>
+            <b>BASH</b>
+          </button>
+        </div>
+        <!-- BASH -->
+        <div class="inside-list" v-if="active==1">
           <ul>
             <li v-for="item in filterList" :key="item.id">
               <a :href="item.href + format">
@@ -34,6 +37,7 @@ module.exports = {
     return {
       format: ".php",
       query: "",
+      active: 1,
 
       // data
       gits: [

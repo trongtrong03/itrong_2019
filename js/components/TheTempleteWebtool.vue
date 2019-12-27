@@ -8,14 +8,23 @@
           <i class="fas fa-search"></i>
         </label>
       </div>
-      <div class="inside-tag">
-        <a href="#tagWeb">網頁前端</a>
-        <a href="#tagMedia">影音剪輯</a>
-        <a href="#tagOthers">未分類</a>
-      </div>
       <div class="inside-container">
-        <div id="tagWeb" class="inside-box">
-          <h2>網頁前端</h2>
+        <div class="inside-btn">
+          <button :class="active==1 ? 'active' : ''" @click="active=1">
+            <i class="fas fa-th"></i>
+            <b>網頁前端</b>
+          </button>
+          <button :class="active==2 ? 'active' : ''" @click="active=2">
+            <i class="fas fa-th"></i>
+            <b>影音剪輯</b>
+          </button>
+          <button :class="active==3 ? 'active' : ''" @click="active=3">
+            <i class="fas fa-th"></i>
+            <b>未分類</b>
+          </button>
+        </div>
+        <!-- 網頁前端 -->
+        <div class="inside-box" v-if="active==1">
           <ul>
             <li v-for="item in filterWT" :key="item.id">
               <a :href="item.href" target="_blank">
@@ -33,8 +42,8 @@
             </li>
           </ul>
         </div>
-        <div id="tagMedia" class="inside-box">
-          <h2>影音剪輯</h2>
+        <!-- 影音剪輯 -->
+        <div class="inside-box" v-if="active==2">
           <ul>
             <li v-for="item in filterMD" :key="item.id">
               <a :href="item.href" target="_blank">
@@ -52,8 +61,8 @@
             </li>
           </ul>
         </div>
-        <div id="tagOthers" class="inside-box">
-          <h2>未分類</h2>
+        <!-- 未分類 -->
+        <div class="inside-box" v-if="active==3">
           <ul>
             <li v-for="item in filterOthers" :key="item.id">
               <a :href="item.href" target="_blank">
@@ -82,11 +91,12 @@ module.exports = {
     return {
       isImg: true,
       query: "",
+      active: 1,
 
       // data
       wt_webs: [
         {
-          id: 27,
+          id: 28,
           isImg: true,
           img: "aconvert",
           href: "https://www.aconvert.com/tw/image/webp-to-png/",
@@ -94,7 +104,7 @@ module.exports = {
           note: "提供各種線上轉檔的服務，包含 .webp 影像格式的轉換，或是電子書文件的轉換等。"
         },
         {
-          id: 26,
+          id: 27,
           isImg: false,
           img: "",
           href: "http://apps.eky.hk/css-triangle-generator/zh-hant",
@@ -102,7 +112,7 @@ module.exports = {
           note: "可即時設定任何三角形的 CSS 樣式，並輸出原始碼提供複製取用。"
         },
         {
-          id: 25,
+          id: 26,
           isImg: true,
           img: "colorZilla",
           href: "http://www.colorzilla.com/gradient-editor/",
@@ -110,12 +120,21 @@ module.exports = {
           note: "方便好用的線上漸層調製工具，可向下支援至 ie8。"
         },
         {
-          id: 24,
+          id: 25,
           isImg: true,
           img: "codepen",
           href: "http://codepen.io/",
           topic: "CodePen",
           note: "線上網頁編寫工具，是非常熱門的前端開發平台。"
+        },
+        {
+          id: 24,
+          isImg: true,
+          img: "stackedit",
+          href: "https://stackedit.io/",
+          topic: "StackEdit",
+          note:
+            "一款可線上撰寫 Markdown 程式語言的線上工具，有提供輸出轉檔的功能。"
         },
         {
           id: 23,
