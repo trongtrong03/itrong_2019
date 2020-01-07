@@ -179,12 +179,6 @@ module.exports = {
       // plug
       jqPlugs: [
         {
-          id: 23,
-          href: 'escape',
-          time: '2019-07-22',
-          topic: '程式碼跳脫字元（escape character）',
-        },
-        {
           id: 22,
           href: 'datepicker',
           time: '2019-07-03',
@@ -320,6 +314,18 @@ module.exports = {
 
       // tec
       jqLists: [
+        {
+          id: 23,
+          href: 'jq_tec_escape',
+          time: '2019-07-22',
+          topic: '程式碼跳脫字元（escape character）',
+        },
+        {
+          id: 2,
+          href: "jq_tec_gotop",
+          time: "2017-07-14",
+          topic: "常見的返回頂部（Top）按鈕"
+        },
         {
           id: 1,
           href: "jq_tec_callback",
