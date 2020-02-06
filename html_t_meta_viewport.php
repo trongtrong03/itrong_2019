@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-08-22</time>
-                        <h1>&lt;meta&gt; 之 viewport 屬性</h1>
+                        <h1>［HTML5］&lt;meta&gt; 之 viewport 屬性</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-08-22</time>
-                        <h1>超連結（&lt;a&gt;）HTML5 的新增屬性</h1>
+                        <h1>［HTML5］超連結（&lt;a&gt;）的新增屬性</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

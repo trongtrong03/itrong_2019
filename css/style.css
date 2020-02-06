@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Karla");
 @import url("https://fonts.googleapis.com/css?family=Keania+One&effect=wallpaper");
+@import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -79,7 +80,7 @@ textarea,
 button,
 a {
   outline: none;
-  font-family: 'Karla', '微軟正黑體', sans-serif;
+  font-family: 'Questrial','微軟正黑體', sans-serif;
 }
 
 a {
@@ -128,7 +129,7 @@ html.iframe {
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Karla', '微軟正黑體', sans-serif;
+  font-family: 'Questrial','微軟正黑體', sans-serif;
   font-size: 100%;
   color: #121212;
   background: #FFF;
@@ -1328,12 +1329,14 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .inside-list li {
   display: block;
   margin-bottom: 1rem;
+  transition: border .3s ease, -webkit-transform .3s ease;
+  transition: border .3s ease, transform .3s ease;
+  transition: border .3s ease, transform .3s ease, -webkit-transform .3s ease;
 }
 .inside-list li a {
   display: block;
   border-left: 4px solid #888;
   padding: .75rem 0 .5rem;
-  transition: border .3s ease;
 }
 .inside-list li a time {
   display: inline-block;
@@ -1359,10 +1362,14 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   overflow: hidden;
   transition: color .3s ease;
 }
-.inside-list li a:hover {
+.inside-list li:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.inside-list li:hover a {
   border-left-color: #40a8c4;
 }
-.inside-list li a:hover h2 {
+.inside-list li:hover a h2 {
   color: #40a8c4;
 }
 .inside-list li:nth-child(even) {
@@ -1501,6 +1508,20 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   color: #40a8c4;
 }
 
+.inside-info {
+  background-color: #EEE;
+  border: 1px solid #EEE;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+.inside-info p {
+  line-height: 1.75;
+  font-size: .875rem;
+}
+.inside-info p a {
+  color: #40a8c4;
+}
+
 .inside-menu {
   position: fixed;
   top: 0;
@@ -1562,7 +1583,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .inside-edit em {
   font-size: 1rem;
   color: #CF5341;
-  background: #f9f2f4;
+  background-color: #f9f2f4;
   border-radius: 4px;
   padding: 0 .25rem;
 }

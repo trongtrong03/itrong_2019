@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-08-23</time>
-                        <h1>HTML 的 Media Queries 寫法</h1>
+                        <h1>［HTML5］HTML 的 Media Queries 寫法</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-09-02</time>
-                        <h1>淺談資料屬性（data-*）</h1>
+                        <h1>［HTML5］淺談資料屬性（data-*）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

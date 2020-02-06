@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-08-28</time>
-                        <h1>&lt;div&gt; V.S. &lt;section&gt; V.S. &lt;article&gt;</h1>
+                        <h1>［HTML5］&lt;div&gt; V.S. &lt;section&gt; V.S. &lt;article&gt;</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->
