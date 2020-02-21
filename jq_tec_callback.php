@@ -33,7 +33,7 @@
 <h3 class="ex"></h3>
 <div class="code-area">
 <pre id="area02" class="code-text"><code class="html">&lt;script&gt;
-    $(document).ready(function(){
+    $(function() {
         $("button").click(function(){
             $("#div-1").slideUp(500, function(){
                 $("#div-2").slideDown(500);

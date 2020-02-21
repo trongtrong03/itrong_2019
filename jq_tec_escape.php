@@ -23,7 +23,7 @@
 <h3 class="js"></h3>
 <div class="code-area">
 <pre id="area01" class="code-text"><code class="html">&lt;script&gt;
-    $(document).ready(function() {
+    $(function() {
         $("button").click(function(){
             $( ".div-2 pre").html($(".div-1 pre").html().escape());
         });

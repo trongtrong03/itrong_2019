@@ -17,11 +17,11 @@
           </button>
           <button :class="active==2 ? 'active' : ''" @click="active=2">
             <i class="fas fa-list-ul"></i>
-            <b>屬性列表</b>
+            <b>Propertys</b>
           </button>
           <button :class="active==3 ? 'active' : ''" @click="active=3">
             <i class="fas fa-list-ul"></i>
-            <b>選擇器列表</b>
+            <b>Selectors</b>
           </button>
         </div>
 
@@ -37,7 +37,7 @@
           </ul>
         </div>
 
-        <!-- 屬性列表 -->
+        <!-- Propertys -->
         <div class="inside-form" v-if="active==2">
           <div class="inside-tag">
             <a href="#tagUI">使用者介面（UI）</a>
@@ -411,9 +411,9 @@
           </ul>
         </div>
 
-        <!-- 選擇器列表 -->
+        <!-- Selectors -->
         <div class="inside-form" v-if="active==3">
-          <h2>選擇器列表（Selectors）</h2>
+          <h2>Selectors（Selectors）</h2>
           <ul class="inside-flex">
             <li v-for="item in filterCSS" :key="item.id">
               <i class="fab fa-css3-alt" v-if="item.isCSS3"></i>

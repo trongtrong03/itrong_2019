@@ -12,10 +12,10 @@
         <div class="inside-btn">
           <button :class="active==1 ? 'active' : ''" @click="active=1">
             <i class="fas fa-list-ul"></i>
-            <b>學習誌</b>
+            <b>Learn</b>
           </button>
         </div>
-        <!-- 學習誌 -->
+        <!-- Learn -->
         <div class="inside-list" v-if="active==1">
           <ul>
             <li v-for="item in filterGulpLn" :key="item.id">

@@ -12,7 +12,7 @@
         <div class="inside-btn">
           <button :class="active==1 ? 'active' : ''" @click="active=1">
             <i class="fas fa-th"></i>
-            <b>Effect</b>
+            <b>Effects</b>
           </button>
           <button :class="active==2 ? 'active' : ''" @click="active=2">
             <i class="fas fa-list-ul"></i>
@@ -23,7 +23,7 @@
             <b>TEC List</b>
           </button>
         </div>
-        <!-- PLUGIN 列表 -->
+        <!-- Effects -->
         <div class="inside-grid" v-if="active==1">
           <ul>
             <li v-for="item in jqPlugin" :key="item.id">
@@ -315,16 +315,58 @@ module.exports = {
       // tec
       jqLists: [
         {
-          id: 23,
+          id: 10,
           href: 'jq_tec_escape',
           time: '2019-07-22',
           topic: '程式碼跳脫字元（escape character）',
         },
         {
-          id: 2,
+          id: 9,
+          href: 'jq_tec_prevent_ctrl_cv',
+          time: '2019-04-16',
+          topic: '使複製（Ctrl + C）與貼上（Ctrl + V）操作失效',
+        },
+        {
+          id: 8,
+          href: 'jq_tec_inputgroup',
+          time: '2018-12-16',
+          topic: '單選的核選方塊（checkbox）',
+        },
+        {
+          id: 7,
+          href: 'jq_tec_get_filename',
+          time: '2018-09-22',
+          topic: '取得上傳項目的名稱',
+        },
+        {
+          id: 6,
+          href: 'jq_tec_remove_allclass',
+          time: '2018-05-01',
+          topic: '移除指定元素所有 class 的幾種方法',
+        },
+        {
+          id: 5,
+          href: 'jq_tec_active',
+          time: '2017-11-23',
+          topic: '實現項目間的 class 轉移效果',
+        },
+        {
+          id: 4,
+          href: 'jq_tec_input_txtConfirm',
+          time: '2017-07-24',
+          topic: '判定兩個輸入框的值是否一致',
+        },
+        {
+          id: 3,
           href: "jq_tec_gotop",
           time: "2017-07-14",
-          topic: "常見的返回頂部（Top）按鈕"
+          topic: "常見的返回頂部按鈕"
+        },
+        {
+          id: 2,
+          href: 'jq_tec_placeholder',
+          time: '2017-04-10',
+          topic: '實現 input 的提示文字（placeholder）變色效果',
         },
         {
           id: 1,

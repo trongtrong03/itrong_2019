@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2017-07-14</time>
-                        <h1>常見的返回頂部（Top）按鈕</h1>
+                        <h1>常見的返回頂部按鈕</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->
@@ -29,7 +29,7 @@
 <h3 class="js"></h3>
 <div class="code-area mb-0">
 <pre id="area02" class="code-text"><code class="html">&lt;script&gt;
-    $(document).ready(function() {
+    $(function() {
         $(window).scroll(function() {
             if ($(this).scrollTop() > 240) {
                 $("#gotop").fadeIn();

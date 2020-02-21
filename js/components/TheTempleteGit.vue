@@ -12,10 +12,10 @@
         <div class="inside-btn">
           <button :class="active==1 ? 'active' : ''" @click="active=1">
             <i class="fas fa-list-ul"></i>
-            <b>BASH</b>
+            <b>Bash</b>
           </button>
         </div>
-        <!-- BASH -->
+        <!-- Bash -->
         <div class="inside-list" v-if="active==1">
           <ul>
             <li v-for="item in filterList" :key="item.id">

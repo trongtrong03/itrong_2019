@@ -661,6 +661,9 @@
         &.js::before {
             content: 'Jacascript：';
         }
+        &.vue::before {
+            content: 'Vue：';
+        }
         &.bash::before {
             content: 'Bash：';
         }

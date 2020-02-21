@@ -17,7 +17,7 @@
           </button>
           <button :class="active==2 ? 'active' : ''" @click="active=2">
             <i class="fas fa-list-ul"></i>
-            <b>屬性列表</b>
+            <b>Elements</b>
           </button>
         </div>
 
@@ -33,7 +33,7 @@
           </ul>
         </div>
 
-        <!-- 屬性列表 -->
+        <!-- Elements -->
         <div class="inside-form" v-if="active==2">
           <div class="inside-tag">
             <a href="#tagBase">Flow（流動型）</a>
