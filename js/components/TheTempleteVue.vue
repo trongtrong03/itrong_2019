@@ -110,10 +110,16 @@ module.exports = {
       // learn
       lns: [
         {
+          id: 2,
+          href: 'vue_ln_template_data',
+          time: '2020-01-15',
+          topic: '資料（Data）與樣板（Template）',
+        },
+        {
           id: 1,
-          href: 'accordion',
-          time: '2017-07-09',
-          topic: '222',
+          href: 'vue_ln_base',
+          time: '2020-01-12',
+          topic: 'Vue.js 的基本介紹',
         }
       ],
 
