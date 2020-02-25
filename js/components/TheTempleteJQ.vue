@@ -16,18 +16,18 @@
           </button>
           <button :class="active==2 ? 'active' : ''" @click="active=2">
             <i class="fas fa-list-ul"></i>
-            <b>API List</b>
+            <b>API</b>
           </button>
           <button :class="active==3 ? 'active' : ''" @click="active=3">
             <i class="fas fa-list"></i>
-            <b>TEC List</b>
+            <b>Notes</b>
           </button>
         </div>
         <!-- Effects -->
         <div class="inside-grid" v-if="active==1">
           <ul>
             <li v-for="item in jqPlugin" :key="item.id">
-              <a :href="'jq_plugin_' + item.href + format">
+              <a :href="item.href + format">
                 <figure>
                     <img :src="'images/pic/jq/plugin/' + item.href + '.jpg'">
                 </figure>
@@ -37,7 +37,7 @@
             </li>
           </ul>
         </div>
-        <!-- API 列表 -->
+        <!-- API -->
         <div class="inside-form" v-if="active==2">
           <h2>選擇器</h2>
           <ul class="inside-flex">
@@ -151,7 +151,7 @@
             </li>
           </ul>
         </div>
-        <!-- TEC 列表 -->
+        <!-- Notes -->
         <div class="inside-list" v-if="active==3">
           <ul>
             <li v-for="item in listJQ" :key="item.id">
@@ -180,140 +180,140 @@ module.exports = {
       jqPlugs: [
         {
           id: 22,
-          href: 'datepicker',
+          href: 'jq_plugin_datepicker',
           time: '2019-07-03',
           topic: '日曆選擇工具（Calendar Picker）',
         },
         {
           id: 21,
-          href: 'masonry',
+          href: 'jq_plugin_masonry',
           time: '2019-07-01',
           topic: '瀑布流（Masonry Grid）',
         },
         {
           id: 20,
-          href: 'pagination',
+          href: 'jq_plugin_pagination',
           time: '2019-06-29',
           topic: '分頁效果（Pagination）',
         },
         {
           id: 19,
-          href: 'contentFlipper',
+          href: 'jq_plugin_contentFlipper',
           time: '2019-06-24',
           topic: '文字翻轉特效（Content Flipper）',
         },
         {
           id: 18,
-          href: 'textdots',
+          href: 'jq_plugin_textdots',
           time: '2019-06-23',
           topic: '文字溢出省略符號（Text Dots）',
         },
         {
           id: 17,
-          href: 'v_tabs',
+          href: 'jq_plugin_v_tabs',
           time: '2019-06-21',
           topic: '垂直切換頁籤（Vertical Tabs）',
         },
         {
           id: 16,
-          href: 'swiper_vslider',
+          href: 'jq_plugin_swiper_vslider',
           time: '2019-06-18',
           topic: '垂直影像輪播（Vertical Slider）',
         },
         {
           id: 15,
-          href: 'thumbslider',
+          href: 'jq_plugin_thumbslider',
           time: '2019-06-01',
           topic: '縮圖型影像輪播（Thumb Slider）',
         },
         {
           id: 14,
-          href: 'copy',
+          href: 'jq_plugin_copy',
           time: '2019-05-13',
           topic: '複製區域文字（Copy）',
         },
         {
           id: 13,
-          href: 'h_newsticker',
+          href: 'jq_plugin_h_newsticker',
           time: '2019-05-10',
           topic: '水平鍵字效果跑馬燈（News Ticker）',
         },
         {
           id: 12,
-          href: 'preloaded',
+          href: 'jq_plugin_preloaded',
           time: '2019-03-29',
           topic: '預先載入影像（Preload Image）',
         },
         {
           id: 11,
-          href: 'mixitup',
+          href: 'jq_plugin_mixitup',
           time: '2019-03-26',
           topic: '項目篩選（MixItUp）',
         },
         {
           id: 10,
-          href: 'v_newsticker',
+          href: 'jq_plugin_v_newsticker',
           time: '2019-01-24',
           topic: '垂直切換跑馬燈（News Ticker）',
         },
         {
           id: 9,
-          href: 'h_tabs',
+          href: 'jq_plugin_h_tabs',
           time: '2019-01-21',
           topic: '水平切換頁籤（Horizontal Tabs）',
         },
         {
           id: 8,
-          href: 'particleground',
+          href: 'jq_plugin_particleground',
           time: '2018-09-07',
           topic: '粒子特效（Particleground）',
         },
         {
           id: 7,
-          href: 'image_comparison',
+          href: 'jq_plugin_image_comparison',
           time: '2018-01-10',
           topic: '兩張影像的拖曳比較（Image Comparison）',
         },
         {
           id: 6,
-          href: 'iosslider_multislide',
+          href: 'jq_plugin_iosslider_multislide',
           time: '2017-10-30',
           topic: '多項目輪播（iosslider）',
         },
         {
           id: 5,
-          href: 'fancyBox',
+          href: 'jq_plugin_fancyBox',
           time: '2017-08-23',
           topic: '燈箱（FancyBox 2.1.7）',
         },
         {
           id: 4,
-          href: 'tabs_slider',
+          href: 'jq_plugin_tabs_slider',
           time: '2017-07-25',
           topic: '頁籤型影像輪播（Tabs Slider）',
         },
         {
           id: 3,
-          href: 'bxslider',
+          href: 'jq_plugin_bxslider',
           time: '2017-07-24',
           topic: '水平影像輪播（Horizontal Slider）',
         },
         {
           id: 2,
-          href: 'elevatezoom',
+          href: 'jq_plugin_elevatezoom',
           time: '2017-07-15',
           topic: '影像放大鏡（Image Zoom）',
         },
         {
           id: 1,
-          href: 'accordion',
+          href: 'jq_plugin_accordion',
           time: '2017-07-09',
           topic: '兩層式摺疊列表（Accordion）',
         }
       ],
 
-      // tec
-      jqLists: [
+      // Notes
+      nts: [
         {
           id: 10,
           href: 'jq_tec_escape',
@@ -1079,7 +1079,7 @@ module.exports = {
     },
     listJQ: function() {
       var search = this;
-      return this.jqLists.filter(function(item) {
+      return this.nts.filter(function(item) {
         return (
           item.topic.toLowerCase().indexOf(search.query.toLowerCase()) !== -1
         );

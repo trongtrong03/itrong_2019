@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-25</time>
-                        <h1>Lesson12-- 條件式（Conditional）</h1>
+                        <h1>Notes12-- 條件式（Conditional）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

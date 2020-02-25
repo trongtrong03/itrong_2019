@@ -12,13 +12,13 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-09</time>
-                        <h1>Lesson16-- 推送（push）</h1>
+                        <h1>Notes16-- 推送（push）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->
                 <div class="inside-edit">
 <!-- start -->
-<p>除了本機端的版控外，遠端儲存庫的同步也是 Git 非常重要的一項備份環節，於 <a href="git_bash_remote.php" target="_blank">〈Lesson14-- 設定遠端（remote）〉</a> 一文裡我們已經學會如何在 Github 建立專屬的遠端儲存庫，並與本機的目標專案進行連接，接下來我們只需下達 <em>push</em> 指令，就能將專案目錄裡的 Git 版控數據，同步備份至遠端上。</p>
+<p>除了本機端的版控外，遠端儲存庫的同步也是 Git 非常重要的一項備份環節，於 <a href="git_bash_remote.php" target="_blank">〈Learn14-- 設定遠端（remote）〉</a> 一文裡我們已經學會如何在 Github 建立專屬的遠端儲存庫，並與本機的目標專案進行連接，接下來我們只需下達 <em>push</em> 指令，就能將專案目錄裡的 Git 版控數據，同步備份至遠端上。</p>
 <h3 class="bash"></h3>
 <div class="code-area">
 <pre id="area01" class="code-text"><code class="shell">$ git push origin master</code></pre>

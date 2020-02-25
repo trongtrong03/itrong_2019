@@ -23,6 +23,7 @@
     <img src="images/pic/knowledge/gestalt-1.jpg">
     <figcaption>如果將分散的圓形稍作排列，人腦很難不會不由自主地將它們視為一個群體。</figcaption>
 </figure>
+<br>
 <h2>格式塔心理學理論的完形法則：</h2>
 <ol class="decimal">
     <li>Proximity（相近）：距離接近的各部分趨於組成形體。</li>

@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-09-27</time>
-                        <h1>Lesson05-- 查閱提交的歷史記錄（log）</h1>
+                        <h1>Notes05-- 查閱提交的歷史記錄（log）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

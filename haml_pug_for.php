@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-25</time>
-                        <h1>Lesson13-- 迴圈（For）</h1>
+                        <h1>Notes13-- 迴圈（For）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

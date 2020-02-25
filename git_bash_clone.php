@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-14</time>
-                        <h1>Lesson18-- 複製（clone）</h1>
+                        <h1>Notes18-- 複製（clone）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

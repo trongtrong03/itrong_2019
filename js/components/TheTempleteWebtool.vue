@@ -96,7 +96,7 @@ module.exports = {
       // data
       wt_webs: [
         {
-          id: 28,
+          id: 29,
           isImg: true,
           img: "aconvert",
           href: "https://www.aconvert.com/tw/image/webp-to-png/",
@@ -104,7 +104,7 @@ module.exports = {
           note: "提供各種線上轉檔的服務，包含 .webp 影像格式的轉換，或是電子書文件的轉換等。"
         },
         {
-          id: 27,
+          id: 28,
           isImg: false,
           img: "",
           href: "http://apps.eky.hk/css-triangle-generator/zh-hant",
@@ -112,12 +112,21 @@ module.exports = {
           note: "可即時設定任何三角形的 CSS 樣式，並輸出原始碼提供複製取用。"
         },
         {
-          id: 26,
+          id: 27,
           isImg: true,
           img: "colorZilla",
           href: "http://www.colorzilla.com/gradient-editor/",
           topic: "Ultimate CSS Gradient Generator",
           note: "方便好用的線上漸層調製工具，可向下支援至 ie8。"
+        },
+        {
+          id: 26,
+          isImg: false,
+          img: "",
+          href: "https://beautifier.io/",
+          topic: "Online JavaScript Beautifier",
+          note:
+            "提供線上美化 JavaScript 程式碼，使用者可透過相關參數設置輸出適合自己專案的美化格式。"
         },
         {
           id: 25,

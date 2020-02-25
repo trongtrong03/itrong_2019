@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-09-28</time>
-                        <h1>Lesson06-- 將檔案從暫存區返回工作目錄（reset）</h1>
+                        <h1>Notes06-- 將檔案從暫存區返回工作目錄（reset）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

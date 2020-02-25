@@ -440,10 +440,17 @@
                     display: block;
                     width: 100%;
                 }
+                time {
+                    line-height: 1.5;
+                    font-size: .875rem;
+                    color: #BBB;
+                    padding: 0 .5rem;
+                }
                 h2 {
                     line-height: 1.5;
-                    font-size: 1.25rem;
+                    font-size: 1.125rem;
                     @include text-overflow;
+                    padding: 0 .5rem;
                 }
                 figcaption {
                     position: absolute;
@@ -468,6 +475,41 @@
             }
         }
         @include MQ(max-1024) {}
+    }
+    &.is-kl {
+        li {
+            width: calc(33.33% - (3rem / 3));
+            a {
+                figure {
+                    span {
+                        overflow: hidden;
+                    }
+                    img {
+                        transition: all .3s ease;
+                    }
+                    h2 {
+                        min-height: calc(1.125rem * 1.5 * 2);
+                        white-space: normal;
+                        overflow: visible;
+                    }
+                }
+            }
+            &:nth-child(4n) {
+                margin-right: 1rem;
+            }
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+            &:hover {
+                a {
+                    figure {
+                        img {
+                            transform: scale(1.2, 1.2);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -730,7 +772,7 @@
     ol.decimal {
         list-style-position: inside;
         list-style-type: decimal;
-        line-height: 1.5;
+        line-height: 1.75;
         margin-bottom: 1rem;
         li {
             a {

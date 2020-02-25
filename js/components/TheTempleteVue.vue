@@ -16,7 +16,7 @@
           </button>
           <button :class="active==2 ? 'active' : ''" @click="active=2">
             <i class="fas fa-list-ul"></i>
-            <b>Learn</b>
+            <b>Notes</b>
           </button>
           <button :class="active==3 ? 'active' : ''" @click="active=3">
             <i class="fas fa-list"></i>
@@ -37,10 +37,10 @@
             </li>
           </ul>
         </div>
-        <!-- Learn -->
+        <!-- Notes -->
         <div class="inside-list" v-if="active==2">
           <ul>
-            <li v-for="item in vueLn" :key="item.id">
+            <li v-for="item in vueNt" :key="item.id">
               <a :href="item.href + format">
                 <time>{{ item.time }}</time>
                 <h2>{{ item.topic }}</h2>
@@ -108,18 +108,18 @@ module.exports = {
       ],
 
       // learn
-      lns: [
+      nts: [
         {
           id: 2,
-          href: 'vue_ln_template_data',
+          href: 'vue_nt_template_data',
           time: '2020-01-15',
-          topic: '資料（Data）與樣板（Template）',
+          topic: 'Notes02-- 資料（Data）與樣板（Template）',
         },
         {
           id: 1,
-          href: 'vue_ln_base',
+          href: 'vue_nt_base',
           time: '2020-01-12',
-          topic: 'Vue.js 的基本介紹',
+          topic: 'Notes01-- Vue.js 的基本介紹',
         }
       ],
 
@@ -160,9 +160,9 @@ module.exports = {
         );
       });
     },
-    vueLn: function() {
+    vueNt: function() {
       var search = this;
-      return this.lns.filter(function(item) {
+      return this.nts.filter(function(item) {
         return (
           item.topic.toLowerCase().indexOf(search.query.toLowerCase()) !== -1
         );

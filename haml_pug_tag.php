@@ -12,13 +12,13 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-21</time>
-                        <h1>Lesson05-- 元素標籤（Tag）</h1>
+                        <h1>Notes05-- 元素標籤（Tag）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->
                 <div class="inside-edit">
 <!-- start -->
-<p>雖然於<a href="haml_pug_text.php">〈Lesson03-- 純文本（Plain Text）〉</a>一文中，我們已學會在 Pug 如何渲染元素標籤，本篇目的則是再次整理元素標籤的使用方法，已經學會的看倌可直接跳過，或是當作複習再看一遍。</p>
+<p>雖然於<a href="haml_pug_text.php">〈Notes03-- 純文本（Plain Text）〉</a>一文中，我們已學會在 Pug 如何渲染元素標籤，本篇目的則是再次整理元素標籤的使用方法，已經學會的看倌可直接跳過，或是當作複習再看一遍。</p>
 <p>正常情況下，我們會在純文本開頭添加元素標籤的名稱，例如：</p>
 <h3 class="pug"></h3>
 <div class="code-area">

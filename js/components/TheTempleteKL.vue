@@ -9,49 +9,20 @@
         </label>
       </div>
       <div class="inside-container">
-        <div class="inside-btn">
-          <button :class="active==1 ? 'active' : ''" @click="active=1">
-            <i class="fas fa-list-ul"></i>
-            <b>網頁前端</b>
-          </button>
-          <button :class="active==2 ? 'active' : ''" @click="active=2">
-            <i class="fas fa-list-ul"></i>
-            <b>影像相關</b>
-          </button>
-          <button :class="active==3 ? 'active' : ''" @click="active=3">
-            <i class="fas fa-list-ul"></i>
-            <b>資訊安全</b>
-          </button>
-        </div>
-        <!-- 網頁前端 -->
-        <div class="inside-list" v-if="active==1">
+        <div class="inside-box is-kl" v-if="active==1">
           <ul>
-            <li v-for="item in filterWFs" :key="item.id">
+            <li v-for="item in filterList" :key="item.id">
               <a :href="item.href + format">
-                <time>{{ item.time }}</time>
-                <h2>{{ item.topic }}</h2>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- 影像相關 -->
-        <div class="inside-list" v-if="active==2">
-          <ul>
-            <li v-for="item in filterVMs" :key="item.id">
-              <a :href="item.href + format">
-                <time>{{ item.time }}</time>
-                <h2>{{ item.topic }}</h2>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- 資訊安全 -->
-        <div class="inside-list" v-if="active==3">
-          <ul>
-            <li v-for="item in filterISs" :key="item.id">
-              <a :href="item.href + format">
-                <time>{{ item.time }}</time>
-                <h2>{{ item.topic }}</h2>
+                <figure>
+                  <span v-if="item.isImg">
+                    <img :src="'images/pic/knowledge/cover/' + item.img + '.jpg'" />
+                  </span>
+                  <span v-else>
+                    <img :src="'images/pic/knowledge/cover/default.jpg'" />
+                  </span>
+                  <time>{{ item.time }}</time>
+                  <h2>{{ item.topic }}</h2>
+                </figure>
               </a>
             </li>
           </ul>
@@ -70,130 +41,116 @@ module.exports = {
       active: 1,
 
       // data
-      wflists: [
+      lists: [
         {
-          id: 9,
-          href: "kl_wf_ui_formdesign",
-          time: "2017-11-17",
-          topic: "「沒有人喜歡表單輸入」──思考如何表單填寫的設計"
+          id: 12,
+          isImg: true,
+          img: "default",
+          href: "kl_bat_rename",
+          time: "2019-06-11",
+          topic: "作業系統：做一個簡易的批次更改副檔名功能執行程式"
         },
         {
-          id: 8,
-          href: "kl_wf_ui_gestalt",
-          time: "2017-11-12",
-          topic: "UI 的格式塔心理學（Gestalt psychology）"
+          id: 11,
+          isImg: true,
+          img: "default",
+          href: "kl_msdos",
+          time: "2019-05-09",
+          topic: "作業系統：MS-DOS 的基本指令介紹"
         },
         {
-          id: 7,
-          href: "kl_wf_uidesign_example",
-          time: "2017-11-10",
-          topic: "幾個成功的 UI 設計範例"
-        },
-        {
-          id: 6,
-          href: "kl_wf_what_is_ux",
-          time: "2017-11-04",
-          topic: "淺談 UX（使用者經驗）"
-        },
-        {
-          id: 5,
-          href: "kl_wf_what_is_ui",
-          time: "2017-11-01",
-          topic: "淺談 UI（使用者介面）"
-        },
-        {
-          id: 4,
-          href: "kl_wf_breadcrumb_trail",
-          time: "2017-04-27",
-          topic: "什麼是麵包屑導覽（Breadcrumb Trail）？"
-        },
-        {
-          id: 3,
-          href: "kl_wf_vendor_prefixes",
-          time: "2016-12-13",
-          topic: "什麼是跨瀏覽器前綴？"
-        },
-        {
-          id: 2,
-          href: "kl_wf_appicon",
-          time: "2016-12-01",
-          topic: "什麼是 App icon？"
-        },
-        {
-          id: 1,
-          href: "kl_wf_oocss",
-          time: "2016-11-25",
-          topic: "什麼是 OOCSS？"
-        }
-      ],
-      vmlists: [
-        {
-          id: 4,
-          href: "kl_vm_heif",
-          time: "2017-11-26",
-          topic: "什麼是 HEIF？"
-        },
-        {
-          id: 3,
-          href: "kl_vm_apng",
-          time: "2017-08-03",
-          topic: "什麼是 APNG？"
-        },
-        {
-          id: 2,
-          href: "kl_vm_api",
-          time: "2017-05-03",
-          topic: "什麼是 API？"
-        },
-        {
-          id: 1,
-          href: "kl_vm_gpu",
-          time: "2017-04-10",
-          topic: "什麼是 GPU？"
-        }
-      ],
-      islists: [
-        {
-          id: 2,
-          href: "kl_is_domain",
+          id: 10,
+          isImg: true,
+          img: "default",
+          href: "kl_whatis_domain",
           time: "2018-12-06",
           topic: "認識網域（Domain Name）"
         },
         {
-          id: 1,
-          href: "kl_is_gdpr",
+          id: 9,
+          isImg: true,
+          img: "default",
+          href: "kl_whatis_gdpr",
           time: "2018-11-04",
           topic: "GDPR：歐盟一般資料保護規章"
-        }
-      ]
+        },
+        {
+          id: 8,
+          isImg: true,
+          img: "default",
+          href: "kl_whatis_heif",
+          time: "2017-11-26",
+          topic: "什麼是 HEIF？"
+        },
+        {
+          id: 7,
+          isImg: true,
+          img: "default",
+          href: "kl_ui_gestalt",
+          time: "2017-11-12",
+          topic: "UI 的格式塔心理學（Gestalt psychology）"
+        },
+        {
+          id: 6,
+          isImg: true,
+          img: "default",
+          href: "kl_whatis_uiux",
+          time: "2017-11-01",
+          topic: "關於 UI 與 UX 的三兩事"
+        },
+        {
+          id: 5,
+          isImg: true,
+          img: "default",
+          href: "kl_whatis_apng",
+          time: "2017-08-03",
+          topic: "什麼是 APNG？"
+        },
+        {
+          id: 4,
+          isImg: true,
+          img: "default",
+          href: "kl_whatis_api",
+          time: "2017-05-03",
+          topic: "什麼是 API？"
+        },
+        {
+          id: 3,
+          isImg: true,
+          img: "default",
+          href: "kl_breadcrumb_trail",
+          time: "2017-04-27",
+          topic: "什麼是麵包屑導覽（Breadcrumb Trail）？"
+        },
+        {
+          id: 2,
+          isImg: true,
+          img: "default",
+          href: "kl_vendor_prefixes",
+          time: "2016-12-13",
+          topic: "什麼是跨瀏覽器前綴？"
+        },
+        {
+          id: 1,
+          isImg: true,
+          img: "default",
+          href: "kl_appicon",
+          time: "2016-12-01",
+          topic: "什麼是 App icon？"
+        },
+      ],
     };
   },
 
   computed: {
-    filterWFs: function() {
+    filterList: function() {
       var search = this;
-      return this.wflists.filter(function(item) {
+      return this.lists.filter(function(item) {
         return (
           item.topic.toLowerCase().indexOf(search.query.toLowerCase()) !== -1
         );
       });
     },
-    filterVMs: function() {
-      var search = this;
-      return this.vmlists.filter(function(item) {
-        return (
-          item.topic.toLowerCase().indexOf(search.query.toLowerCase()) !== -1
-        );
-      });
-    },
-    filterISs: function() {
-      var search = this;
-      return this.islists.filter(function(item) {
-        return (
-          item.topic.toLowerCase().indexOf(search.query.toLowerCase()) !== -1
-        );
-      });
-    }
   }
 };
 </script>

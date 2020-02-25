@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-14</time>
-                        <h1>Lesson17-- 拉取（pull）</h1>
+                        <h1>Notes17-- 拉取（pull）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

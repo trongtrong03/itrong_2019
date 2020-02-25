@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-01</time>
-                        <h1>Lesson11-- 合併（merge）：還原合併</h1>
+                        <h1>Notes11-- 合併（merge）：還原合併</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

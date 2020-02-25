@@ -12,13 +12,13 @@
         <div class="inside-btn">
           <button :class="active==1 ? 'active' : ''" @click="active=1">
             <i class="fas fa-list-ul"></i>
-            <b>Learn</b>
+            <b>Notes</b>
           </button>
         </div>
-        <!-- Learn -->
+        <!-- Notes -->
         <div class="inside-list" v-if="active==1">
           <ul>
-            <li v-for="item in filterCanvas" :key="item.id">
+            <li v-for="item in filterNt" :key="item.id">
               <a :href="item.href + format">
                 <time>{{ item.time }}</time>
                 <h2>{{ item.topic }}</h2>
@@ -40,45 +40,45 @@ module.exports = {
       active: 1,
 
       // data
-      lists: [
+      nts: [
         {
           id: 5,
           href: "js_canvas_base_path2",
           time: "2019-06-26",
-          topic: "Learn05-- 基本繪圖 ● 其三：路徑（Path）-下"
+          topic: "Notes05-- 基本繪圖 ● 其三：路徑（Path）-下"
         },
         {
           id: 4,
           href: "js_canvas_base_path",
           time: "2019-06-25",
-          topic: "Learn04-- 基本繪圖 ● 其二：路徑（Path）-上"
+          topic: "Notes04-- 基本繪圖 ● 其二：路徑（Path）-上"
         },
         {
           id: 3,
           href: "js_canvas_base_rect",
           time: "2019-06-25",
-          topic: "Learn03-- 基本繪圖 ● 其一：矩形（Rect）"
+          topic: "Notes03-- 基本繪圖 ● 其一：矩形（Rect）"
         },
         {
           id: 2,
           href: "js_canvas_base_rendering",
           time: "2019-06-23",
-          topic: "Learn02-- 渲染環境（rendering context）"
+          topic: "Notes02-- 渲染環境（rendering context）"
         },
         {
           id: 1,
           href: "js_canvas_intro",
           time: "2019-06-22",
-          topic: "Learn01-- 什麼是 Canvas？"
+          topic: "Notes01-- 什麼是 Canvas？"
         }
       ]
     };
   },
 
   computed: {
-    filterCanvas: function() {
+    filterNt: function() {
       var search = this;
-      return this.lists.filter(function(item) {
+      return this.nts.filter(function(item) {
         return (
           item.topic.toLowerCase().indexOf(search.query.toLowerCase()) !== -1
         );

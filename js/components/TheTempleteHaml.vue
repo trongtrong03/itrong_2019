@@ -45,91 +45,91 @@ module.exports = {
           id: 15,
           href: "haml_pug_comment",
           time: "2019-10-27",
-          topic: "Lesson15-- 註解（Comment）"
+          topic: "Notes15-- 註解（Comment）"
         },
         {
           id: 14,
           href: "haml_pug_iteration",
           time: "2019-10-26",
-          topic: "Lesson14-- 迭代（Iteration）"
+          topic: "Notes14-- 迭代（Iteration）"
         },
         {
           id: 13,
           href: "haml_pug_for",
           time: "2019-10-25",
-          topic: "Lesson13-- 迴圈（For）"
+          topic: "Notes13-- 迴圈（For）"
         },
         {
           id: 12,
           href: "haml_pug_conditional",
           time: "2019-10-25",
-          topic: "Lesson12-- 條件式（Conditional）"
+          topic: "Notes12-- 條件式（Conditional）"
         },
         {
           id: 11,
           href: "haml_pug_interpolation",
           time: "2019-10-24",
-          topic: "Lesson11-- 變數（Variable）與嵌入（Interpolation）"
+          topic: "Notes11-- 變數（Variable）與嵌入（Interpolation）"
         },
         {
           id: 10,
           href: "haml_pug_code",
           time: "2019-10-24",
-          topic: "Lesson10-- 程式碼輸出的觀念（Code）"
+          topic: "Notes10-- 程式碼輸出的觀念（Code）"
         },
         {
           id: 9,
           href: "haml_pug_mixin",
           time: "2019-10-24",
-          topic: "Lesson09-- 混入（Mixin）"
+          topic: "Notes09-- 混入（Mixin）"
         },
         {
           id: 8,
           href: "haml_pug_inheritance",
           time: "2019-10-23",
-          topic: "Lesson08-- 模板繼承（Inheritance）"
+          topic: "Notes08-- 模板繼承（Inheritance）"
         },
         {
           id: 7,
           href: "haml_pug_include",
           time: "2019-10-23",
-          topic: "Lesson07-- 包含（Include）"
+          topic: "Notes07-- 包含（Include）"
         },
         {
           id: 6,
           href: "haml_pug_attribute",
           time: "2019-10-21",
-          topic: "Lesson06-- 屬性（Attribute）"
+          topic: "Notes06-- 屬性（Attribute）"
         },
         {
           id: 5,
           href: "haml_pug_tag",
           time: "2019-10-21",
-          topic: "Lesson05-- 元素標籤（Tag）"
+          topic: "Notes05-- 元素標籤（Tag）"
         },
         {
           id: 4,
           href: "haml_pug_whitespace",
           time: "2019-10-20",
-          topic: "Lesson04-- 空白控制（Whitespace Control）"
+          topic: "Notes04-- 空白控制（Whitespace Control）"
         },
         {
           id: 3,
           href: "haml_pug_text",
           time: "2019-10-20",
-          topic: "Lesson03-- 純文本（Plain Text）"
+          topic: "Notes03-- 純文本（Plain Text）"
         },
         {
           id: 2,
           href: "haml_pug_doctype",
           time: "2019-10-20",
-          topic: "Lesson02-- 文件類型（Doctype）"
+          topic: "Notes02-- 文件類型（Doctype）"
         },
         {
           id: 1,
           href: "haml_pug_intro",
           time: "2019-10-19",
-          topic: "Lesson01-- 什麼是 Pug？"
+          topic: "Notes01-- 什麼是 Pug？"
         }
       ]
     };

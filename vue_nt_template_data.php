@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2020-01-15</time>
-                        <h1>資料（Data）與樣板（Template）</h1>
+                        <h1>Notes02-- 資料（Data）與樣板（Template）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

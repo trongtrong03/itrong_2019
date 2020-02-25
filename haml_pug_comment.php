@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-27</time>
-                        <h1>Lesson15-- 註解（Comment）</h1>
+                        <h1>Notes15-- 註解（Comment）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

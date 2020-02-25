@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-05</time>
-                        <h1>Lesson15-- 遠端（remote）的相關指令</h1>
+                        <h1>Notes15-- 遠端（remote）的相關指令</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

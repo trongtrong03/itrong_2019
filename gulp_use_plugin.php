@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-14</time>
-                        <h1>Lesson04-- 使用 Gulp 套件與 寫入 gulpfile.js</h1>
+                        <h1>Notes04-- 使用 Gulp 套件與 寫入 gulpfile.js</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-20</time>
-                        <h1>Lesson03-- 純文本（Plain Text）</h1>
+                        <h1>Notes03-- 純文本（Plain Text）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-19</time>
-                        <h1>Lesson01-- 什麼是 Pug？</h1>
+                        <h1>Notes01-- 什麼是 Pug？</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

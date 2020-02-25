@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-23</time>
-                        <h1>Lesson08-- 模板繼承（Inheritance）</h1>
+                        <h1>Notes08-- 模板繼承（Inheritance）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

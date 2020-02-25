@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-17</time>
-                        <h1>Lesson19-- 差異比對（diff）</h1>
+                        <h1>Notes19-- 差異比對（diff）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

@@ -418,7 +418,6 @@ header {
   overflow-y: auto;
   overflow-scrolling: touch;
   -webkit-overflow-scrolling: touch;
-  padding: 1rem 0;
 }
 .nav-wrap > ul::-webkit-scrollbar {
   width: 6px;
@@ -433,24 +432,25 @@ header {
 .nav-wrap > ul > li:hover .nav-title, .nav-wrap > ul > li.active .nav-title {
   font-weight: bold;
   color: #2d4059;
+  background-color: #FFF;
 }
 .nav-wrap > ul > li.active.navHtml .nav-sub {
-  height: calc(2.5rem * 3);
+  height: calc(2.5rem * 3 + 1rem);
 }
 .nav-wrap > ul > li.active.navCss .nav-sub {
-  height: calc(2.5rem * 3);
+  height: calc(2.5rem * 3 + 1rem);
 }
 .nav-wrap > ul > li.active.navJs .nav-sub {
-  height: calc(2.5rem * 4);
+  height: calc(2.5rem * 4 + 1rem);
 }
 .nav-wrap > ul > li.active.navFe .nav-sub {
-  height: calc(2.5rem * 1);
+  height: calc(2.5rem * 1 + 1rem);
 }
 .nav-wrap > ul > li.active.navApp .nav-sub {
-  height: calc(2.5rem * 3);
+  height: calc(2.5rem * 2 + 1rem);
 }
 .nav-wrap > ul > li.active.navRes .nav-sub {
-  height: calc(2.5rem * 4);
+  height: calc(2.5rem * 4 + 1rem);
 }
 
 .nav-title {
@@ -478,6 +478,12 @@ header {
 }
 .nav-sub li a:hover {
   color: #ffffff;
+}
+.nav-sub li:first-child {
+  margin-top: .5rem;
+}
+.nav-sub li:last-child {
+  margin-bottom: .5rem;
 }
 
 .nav-btn {
@@ -1413,13 +1419,20 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   display: block;
   width: 100%;
 }
+.inside-box li a figure time {
+  line-height: 1.5;
+  font-size: .875rem;
+  color: #BBB;
+  padding: 0 .5rem;
+}
 .inside-box li a figure h2 {
   line-height: 1.5;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   white-space: nowrap;
   text-overflow: ellipsis;
   -ms-text-overflow: ellipsis;
   overflow: hidden;
+  padding: 0 .5rem;
 }
 .inside-box li a figure figcaption {
   position: absolute;
@@ -1436,6 +1449,30 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 }
 .inside-box li:hover a figure figcaption {
   display: block;
+}
+.inside-box.is-kl li {
+  width: calc(33.33% - (3rem / 3));
+}
+.inside-box.is-kl li a figure span {
+  overflow: hidden;
+}
+.inside-box.is-kl li a figure img {
+  transition: all .3s ease;
+}
+.inside-box.is-kl li a figure h2 {
+  min-height: calc(1.125rem * 1.5 * 2);
+  white-space: normal;
+  overflow: visible;
+}
+.inside-box.is-kl li:nth-child(4n) {
+  margin-right: 1rem;
+}
+.inside-box.is-kl li:nth-child(3n) {
+  margin-right: 0;
+}
+.inside-box.is-kl li:hover a figure img {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
 }
 
 .inside-grid ul {
@@ -1703,7 +1740,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .inside-edit ol.decimal {
   list-style-position: inside;
   list-style-type: decimal;
-  line-height: 1.5;
+  line-height: 1.75;
   margin-bottom: 1rem;
 }
 .inside-edit ol.decimal li a {

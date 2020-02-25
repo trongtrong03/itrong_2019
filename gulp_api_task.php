@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-15</time>
-                        <h1>Lesson06-- gulp.task 於 Gulp4.0 的改動</h1>
+                        <h1>Notes06-- gulp.task 於 Gulp4.0 的改動</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-09-30</time>
-                        <h1>Lesson08-- 分支（branch）：進行作業</h1>
+                        <h1>Notes08-- 分支（branch）：進行作業</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

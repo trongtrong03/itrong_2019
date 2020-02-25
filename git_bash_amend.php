@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-20</time>
-                        <h1>Lesson20-- 修改 Commit 記錄（--amend）</h1>
+                        <h1>Notes20-- 修改 Commit 記錄（--amend）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

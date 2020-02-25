@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-09-25</time>
-                        <h1>Lesson01-- Git 初始設定（config）</h1>
+                        <h1>Notes01-- Git 初始設定（config）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

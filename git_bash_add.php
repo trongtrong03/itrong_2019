@@ -12,13 +12,13 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-02</time>
-                        <h1>Lesson13-- 補遺：新增檔案（add）</h1>
+                        <h1>Notes13-- 補遺：新增檔案（add）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->
                 <div class="inside-edit">
 <!-- start -->
-<p>在 <a href="git_bash_add_and_commit.php" target="_blank">Lesson03-- 新增檔案（add）並提交（commit）</a> 一文中，有介紹到如何把檔案添加到暫存區域裡，使用的指令是 <em>git add .</em>，現在來多談談有關 <em>add</em> 的其他操作方式。</p>
+<p>在 <a href="git_bash_add_and_commit.php" target="_blank">Notes03-- 新增檔案（add）並提交（commit）</a> 一文中，有介紹到如何把檔案添加到暫存區域裡，使用的指令是 <em>git add .</em>，現在來多談談有關 <em>add</em> 的其他操作方式。</p>
 <br>
 
 <h2>將新創、更動的檔案一併添加至暫存區域：</h2>

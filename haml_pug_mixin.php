@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-24</time>
-                        <h1>Lesson09-- 混入（Mixin）</h1>
+                        <h1>Notes09-- 混入（Mixin）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-10-24</time>
-                        <h1>Lesson11-- 變數（Variable）與嵌入（Interpolation）</h1>
+                        <h1>Notes11-- 變數（Variable）與嵌入（Interpolation）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->
@@ -54,7 +54,7 @@ p= string</code></pre>
 <br>
 
 <h2>嵌入：</h2>
-<p>在 <a href="haml_pug_code.php" target="_blank">〈Lesson10-- 程式碼輸出的觀念（Code）〉</a> 一文裡提過程式碼輸出可以用 <em>=</em> 表示，這個用法基本上已經做到 Pug 簡單求值的功能，除了這個用法之外，還有另一種向變數求值的方式，語法為下：</p>
+<p>在 <a href="haml_pug_code.php" target="_blank">〈Notes10-- 程式碼輸出的觀念（Code）〉</a> 一文裡提過程式碼輸出可以用 <em>=</em> 表示，這個用法基本上已經做到 Pug 簡單求值的功能，除了這個用法之外，還有另一種向變數求值的方式，語法為下：</p>
 <h3 class="pug"></h3>
 <div class="code-area">
 <pre id="area04" class="code-text"><code class="yaml">- var name = value

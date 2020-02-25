@@ -167,10 +167,6 @@ module.exports = {
           name: "Code Editor",
           href: "_editor"
         },
-        {
-          name: "OS",
-          href: "_os"
-        }
       ],
 
       navRes: [

@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2019-09-26</time>
-                        <h1>Lesson04-- 查看檔案狀態（status）</h1>
+                        <h1>Notes04-- 查看檔案狀態（status）</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->

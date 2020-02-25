@@ -12,7 +12,7 @@
                 <div class="inside-view">
                     <hgroup>
                         <time>2020-01-12</time>
-                        <h1>Vue.js 的基本介紹</h1>
+                        <h1>Notes01-- Vue.js 的基本介紹</h1>
                     </hgroup>
                 </div>
                 <!-- 文章內容 -->
