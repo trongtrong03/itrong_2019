@@ -457,6 +457,12 @@ module.exports = {
       // Tips
       cTips: [
         {
+          id: 20,
+          href: "css_t_appearance",
+          time: "2020-02-07",
+          topic: "消除 iPhone 瀏覽器 input、textarea 內的陰影"
+        },
+        {
           id: 19,
           href: "css_t_justify_content",
           time: "2019-09-03",
