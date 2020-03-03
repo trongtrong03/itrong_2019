@@ -142,6 +142,14 @@ module.exports = {
       // data
       res_webs: [
         {
+          id: 15,
+          isImg: true,
+          img: "animatedicons",
+          href: "https://icons8.com/animated-icons",
+          topic: "Animated Icons",
+          note: "提供上百種由 Lottie 發展創作的動態圖示素材。"
+        },
+        {
           id: 14,
           isImg: true,
           img: "statcounter",
