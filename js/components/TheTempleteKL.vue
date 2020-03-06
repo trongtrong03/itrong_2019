@@ -133,7 +133,7 @@ module.exports = {
         {
           id: 1,
           isImg: true,
-          img: "default",
+          img: "appicon",
           href: "kl_appicon",
           time: "2016-12-01",
           topic: "什麼是 App icon？"
